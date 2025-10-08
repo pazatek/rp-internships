@@ -9,6 +9,10 @@ venv/
 ENV/
 .venv
 
+# Generated files (don't ignore these, they should be committed)
+# README.md - auto-generated from template
+# jobs.json - cached job data
+
 # IDE
 .vscode/
 .idea/

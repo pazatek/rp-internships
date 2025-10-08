@@ -2,7 +2,7 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Last Updated:** October 07, 2025 at 11:09 PM  
+**Last Updated:** October 08, 2025 at 12:11 AM  
 **Total Positions:** 10
 
 ---
@@ -10,7 +10,8 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 ## Current Openings
 
 | Company | Position | Link |
-|---------|----------|------|
+| ------- | -------- | ---- |
+
 | APTech | Equipment Operator/ Engineering Technician | [Apply](https://researchpark.illinois.edu/job/equipment-operator-engineering-technician-2/) |
 | Tiptek | Part-Time Production Technician | [Apply](https://researchpark.illinois.edu/job/tiptek-savoy-illinois-5-part-time-production-technician/) |
 | Research Park | Graphic Design Intern | [Apply](https://researchpark.illinois.edu/job/graphic-design-intern/) |
@@ -26,7 +27,7 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## About This Project
 
-This repository automatically monitors the Research Park job feed and updates every hour. 
+This repository automatically monitors the Research Park job feed and updates every hour.
 
 - **Source:** [Research Park RSS Feed](https://researchpark.illinois.edu/?feed=job_feed)
 - **Update Frequency:** Every hour via GitHub Actions
@@ -42,10 +43,11 @@ This repository automatically monitors the Research Park job feed and updates ev
 ### Get Notifications
 
 **Watch this repository** to get notified when new jobs are added:
+
 - Click "Watch" at the top of this repo
 - Select "Custom" → Check "Commits"
 - You'll get a notification every time new jobs are posted!
 
 ---
 
-*Built with Python • Automated with GitHub Actions*
+_Built with Python • Automated with GitHub Actions_
