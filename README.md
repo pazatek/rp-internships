@@ -2,7 +2,7 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Last Updated:** October 08, 2025 at 12:14 AM  
+**Last Updated:** October 08, 2025 at 12:16 AM  
 **Total Positions:** 10
 
 ---
@@ -11,7 +11,6 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 | Company | Position | Link |
 | ------- | -------- | ---- |
-
 | APTech | Equipment Operator/ Engineering Technician | [Apply](https://researchpark.illinois.edu/job/equipment-operator-engineering-technician-2/) |
 | Tiptek | Part-Time Production Technician | [Apply](https://researchpark.illinois.edu/job/tiptek-savoy-illinois-5-part-time-production-technician/) |
 | Research Park | Graphic Design Intern | [Apply](https://researchpark.illinois.edu/job/graphic-design-intern/) |

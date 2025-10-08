@@ -29,7 +29,6 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 | Company | Position | Link |
 | ------- | -------- | ---- |
-
 {job_table}
 
 ---
