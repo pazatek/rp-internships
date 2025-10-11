@@ -2,7 +2,7 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Last Updated:** October 11, 2025 at 04:08 PM  
+**Last Updated:** October 11, 2025 at 05:05 PM  
 **Total Positions:** 10
 
 ---
