@@ -2,7 +2,7 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Last Updated:** October 16, 2025 at 11:08 PM  
+**Last Updated:** October 17, 2025 at 12:42 AM  
 **Total Positions:** 10
 
 ---
@@ -11,8 +11,6 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 | Company | Position | Link |
 | ------- | -------- | ---- |
-| APTech | Equipment Operator/ Engineering Technician | [Apply](https://researchpark.illinois.edu/job/equipment-operator-engineering-technician-2/) |
-| Tiptek | Part-Time Production Technician | [Apply](https://researchpark.illinois.edu/job/tiptek-savoy-illinois-5-part-time-production-technician/) |
 | Research Park | Graphic Design Intern | [Apply](https://researchpark.illinois.edu/job/graphic-design-intern/) |
 | Research Park | Communications Intern | [Apply](https://researchpark.illinois.edu/job/communications-and-social-media-intern/) |
 | Research Park | HR and Outreach Intern | [Apply](https://researchpark.illinois.edu/job/hr-and-outreach-intern/) |
@@ -21,6 +19,8 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 | Aviatrix | Staff Engineer – Software Development | [Apply](https://researchpark.illinois.edu/job/staff-engineer-software-development/) |
 | Aviatrix | MTS – Software Development | [Apply](https://researchpark.illinois.edu/job/mts-software-development/) |
 | RationalCyPhy Inc | Robotics Hardware Engineer | [Apply](https://researchpark.illinois.edu/job/robotics-hardware-engineer/) |
+| Yahoo! | DevOps Engineer | [Apply](https://researchpark.illinois.edu/job/devops-engineer/) |
+| Yahoo! | Software Dev Engineer I | [Apply](https://researchpark.illinois.edu/job/software-dev-engineer-i/) |
 
 ---
 
