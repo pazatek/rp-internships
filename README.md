@@ -2,7 +2,7 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Last Updated:** October 21, 2025 at 08:14 AM  
+**Last Updated:** October 21, 2025 at 09:10 AM  
 **Total Positions:** 10
 
 ---
@@ -11,9 +11,9 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 | Company | Position | Link |
 | ------- | -------- | ---- |
-| Research Park | Graphic Design Intern | [Apply](https://researchpark.illinois.edu/job/graphic-design-intern/) |
-| Research Park | Communications Intern | [Apply](https://researchpark.illinois.edu/job/communications-and-social-media-intern/) |
-| Research Park | HR and Outreach Intern | [Apply](https://researchpark.illinois.edu/job/hr-and-outreach-intern/) |
+| MS Bioanalytical LLC | Adminsitrative Assistant/ Clerk | [Apply](https://researchpark.illinois.edu/job/adminsitrative-assistant-clerk/) |
+| APTech | Equipment Operator/ Engineering Technician | [Apply](https://researchpark.illinois.edu/job/equipment-operator-engineering-technician-2/) |
+| Tiptek | Part-Time Production Technician | [Apply](https://researchpark.illinois.edu/job/tiptek-savoy-illinois-5-part-time-production-technician/) |
 | Epivara | Formulation Scientist | [Apply](https://researchpark.illinois.edu/job/formulation-scientist/) |
 | SPA | Award Management Coordinator / Senior Award Management Coordinator | [Apply](https://researchpark.illinois.edu/job/award-management-coordinator-senior-award-management-coordinator/) |
 | Aviatrix | Staff Engineer – Software Development | [Apply](https://researchpark.illinois.edu/job/staff-engineer-software-development/) |
