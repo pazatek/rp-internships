@@ -2,7 +2,7 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Last Updated:** October 22, 2025 at 10:08 PM  
+**Last Updated:** October 22, 2025 at 11:07 PM  
 **Total Positions:** 10
 
 ---
@@ -11,7 +11,6 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 | Company | Position | Link |
 | ------- | -------- | ---- |
-| APTech | Equipment Operator/ Engineering Technician | [Apply](https://researchpark.illinois.edu/job/equipment-operator-engineering-technician-2/) |
 | Tiptek | Part-Time Production Technician | [Apply](https://researchpark.illinois.edu/job/tiptek-savoy-illinois-5-part-time-production-technician/) |
 | Epivara | Formulation Scientist | [Apply](https://researchpark.illinois.edu/job/formulation-scientist/) |
 | SPA | Award Management Coordinator / Senior Award Management Coordinator | [Apply](https://researchpark.illinois.edu/job/award-management-coordinator-senior-award-management-coordinator/) |
@@ -21,6 +20,7 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 | Yahoo! | DevOps Engineer | [Apply](https://researchpark.illinois.edu/job/devops-engineer/) |
 | Yahoo! | Software Dev Engineer I | [Apply](https://researchpark.illinois.edu/job/software-dev-engineer-i/) |
 | Research Park | Administrative Aide – EnterpriseWorks | [Apply](https://researchpark.illinois.edu/job/administrative-aide-enterpriseworks/) |
+| Boston Bioprocess | Spring/Summer Software Engineering Intern-Boston Bioprocess | [Apply](https://researchpark.illinois.edu/job/spring-summer-software-engineering-intern-boston-bioprocess/) |
 
 ---
 
