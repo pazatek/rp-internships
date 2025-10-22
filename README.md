@@ -2,7 +2,7 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Last Updated:** October 22, 2025 at 07:07 PM  
+**Last Updated:** October 22, 2025 at 08:11 PM  
 **Total Positions:** 10
 
 ---
@@ -11,7 +11,6 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 | Company | Position | Link |
 | ------- | -------- | ---- |
-| MS Bioanalytical LLC | Adminsitrative Assistant/ Clerk | [Apply](https://researchpark.illinois.edu/job/adminsitrative-assistant-clerk/) |
 | APTech | Equipment Operator/ Engineering Technician | [Apply](https://researchpark.illinois.edu/job/equipment-operator-engineering-technician-2/) |
 | Tiptek | Part-Time Production Technician | [Apply](https://researchpark.illinois.edu/job/tiptek-savoy-illinois-5-part-time-production-technician/) |
 | Epivara | Formulation Scientist | [Apply](https://researchpark.illinois.edu/job/formulation-scientist/) |
@@ -21,6 +20,7 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 | RationalCyPhy Inc | Robotics Hardware Engineer | [Apply](https://researchpark.illinois.edu/job/robotics-hardware-engineer/) |
 | Yahoo! | DevOps Engineer | [Apply](https://researchpark.illinois.edu/job/devops-engineer/) |
 | Yahoo! | Software Dev Engineer I | [Apply](https://researchpark.illinois.edu/job/software-dev-engineer-i/) |
+| Research Park | Administrative Aide – EnterpriseWorks | [Apply](https://researchpark.illinois.edu/job/administrative-aide-enterpriseworks/) |
 
 ---
 
