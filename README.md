@@ -2,7 +2,7 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Last Updated:** October 27, 2025 at 07:07 PM  
+**Last Updated:** October 27, 2025 at 08:08 PM  
 **Total Positions:** 10
 
 ---
@@ -13,11 +13,11 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 | ------- | -------- | ---- |
 | Epivara | Formulation Scientist | [Apply](https://researchpark.illinois.edu/job/formulation-scientist/) |
 | SPA | Award Management Coordinator / Senior Award Management Coordinator | [Apply](https://researchpark.illinois.edu/job/award-management-coordinator-senior-award-management-coordinator/) |
-| Aviatrix | Staff Engineer – Software Development | [Apply](https://researchpark.illinois.edu/job/staff-engineer-software-development/) |
-| Aviatrix | MTS – Software Development | [Apply](https://researchpark.illinois.edu/job/mts-software-development/) |
-| RationalCyPhy Inc | Robotics Hardware Engineer | [Apply](https://researchpark.illinois.edu/job/robotics-hardware-engineer/) |
-| Yahoo! | DevOps Engineer | [Apply](https://researchpark.illinois.edu/job/devops-engineer/) |
-| Yahoo! | Software Dev Engineer I | [Apply](https://researchpark.illinois.edu/job/software-dev-engineer-i/) |
+| Aviatrix | Staff Engineer (Software Development) – Aviatrix | [Apply](https://researchpark.illinois.edu/job/staff-engineer-software-development/) |
+| Aviatrix | MTS (Software Development) – Aviatrix | [Apply](https://researchpark.illinois.edu/job/mts-software-development/) |
+| RationalCyPhy Inc | Robotics Hardware Engineer – Rational CyPhy Inc | [Apply](https://researchpark.illinois.edu/job/robotics-hardware-engineer/) |
+| Yahoo! | DevOps Engineer – Yahoo! | [Apply](https://researchpark.illinois.edu/job/devops-engineer/) |
+| Yahoo! | Software Dev Engineer I – Yahoo! | [Apply](https://researchpark.illinois.edu/job/software-dev-engineer-i/) |
 | Research Park | Administrative Aide – EnterpriseWorks | [Apply](https://researchpark.illinois.edu/job/administrative-aide-enterpriseworks/) |
 | Boston Bioprocess | Spring/Summer Software Engineering Intern-Boston Bioprocess | [Apply](https://researchpark.illinois.edu/job/spring-summer-software-engineering-intern-boston-bioprocess/) |
 | APTech | Senior Engineering (Transportation Asset Management) – Applied Pavement Technology | [Apply](https://researchpark.illinois.edu/job/senior-engineering-transportation-asset-management-applied-pavement-technology/) |
