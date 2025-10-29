@@ -2,7 +2,7 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Last Updated:** October 29, 2025 at 07:10 AM  
+**Last Updated:** October 29, 2025 at 08:13 AM  
 **Total Positions:** 10
 
 ---
@@ -11,7 +11,7 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 | Company | Position | Link |
 | ------- | -------- | ---- |
-| SPA | Award Management Coordinator / Senior Award Management Coordinator | [Apply](https://researchpark.illinois.edu/job/award-management-coordinator-senior-award-management-coordinator/) |
+| Epivara | Formulation Scientist | [Apply](https://researchpark.illinois.edu/job/formulation-scientist/) |
 | Aviatrix | Staff Engineer (Software Development) – Aviatrix | [Apply](https://researchpark.illinois.edu/job/staff-engineer-software-development/) |
 | Aviatrix | MTS (Software Development) – Aviatrix | [Apply](https://researchpark.illinois.edu/job/mts-software-development/) |
 | RationalCyPhy Inc | Robotics Hardware Engineer – Rational CyPhy Inc | [Apply](https://researchpark.illinois.edu/job/robotics-hardware-engineer/) |
