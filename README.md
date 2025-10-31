@@ -2,8 +2,8 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Last Updated:** October 31, 2025 at 05:10 AM  
-**Total Positions:** 0
+**Last Updated:** October 31, 2025 at 06:14 AM  
+**Total Positions:** 10
 
 ---
 
@@ -11,7 +11,16 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 | Company | Position | Link |
 | ------- | -------- | ---- |
-
+| Epivara | Formulation Scientist | [Apply](https://researchpark.illinois.edu/job/formulation-scientist/) |
+| Aviatrix | Staff Engineer (Software Development) – Aviatrix | [Apply](https://researchpark.illinois.edu/job/staff-engineer-software-development/) |
+| Aviatrix | MTS (Software Development) – Aviatrix | [Apply](https://researchpark.illinois.edu/job/mts-software-development/) |
+| RationalCyPhy Inc | Robotics Hardware Engineer – Rational CyPhy Inc | [Apply](https://researchpark.illinois.edu/job/robotics-hardware-engineer/) |
+| Yahoo! | DevOps Engineer – Yahoo! | [Apply](https://researchpark.illinois.edu/job/devops-engineer/) |
+| Yahoo! | Software Dev Engineer I – Yahoo! | [Apply](https://researchpark.illinois.edu/job/software-dev-engineer-i/) |
+| Boston Bioprocess | Spring/Summer Software Engineering Intern-Boston Bioprocess | [Apply](https://researchpark.illinois.edu/job/spring-summer-software-engineering-intern-boston-bioprocess/) |
+| APTech | Senior Engineering (Transportation Asset Management) – Applied Pavement Technology | [Apply](https://researchpark.illinois.edu/job/senior-engineering-transportation-asset-management-applied-pavement-technology/) |
+| John Deere | Part-Time Student – John Deere | [Apply](https://researchpark.illinois.edu/job/part-time-student-uiuc-john-deere/) |
+| Office of the Vice Chancellor for Research &amp; Innovation | Graphic Communications Designer/ Senior Graphic designer – Office of the Vice Chancellor for Research & Innovation | [Apply](https://researchpark.illinois.edu/job/graphic-communications-designer-senior-graphic-designer-office-of-the-vice-chancellor-for-research-innovation/) |
 
 ---
 
