@@ -30,8 +30,8 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Current Openings
 
-| Logo | Company | Position | Type | Posted | Link |
-| :---: | ------- | -------- | :---: | ------ | ---- |
+| Logo | Company | Position | Posted | Link |
+| :---: | ------- | -------- | ------ | ---- |
 {job_table}
 
 {posting_stats}
@@ -376,8 +376,8 @@ def format_posted_date(posted_date_str, published_parsed=None):
         # Last resort: return shortened version
         return posted_date_str[:16] if len(posted_date_str) > 16 else posted_date_str
 
-def analyze_posting_times(jobs):
-    """Analyze posting time distribution from job data."""
+def generate_posting_chart(jobs):
+    """Generate a bar chart URL showing posting time distribution."""
     posting_hours = []
     
     for job in jobs:
@@ -397,49 +397,78 @@ def analyze_posting_times(jobs):
     if len(posting_hours) < 3:
         return None  # Not enough data
     
-    posting_hours.sort()
-    n = len(posting_hours)
-    
-    # Calculate percentiles
-    p10_idx = int(n * 0.1)
-    p90_idx = int(n * 0.9)
-    p10_hour = posting_hours[p10_idx]
-    p90_hour = posting_hours[p90_idx]
-    
-    # Count hour distribution
+    # Count jobs per hour
     hour_counts = {}
     for hour in posting_hours:
         hour_counts[hour] = hour_counts.get(hour, 0) + 1
     
-    # Find most common hours
-    most_common_hour = max(hour_counts.items(), key=lambda x: x[1])
-    
-    # Calculate percentage in the 90% range
-    in_range = sum(1 for h in posting_hours if p10_hour <= h <= p90_hour)
-    pct_in_range = (in_range / n) * 100
-    
-    # Format hour ranges (12-hour format)
-    def format_hour(hour):
+    # Create data for chart (24 hours)
+    labels = []
+    data = []
+    for hour in range(24):
+        # Format hour labels
         if hour == 0:
-            return "12 AM"
+            label = "12 AM"
         elif hour < 12:
-            return f"{hour} AM"
+            label = f"{hour} AM"
         elif hour == 12:
-            return "12 PM"
+            label = "12 PM"
         else:
-            return f"{hour - 12} PM"
+            label = f"{hour - 12} PM"
+        labels.append(label)
+        data.append(hour_counts.get(hour, 0))
     
-    return {
-        'total_jobs': n,
-        'p10_hour': p10_hour,
-        'p90_hour': p90_hour,
-        'p10_formatted': format_hour(p10_hour),
-        'p90_formatted': format_hour(p90_hour),
-        'pct_in_range': pct_in_range,
-        'most_common_hour': most_common_hour[0],
-        'most_common_count': most_common_hour[1],
-        'most_common_formatted': format_hour(most_common_hour[0])
+    # Create chart using QuickChart.io
+    chart_config = {
+        "type": "bar",
+        "data": {
+            "labels": labels,
+            "datasets": [{
+                "label": "Jobs Posted",
+                "data": data,
+                "backgroundColor": "rgba(54, 162, 235, 0.6)",
+                "borderColor": "rgba(54, 162, 235, 1)",
+                "borderWidth": 1
+            }]
+        },
+        "options": {
+            "scales": {
+                "y": {
+                    "beginAtZero": True,
+                    "ticks": {
+                        "stepSize": 1
+                    },
+                    "title": {
+                        "display": True,
+                        "text": "Number of Jobs"
+                    }
+                },
+                "x": {
+                    "title": {
+                        "display": True,
+                        "text": "Time of Day (CST)"
+                    }
+                }
+            },
+            "plugins": {
+                "title": {
+                    "display": True,
+                    "text": f"Job Posting Times (Based on {len(posting_hours)} postings)",
+                    "font": {"size": 16}
+                },
+                "legend": {
+                    "display": False
+                }
+            },
+            "responsive": True
+        }
     }
+    
+    # Encode chart config as URL
+    import urllib.parse
+    chart_url = f"https://quickchart.io/chart?c={urllib.parse.quote(json.dumps(chart_config))}"
+    
+    return chart_url
 
 def update_readme(jobs):
     """Generate and write README.md with current job listings."""
@@ -450,10 +479,9 @@ def update_readme(jobs):
         position = job['position'].replace('|', '-')
         company = job['company'].replace('|', '-')
         logo = get_company_logo(job)
-        job_type = detect_job_type(job) or '—'
         posted = format_posted_date(job.get('posted_date', ''), job.get('published_parsed'))
         link = job['link']
-        table_rows.append(f"| {logo} | {company} | {position} | {job_type} | {posted} | [Apply]({link}) |")
+        table_rows.append(f"| {logo} | {company} | {position} | {posted} | [Apply]({link}) |")
     
     table_rows = '\n'.join(table_rows)
     
@@ -461,17 +489,16 @@ def update_readme(jobs):
     cst_time = datetime.now(cst)
     last_updated = cst_time.strftime('%B %d, %Y at %I:%M %p CST')
     
-    # Analyze posting times
-    posting_stats = analyze_posting_times(jobs)
+    # Generate posting time chart
+    chart_url = generate_posting_chart(jobs)
     stats_text = ""
-    if posting_stats:
+    if chart_url:
         stats_text = f"""
-## Posting Time Statistics
+## Posting Time Distribution
 
-Based on {posting_stats['total_jobs']} job postings analyzed:
+![Posting Times Chart]({chart_url})
 
-- **{posting_stats['pct_in_range']:.0f}%** of jobs are posted between **{posting_stats['p10_formatted']}** and **{posting_stats['p90_formatted']}** (CST)
-- Most common posting hour: **{posting_stats['most_common_formatted']}** ({posting_stats['most_common_count']} jobs)
+*Distribution of job posting times throughout the day (CST)*
 
 ---
 """
