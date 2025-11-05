@@ -2,7 +2,7 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Last Updated:** November 05, 2025 at 03:59 PM CST  
+**Last Updated:** November 05, 2025 at 04:01 PM CST  
 **Total Positions:** 25
 
 ---
@@ -10,7 +10,7 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 ## Current Openings
 
 | Logo | Company | Position | Posted | Link |
-| ---- | ------- | -------- | ------ | ---- |
+| :---: | ------- | -------- | ------ | ---- |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png" alt="Tiptek" width="50"> | Tiptek | Part-Time Production Technician | Sep 24, 2025 04:00 PM CST | [Apply](https://researchpark.illinois.edu/job/tiptek-savoy-illinois-5-part-time-production-technician/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/03/boston-bioprocess-logo-e1741364276860-150x150.png" alt="Boston Bioprocess" width="50"> | Boston Bioprocess | Spring/Summer Software Engineering Intern-Boston Bioprocess | Oct 22, 2025 04:08 PM CST | [Apply](https://researchpark.illinois.edu/job/spring-summer-software-engineering-intern-boston-bioprocess/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2021/12/Kocree-Logo-150x114.png" alt="Kocree" width="50"> | Kocree | High-Performance Computing Developer | Sep 17, 2025 03:11 PM CST | [Apply](https://researchpark.illinois.edu/job/high-performance-computing-developer-2/) |
