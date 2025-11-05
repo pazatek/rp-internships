@@ -2,7 +2,7 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Last Updated:** November 05, 2025 at 04:23 PM CST  
+**Last Updated:** November 05, 2025 at 04:25 PM CST  
 **Total Positions:** 25
 
 ---
@@ -40,7 +40,13 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Posting Time Distribution
 
-![Posting Times Chart](https://quickchart.io/chart?c=%7B%22type%22%3A%20%22bar%22%2C%20%22data%22%3A%20%7B%22labels%22%3A%20%5B%221%20PM%22%2C%20%222%20PM%22%2C%20%223%20PM%22%2C%20%224%20PM%22%2C%20%225%20PM%22%2C%20%226%20PM%22%5D%2C%20%22datasets%22%3A%20%5B%7B%22label%22%3A%20%22Jobs%20Posted%22%2C%20%22data%22%3A%20%5B3%2C%206%2C%209%2C%203%2C%202%2C%202%5D%2C%20%22backgroundColor%22%3A%20%22rgba%2854%2C%20162%2C%20235%2C%200.6%29%22%2C%20%22borderColor%22%3A%20%22rgba%2854%2C%20162%2C%20235%2C%201%29%22%2C%20%22borderWidth%22%3A%201%7D%5D%7D%2C%20%22options%22%3A%20%7B%22scales%22%3A%20%7B%22y%22%3A%20%7B%22beginAtZero%22%3A%20true%2C%20%22ticks%22%3A%20%7B%22stepSize%22%3A%201%2C%20%22precision%22%3A%200%7D%2C%20%22title%22%3A%20%7B%22display%22%3A%20true%2C%20%22text%22%3A%20%22Number%20of%20Jobs%22%7D%7D%2C%20%22x%22%3A%20%7B%22title%22%3A%20%7B%22display%22%3A%20true%2C%20%22text%22%3A%20%22Time%20of%20Day%20%28CST%29%22%7D%7D%7D%2C%20%22plugins%22%3A%20%7B%22title%22%3A%20%7B%22display%22%3A%20true%2C%20%22text%22%3A%20%22Job%20Posting%20Times%20%28Based%20on%2025%20postings%29%22%2C%20%22font%22%3A%20%7B%22size%22%3A%2016%7D%7D%2C%20%22legend%22%3A%20%7B%22display%22%3A%20false%7D%7D%2C%20%22responsive%22%3A%20true%2C%20%22maintainAspectRatio%22%3A%20true%7D%2C%20%22width%22%3A%20600%2C%20%22height%22%3A%20300%7D)
+```mermaid
+xychart-beta
+    title "Job Posting Times (Based on 25 postings)"
+    x-axis ["1 PM", "2 PM", "3 PM", "4 PM", "5 PM", "6 PM"]
+    y-axis "Number of Jobs" 0 --> 10
+    bar [3, 6, 9, 3, 2, 2]
+```
 
 ### Key Insights
 

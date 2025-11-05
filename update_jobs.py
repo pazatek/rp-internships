@@ -328,7 +328,7 @@ def generate_posting_insights(jobs):
     return posting_hours, hour_counts
 
 def generate_posting_chart(jobs):
-    """Generate a bar chart URL showing posting time distribution."""
+    """Generate a Mermaid bar chart showing posting time distribution."""
     result = generate_posting_insights(jobs)
     if not result:
         return None
@@ -353,61 +353,15 @@ def generate_posting_chart(jobs):
             labels.append(label)
             data.append(count)
     
-    # Create chart using QuickChart.io
-    chart_config = {
-        "type": "bar",
-        "data": {
-            "labels": labels,
-            "datasets": [{
-                "label": "Jobs Posted",
-                "data": data,
-                "backgroundColor": "rgba(54, 162, 235, 0.6)",
-                "borderColor": "rgba(54, 162, 235, 1)",
-                "borderWidth": 1
-            }]
-        },
-        "options": {
-            "scales": {
-                "y": {
-                    "beginAtZero": True,
-                    "ticks": {
-                        "stepSize": 1,
-                        "precision": 0
-                    },
-                    "title": {
-                        "display": True,
-                        "text": "Number of Jobs"
-                    }
-                },
-                "x": {
-                    "title": {
-                        "display": True,
-                        "text": "Time of Day (CST)"
-                    }
-                }
-            },
-            "plugins": {
-                "title": {
-                    "display": True,
-                    "text": f"Job Posting Times (Based on {len(posting_hours)} postings)",
-                    "font": {"size": 16}
-                },
-                "legend": {
-                    "display": False
-                }
-            },
-            "responsive": True,
-            "maintainAspectRatio": True
-        },
-        "width": 600,
-        "height": 300
-    }
+    # Create Mermaid bar chart (GitHub native rendering)
+    chart_lines = ["```mermaid", "xychart-beta", "    title \"Job Posting Times (Based on {} postings)\"".format(len(posting_hours)), "    x-axis [{}]".format(", ".join([f'"{l}"' for l in labels])), "    y-axis \"Number of Jobs\" 0 --> {}".format(max(data) + 1)]
     
-    # Encode chart config as URL
-    import urllib.parse
-    chart_url = f"https://quickchart.io/chart?c={urllib.parse.quote(json.dumps(chart_config))}"
+    # Add data series
+    chart_lines.append("    bar [{}]".format(", ".join(map(str, data))))
     
-    return chart_url
+    chart_lines.append("```")
+    
+    return "\n".join(chart_lines)
 
 def update_readme(jobs):
     """Generate and write README.md with current job listings."""
@@ -484,7 +438,7 @@ def update_readme(jobs):
         stats_text = f"""
 ## Posting Time Distribution
 
-![Posting Times Chart]({chart_url})
+{chart_url}
 
 ### Key Insights
 
