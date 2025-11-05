@@ -299,8 +299,8 @@ def format_posted_date(posted_date_str, published_parsed=None):
         # Last resort: return shortened version
         return posted_date_str[:16] if len(posted_date_str) > 16 else posted_date_str
 
-def generate_posting_chart(jobs):
-    """Generate a bar chart URL showing posting time distribution."""
+def generate_posting_insights(jobs):
+    """Generate insights about posting times to help users know when to check."""
     posting_hours = []
     
     for job in jobs:
@@ -324,6 +324,16 @@ def generate_posting_chart(jobs):
     hour_counts = {}
     for hour in posting_hours:
         hour_counts[hour] = hour_counts.get(hour, 0) + 1
+    
+    return posting_hours, hour_counts
+
+def generate_posting_chart(jobs):
+    """Generate a bar chart URL showing posting time distribution."""
+    result = generate_posting_insights(jobs)
+    if not result:
+        return None
+    
+    posting_hours, hour_counts = result
     
     # Create data for chart (only hours with at least 1 job)
     labels = []
@@ -385,8 +395,11 @@ def generate_posting_chart(jobs):
                     "display": False
                 }
             },
-            "responsive": True
-        }
+            "responsive": True,
+            "maintainAspectRatio": True
+        },
+        "width": 600,
+        "height": 300
     }
     
     # Encode chart config as URL
@@ -414,16 +427,69 @@ def update_readme(jobs):
     cst_time = datetime.now(cst)
     last_updated = cst_time.strftime('%B %d, %Y at %I:%M %p CST')
     
-    # Generate posting time chart
+    # Generate posting time chart and insights
     chart_url = generate_posting_chart(jobs)
+    insights_result = generate_posting_insights(jobs)
     stats_text = ""
-    if chart_url:
+    if chart_url and insights_result:
+        posting_hours, hour_counts = insights_result
+        n = len(posting_hours)
+        
+        # Find peak hour
+        peak_hour, peak_count = max(hour_counts.items(), key=lambda x: x[1])
+        
+        # Format hours
+        def format_hour(hour):
+            if hour == 0:
+                return "12 AM"
+            elif hour < 12:
+                return f"{hour} AM"
+            elif hour == 12:
+                return "12 PM"
+            else:
+                return f"{hour - 12} PM"
+        
+        peak_formatted = format_hour(peak_hour)
+        
+        # Find time range where most jobs are posted (80% percentile)
+        sorted_hours = sorted(posting_hours)
+        p10_idx = int(n * 0.1)
+        p90_idx = int(n * 0.9)
+        start_hour = sorted_hours[p10_idx]
+        end_hour = sorted_hours[p90_idx]
+        
+        # Count jobs in the main range
+        in_range = sum(1 for h in posting_hours if start_hour <= h <= end_hour)
+        pct_in_range = (in_range / n) * 100
+        
+        # Find hours with significant activity (at least 2 jobs or top 3 hours)
+        significant_hours = sorted([(h, c) for h, c in hour_counts.items() if c >= 2], 
+                                  key=lambda x: x[1], reverse=True)[:3]
+        
+        # Format insights
+        range_text = f"{format_hour(start_hour)} - {format_hour(end_hour)}"
+        if start_hour == end_hour:
+            range_text = format_hour(start_hour)
+        
+        insights_lines = [
+            f"**Peak posting time:** {peak_formatted} ({peak_count} of {n} jobs)",
+            f"**{pct_in_range:.0f}% of jobs** posted between {range_text} (CST)",
+        ]
+        
+        if significant_hours:
+            best_times = ", ".join([format_hour(h) for h, _ in significant_hours])
+            insights_lines.append(f"**Best times to check:** {best_times}")
+        
         stats_text = f"""
 ## Posting Time Distribution
 
 ![Posting Times Chart]({chart_url})
 
-*Distribution of job posting times throughout the day (CST)*
+### Key Insights
+
+{chr(10).join('- ' + line for line in insights_lines)}
+
+*Based on {n} job postings analyzed. Insights update automatically as more data is collected.*
 
 ---
 """
