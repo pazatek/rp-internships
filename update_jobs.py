@@ -12,6 +12,8 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 import feedparser
+from bs4 import BeautifulSoup
+import re
 
 RSS_FEED_URL = "https://researchpark.illinois.edu/?feed=job_feed"
 JOBS_FILE = "jobs.json"
@@ -28,8 +30,8 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Current Openings
 
-| Company | Position | Link |
-| ------- | -------- | ---- |
+| Position | Company | Logo | Link |
+| -------- | ------- | ---- | ---- |
 {job_table}
 
 ---
@@ -103,13 +105,19 @@ def parse_job_board():
         
         page_jobs = []
         for entry in feed.entries:
+            company = entry.get('job_listing_company', 'N/A')
             job = {
                 "id": entry.get('guid', entry.link),
-                "company": entry.get('job_listing_company', 'N/A'),
+                "company": company,
                 "position": entry.title,
                 "link": entry.link,
-                "posted_date": entry.get('published', '')
+                "posted_date": entry.get('published', ''),
+                "logo_url": None
             }
+            # Try to fetch logo (non-blocking, quick timeout)
+            logo = fetch_logo_for_job(job['link'], company)
+            if logo:
+                job['logo_url'] = logo
             page_jobs.append(job)
         
         if not page_jobs:
@@ -131,14 +139,47 @@ def find_new_jobs(current_jobs, existing_jobs):
     seen_ids = {job['id'] for job in existing_jobs}
     return [job for job in current_jobs if job['id'] not in seen_ids]
 
+def get_company_logo(job):
+    """Try to fetch company logo from job page, or return placeholder."""
+    logo_url = job.get('logo_url', '')
+    if logo_url:
+        return f"<img src=\"{logo_url}\" alt=\"{job['company']}\" width=\"50\">"
+    return f"📋 {job['company'][:10]}"
+    
+def fetch_logo_for_job(job_link, company_name):
+    """Try to fetch logo URL from job page."""
+    try:
+        req = urllib.request.Request(job_link, headers={'User-Agent': 'Mozilla/5.0'})
+        context = ssl._create_unverified_context()
+        with urllib.request.urlopen(req, context=context, timeout=5) as response:
+            html = response.read().decode('utf-8')
+            soup = BeautifulSoup(html, 'html.parser')
+            
+            # Look for images in company/title area
+            img = soup.find('img', src=re.compile(r'logo|company|brand', re.I))
+            if img:
+                src = img.get('src', '')
+                if src.startswith('/'):
+                    return f"https://researchpark.illinois.edu{src}"
+                elif src.startswith('http'):
+                    return src
+    except:
+        pass
+    return None
+
 def update_readme(jobs):
     """Generate and write README.md with current job listings."""
     sorted_jobs = sorted(jobs, key=lambda x: x.get('posted_date', ''), reverse=True)
     
-    table_rows = '\n'.join([
-        f"| {job['company'].replace('|', '-')} | {job['position'].replace('|', '-')} | [Apply]({job['link']}) |"
-        for job in sorted_jobs
-    ])
+    table_rows = []
+    for job in sorted_jobs:
+        position = job['position'].replace('|', '-')
+        company = job['company'].replace('|', '-')
+        logo = get_company_logo(job)
+        link = job['link']
+        table_rows.append(f"| {position} | {company} | {logo} | [Apply]({link}) |")
+    
+    table_rows = '\n'.join(table_rows)
     
     cst = ZoneInfo('America/Chicago')
     cst_time = datetime.now(cst)
