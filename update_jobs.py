@@ -30,8 +30,8 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Current Openings
 
-| Position | Company | Logo | Link |
-| -------- | ------- | ---- | ---- |
+| Logo | Position | Company | Posted | Link |
+| ---- | -------- | ------- | ------ | ---- |
 {job_table}
 
 ---
@@ -122,6 +122,7 @@ def parse_job_board():
                 "position": entry.title,
                 "link": entry.link,
                 "posted_date": entry.get('published', ''),
+                "published_parsed": entry.get('published_parsed'),
                 "logo_url": logo_url
             }
             page_jobs.append(job)
@@ -150,7 +151,7 @@ def get_company_logo(job):
     logo_url = job.get('logo_url', '')
     if logo_url:
         return f"<img src=\"{logo_url}\" alt=\"{job['company']}\" width=\"50\">"
-    return f"📋 {job['company'][:10]}"
+    return "???"
     
 def fetch_logo_for_job(job_link, company_name):
     """Try to fetch logo URL from job page or tenant directory."""
@@ -248,6 +249,48 @@ def normalize_logo_url(src):
         return src
     return None
 
+def format_posted_date(posted_date_str, published_parsed=None):
+    """Format posted date from RSS feed to readable format."""
+    if not posted_date_str or posted_date_str == 'N/A':
+        return 'N/A'
+    
+    # Try using parsed tuple from feedparser first (most reliable)
+    if published_parsed:
+        try:
+            dt = datetime(*published_parsed[:6], tzinfo=ZoneInfo('UTC'))
+            cst = ZoneInfo('America/Chicago')
+            dt_cst = dt.astimezone(cst)
+            return dt_cst.strftime('%b %d, %Y %I:%M %p CST')
+        except:
+            pass
+    
+    # Try parsing the date string
+    try:
+        # Try RFC 2822 format (common in RSS)
+        import email.utils
+        timestamp = email.utils.parsedate_tz(posted_date_str)
+        if timestamp:
+            dt = datetime(*timestamp[:6], tzinfo=ZoneInfo('UTC'))
+            cst = ZoneInfo('America/Chicago')
+            dt_cst = dt.astimezone(cst)
+            return dt_cst.strftime('%b %d, %Y %I:%M %p CST')
+    except:
+        pass
+    
+    # Fallback: try ISO format
+    try:
+        dt_str = posted_date_str.replace('Z', '+00:00')
+        dt = datetime.fromisoformat(dt_str)
+        if dt.tzinfo:
+            cst = ZoneInfo('America/Chicago')
+            dt = dt.astimezone(cst)
+        else:
+            dt = dt.replace(tzinfo=ZoneInfo('America/Chicago'))
+        return dt.strftime('%b %d, %Y %I:%M %p CST')
+    except:
+        # Last resort: return shortened version
+        return posted_date_str[:16] if len(posted_date_str) > 16 else posted_date_str
+
 def update_readme(jobs):
     """Generate and write README.md with current job listings."""
     sorted_jobs = sorted(jobs, key=lambda x: x.get('posted_date', ''), reverse=True)
@@ -257,8 +300,9 @@ def update_readme(jobs):
         position = job['position'].replace('|', '-')
         company = job['company'].replace('|', '-')
         logo = get_company_logo(job)
+        posted = format_posted_date(job.get('posted_date', ''), job.get('published_parsed'))
         link = job['link']
-        table_rows.append(f"| {position} | {company} | {logo} | [Apply]({link}) |")
+        table_rows.append(f"| {logo} | {position} | {company} | {posted} | [Apply]({link}) |")
     
     table_rows = '\n'.join(table_rows)
     
