@@ -325,21 +325,23 @@ def generate_posting_chart(jobs):
     for hour in posting_hours:
         hour_counts[hour] = hour_counts.get(hour, 0) + 1
     
-    # Create data for chart (24 hours)
+    # Create data for chart (only hours with at least 1 job)
     labels = []
     data = []
     for hour in range(24):
-        # Format hour labels
-        if hour == 0:
-            label = "12 AM"
-        elif hour < 12:
-            label = f"{hour} AM"
-        elif hour == 12:
-            label = "12 PM"
-        else:
-            label = f"{hour - 12} PM"
-        labels.append(label)
-        data.append(hour_counts.get(hour, 0))
+        count = hour_counts.get(hour, 0)
+        if count > 0:  # Only include hours with jobs
+            # Format hour labels
+            if hour == 0:
+                label = "12 AM"
+            elif hour < 12:
+                label = f"{hour} AM"
+            elif hour == 12:
+                label = "12 PM"
+            else:
+                label = f"{hour - 12} PM"
+            labels.append(label)
+            data.append(count)
     
     # Create chart using QuickChart.io
     chart_config = {
