@@ -135,8 +135,13 @@ def main():
         print(f"🎉 {len(new_jobs)} new job(s) detected:")
         for job in new_jobs:
             print(f"  • {job['company']} - {job['position']}")
+        # Write new jobs to file for GitHub Action
+        with open('new_jobs.json', 'w') as f:
+            json.dump(new_jobs, f, indent=2)
     else:
         print(f"✓ No new jobs (scanned {len(current_jobs)} listings)")
+        # Create empty file to indicate no new jobs
+        Path('new_jobs.json').touch()
     
     update_readme(current_jobs)
     save_jobs(current_jobs)

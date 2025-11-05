@@ -13,6 +13,10 @@ ENV/
 # README.md - auto-generated from template
 # jobs.json - cached job data
 
+# Temporary files
+new_jobs.json
+email_body.txt
+
 # IDE
 .vscode/
 .idea/
