@@ -371,7 +371,8 @@ def generate_posting_chart(jobs):
                 "y": {
                     "beginAtZero": True,
                     "ticks": {
-                        "stepSize": 1
+                        "stepSize": 1,
+                        "precision": 0
                     },
                     "title": {
                         "display": True,
