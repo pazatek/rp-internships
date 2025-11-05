@@ -4,7 +4,6 @@ Research Park Job Feed Monitor
 Automatically updates job listings from UIUC Research Park RSS feed.
 """
 
-import feedparser
 import json
 import ssl
 import urllib.request
@@ -12,6 +11,7 @@ import urllib.error
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
+import feedparser
 
 RSS_FEED_URL = "https://researchpark.illinois.edu/?feed=job_feed"
 JOBS_FILE = "jobs.json"
@@ -38,7 +38,7 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 This repository automatically monitors the Research Park job feed and updates every hour.
 
-- **Source:** [Research Park RSS Feed](https://researchpark.illinois.edu/?feed=job_feed)
+- **Source:** [Research Park Job Board](https://researchpark.illinois.edu/job-board)
 - **Update Frequency:** Every hour via GitHub Actions
 - **Maintained by:** Student project for tracking Research Park opportunities
 
@@ -74,31 +74,55 @@ def save_jobs(jobs):
     with open(JOBS_FILE, 'w') as f:
         json.dump(jobs, f, indent=2)
 
-def parse_feed():
-    """Fetch and parse the Research Park RSS feed."""
-    req = urllib.request.Request(RSS_FEED_URL, headers={'User-Agent': 'Mozilla/5.0'})
+def fetch_rss_page(page=1):
+    """Fetch a single RSS feed page."""
+    url = f"{RSS_FEED_URL}&paged={page}" if page > 1 else RSS_FEED_URL
+    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
     
     for use_ssl_verification in [True, False]:
         try:
             context = ssl.create_default_context() if use_ssl_verification else ssl._create_unverified_context()
             with urllib.request.urlopen(req, context=context) as response:
-                feed = feedparser.parse(response.read())
-                break
+                return feedparser.parse(response.read())
         except Exception as e:
             if not use_ssl_verification:
-                print(f"Error fetching feed: {e}")
-                return []
-    
+                print(f"Error fetching RSS page {page}: {e}")
+                return None
+    return None
+
+def parse_job_board():
+    """Fetch all job listings from RSS feed pages."""
     jobs = []
-    for entry in feed.entries:
-        job = {
-            "id": entry.get('guid', entry.link),
-            "company": entry.get('job_listing_company', 'N/A'),
-            "position": entry.title,
-            "link": entry.link,
-            "posted_date": entry.get('published', '')
-        }
-        jobs.append(job)
+    page = 1
+    max_pages = 20  # Safety limit
+    
+    while page <= max_pages:
+        feed = fetch_rss_page(page)
+        if not feed or not feed.entries:
+            break
+        
+        page_jobs = []
+        for entry in feed.entries:
+            job = {
+                "id": entry.get('guid', entry.link),
+                "company": entry.get('job_listing_company', 'N/A'),
+                "position": entry.title,
+                "link": entry.link,
+                "posted_date": entry.get('published', '')
+            }
+            page_jobs.append(job)
+        
+        if not page_jobs:
+            break
+        
+        jobs.extend(page_jobs)
+        print(f"  Page {page}: found {len(page_jobs)} jobs (total: {len(jobs)})")
+        
+        # Check if there are more pages by looking for next page indicator
+        if len(page_jobs) < 10:  # Typically 10 jobs per page
+            break
+        
+        page += 1
     
     return jobs
 
@@ -134,7 +158,8 @@ def main():
     print("🎓 UIUC Research Park Job Monitor")
     print("=" * 60 + "\n")
     
-    current_jobs = parse_feed()
+    print("Fetching all job listings from job board...")
+    current_jobs = parse_job_board()
     existing_jobs = load_existing_jobs()
     
     # Add discovered_date to new jobs only
