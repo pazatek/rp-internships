@@ -106,18 +106,24 @@ def parse_job_board():
         page_jobs = []
         for entry in feed.entries:
             company = entry.get('job_listing_company', 'N/A')
+            job_id = entry.get('guid', entry.link)
+            
+            # Check if we already have logo cached
+            cached_job = next((j for j in jobs if j['id'] == job_id), None)
+            logo_url = cached_job.get('logo_url') if cached_job else None
+            
+            # Only fetch logo if not cached
+            if not logo_url:
+                logo_url = fetch_logo_for_job(entry.link, company)
+            
             job = {
-                "id": entry.get('guid', entry.link),
+                "id": job_id,
                 "company": company,
                 "position": entry.title,
                 "link": entry.link,
                 "posted_date": entry.get('published', ''),
-                "logo_url": None
+                "logo_url": logo_url
             }
-            # Try to fetch logo (non-blocking, quick timeout)
-            logo = fetch_logo_for_job(job['link'], company)
-            if logo:
-                job['logo_url'] = logo
             page_jobs.append(job)
         
         if not page_jobs:
@@ -147,24 +153,99 @@ def get_company_logo(job):
     return f"📋 {job['company'][:10]}"
     
 def fetch_logo_for_job(job_link, company_name):
-    """Try to fetch logo URL from job page."""
+    """Try to fetch logo URL from job page or tenant directory."""
+    # Method 1: Try job page
+    logo = fetch_logo_from_page(job_link, company_name)
+    if logo:
+        return logo
+    
+    # Method 2: Try tenant directory page (company name might be in URL format)
+    # Convert company name to URL slug (e.g., "RationalCyPhy Inc" -> "rational-cyphy")
+    tenant_slug = re.sub(r'[^a-z0-9]+', '-', company_name.lower()).strip('-')
+    tenant_url = f"https://researchpark.illinois.edu/tenant-directory/{tenant_slug}/"
+    logo = fetch_logo_from_page(tenant_url, company_name)
+    if logo:
+        return logo
+    
+    return None
+
+def fetch_logo_from_page(url, company_name):
+    """Fetch logo from a specific page."""
     try:
-        req = urllib.request.Request(job_link, headers={'User-Agent': 'Mozilla/5.0'})
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         context = ssl._create_unverified_context()
         with urllib.request.urlopen(req, context=context, timeout=5) as response:
             html = response.read().decode('utf-8')
             soup = BeautifulSoup(html, 'html.parser')
             
-            # Look for images in company/title area
-            img = soup.find('img', src=re.compile(r'logo|company|brand', re.I))
-            if img:
+            # Method 1: Look for company-logo div with img inside
+            company_logo_div = soup.find('div', class_='company-logo')
+            if company_logo_div:
+                img = company_logo_div.find('img')
+                if img and img.get('src'):
+                    src = img.get('src')
+                    return normalize_logo_url(src)
+                
+                # Check for background image in style
+                style = company_logo_div.get('style', '')
+                if 'background-image' in style:
+                    match = re.search(r'url\(["\']?([^"\']+)["\']?\)', style)
+                    if match:
+                        return normalize_logo_url(match.group(1))
+            
+            # Method 2: Look for images in wp-content/uploads directory
+            company_normalized = re.sub(r'[^a-z0-9]', '', company_name.lower())
+            company_words = [w for w in company_name.lower().split() if len(w) > 2]
+            
+            for img in soup.find_all('img'):
                 src = img.get('src', '')
-                if src.startswith('/'):
-                    return f"https://researchpark.illinois.edu{src}"
-                elif src.startswith('http'):
-                    return src
+                if not src or 'wp-content/uploads' not in src.lower():
+                    continue
+                
+                filename = src.split('/')[-1].lower()
+                filename_clean = re.sub(r'[^a-z0-9]', '', filename)
+                
+                # Skip obvious non-logo images
+                if any(skip in filename for skip in ['wordmark', 'illinois', 'untitled', 'elementor', 'color-variation']):
+                    continue
+                
+                # Match if: contains "logo" OR has "150x" (thumbnail size) AND matches company name
+                has_logo_keyword = 'logo' in filename
+                has_thumbnail_size = '150x' in filename
+                
+                # Company name matching - be more strict
+                company_match = False
+                if company_words:
+                    # Check if any significant company word is in filename
+                    for word in company_words:
+                        if len(word) > 4 and word in filename_clean:
+                            company_match = True
+                            break
+                    # Also check first 6 chars of normalized company name
+                    if not company_match and len(company_normalized) > 5:
+                        company_match = company_normalized[:6] in filename_clean
+                
+                # Only accept if it's clearly a logo (has logo keyword or thumbnail) AND matches company
+                is_logo = (has_logo_keyword or has_thumbnail_size) and company_match
+                
+                # If no company match but has logo keyword/thumbnail, still accept (might be generic logo)
+                if not is_logo and (has_logo_keyword or has_thumbnail_size):
+                    is_logo = True
+                
+                if is_logo:
+                    return normalize_logo_url(src)
     except:
         pass
+    return None
+
+def normalize_logo_url(src):
+    """Normalize logo URL to full URL."""
+    if not src:
+        return None
+    if src.startswith('/'):
+        return f"https://researchpark.illinois.edu{src}"
+    elif src.startswith('http'):
+        return src
     return None
 
 def update_readme(jobs):
@@ -203,16 +284,22 @@ def main():
     current_jobs = parse_job_board()
     existing_jobs = load_existing_jobs()
     
-    # Add discovered_date to new jobs only
+    # Add discovered_date and preserve logo_url from existing jobs
     existing_ids = {job['id'] for job in existing_jobs}
+    existing_jobs_dict = {job['id']: job for job in existing_jobs}
+    
     for job in current_jobs:
         if job['id'] not in existing_ids:
             job['discovered_date'] = datetime.now().isoformat()
         else:
-            # Preserve discovered_date from existing job
-            existing_job = next((j for j in existing_jobs if j['id'] == job['id']), None)
-            if existing_job and 'discovered_date' in existing_job:
-                job['discovered_date'] = existing_job['discovered_date']
+            # Preserve discovered_date and logo_url from existing job
+            existing_job = existing_jobs_dict.get(job['id'])
+            if existing_job:
+                if 'discovered_date' in existing_job:
+                    job['discovered_date'] = existing_job['discovered_date']
+                # Keep cached logo if we have one, otherwise use newly fetched
+                if existing_job.get('logo_url') and not job.get('logo_url'):
+                    job['logo_url'] = existing_job['logo_url']
     
     new_jobs = find_new_jobs(current_jobs, existing_jobs)
     
