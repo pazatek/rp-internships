@@ -2,7 +2,7 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Last Updated:** November 05, 2025 at 04:01 PM CST  
+**Last Updated:** November 05, 2025 at 04:05 PM CST  
 **Total Positions:** 25
 
 ---
@@ -37,7 +37,16 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png" alt="Tiptek" width="50"> | Tiptek | Laboratory Technician | Sep 05, 2025 01:47 PM CST | [Apply](https://researchpark.illinois.edu/job/laboratory-technician/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2020/05/Caterpillar-150x150.png" alt="Caterpillar" width="50"> | Caterpillar | 2026 Corporate Parallel Co-op – Engineering | Aug 01, 2025 03:23 PM CST | [Apply](https://researchpark.illinois.edu/job/2026-corporate-parallel-co-op-engineering/) |
 
+
+## Posting Time Statistics
+
+Based on 25 job postings analyzed:
+
+- **92%** of jobs are posted between **1 PM** and **5 PM** (CST)
+- Most common posting hour: **3 PM** (9 jobs)
+
 ---
+
 
 ## About This Project
 

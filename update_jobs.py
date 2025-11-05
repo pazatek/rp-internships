@@ -34,7 +34,7 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 | :---: | ------- | -------- | ------ | ---- |
 {job_table}
 
----
+{posting_stats}
 
 ## About This Project
 
@@ -291,6 +291,71 @@ def format_posted_date(posted_date_str, published_parsed=None):
         # Last resort: return shortened version
         return posted_date_str[:16] if len(posted_date_str) > 16 else posted_date_str
 
+def analyze_posting_times(jobs):
+    """Analyze posting time distribution from job data."""
+    posting_hours = []
+    
+    for job in jobs:
+        published_parsed = job.get('published_parsed')
+        if not published_parsed:
+            continue
+        
+        try:
+            # Parse from published_parsed tuple [year, month, day, hour, minute, second, ...]
+            dt = datetime(*published_parsed[:6], tzinfo=ZoneInfo('UTC'))
+            cst = ZoneInfo('America/Chicago')
+            dt_cst = dt.astimezone(cst)
+            posting_hours.append(dt_cst.hour)  # Get hour in CST (0-23)
+        except:
+            continue
+    
+    if len(posting_hours) < 3:
+        return None  # Not enough data
+    
+    posting_hours.sort()
+    n = len(posting_hours)
+    
+    # Calculate percentiles
+    p10_idx = int(n * 0.1)
+    p90_idx = int(n * 0.9)
+    p10_hour = posting_hours[p10_idx]
+    p90_hour = posting_hours[p90_idx]
+    
+    # Count hour distribution
+    hour_counts = {}
+    for hour in posting_hours:
+        hour_counts[hour] = hour_counts.get(hour, 0) + 1
+    
+    # Find most common hours
+    most_common_hour = max(hour_counts.items(), key=lambda x: x[1])
+    
+    # Calculate percentage in the 90% range
+    in_range = sum(1 for h in posting_hours if p10_hour <= h <= p90_hour)
+    pct_in_range = (in_range / n) * 100
+    
+    # Format hour ranges (12-hour format)
+    def format_hour(hour):
+        if hour == 0:
+            return "12 AM"
+        elif hour < 12:
+            return f"{hour} AM"
+        elif hour == 12:
+            return "12 PM"
+        else:
+            return f"{hour - 12} PM"
+    
+    return {
+        'total_jobs': n,
+        'p10_hour': p10_hour,
+        'p90_hour': p90_hour,
+        'p10_formatted': format_hour(p10_hour),
+        'p90_formatted': format_hour(p90_hour),
+        'pct_in_range': pct_in_range,
+        'most_common_hour': most_common_hour[0],
+        'most_common_count': most_common_hour[1],
+        'most_common_formatted': format_hour(most_common_hour[0])
+    }
+
 def update_readme(jobs):
     """Generate and write README.md with current job listings."""
     sorted_jobs = sorted(jobs, key=lambda x: x.get('posted_date', ''), reverse=True)
@@ -310,10 +375,26 @@ def update_readme(jobs):
     cst_time = datetime.now(cst)
     last_updated = cst_time.strftime('%B %d, %Y at %I:%M %p CST')
     
+    # Analyze posting times
+    posting_stats = analyze_posting_times(jobs)
+    stats_text = ""
+    if posting_stats:
+        stats_text = f"""
+## Posting Time Statistics
+
+Based on {posting_stats['total_jobs']} job postings analyzed:
+
+- **{posting_stats['pct_in_range']:.0f}%** of jobs are posted between **{posting_stats['p10_formatted']}** and **{posting_stats['p90_formatted']}** (CST)
+- Most common posting hour: **{posting_stats['most_common_formatted']}** ({posting_stats['most_common_count']} jobs)
+
+---
+"""
+    
     readme_content = README_TEMPLATE.format(
         last_updated=last_updated,
         total_positions=len(jobs),
-        job_table=table_rows
+        job_table=table_rows,
+        posting_stats=stats_text
     )
     
     with open(README_FILE, 'w') as f:
