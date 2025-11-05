@@ -30,8 +30,8 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Current Openings
 
-| Logo | Position | Company | Posted | Link |
-| ---- | -------- | ------- | ------ | ---- |
+| Logo | Company | Position | Posted | Link |
+| ---- | ------- | -------- | ------ | ---- |
 {job_table}
 
 ---
@@ -302,7 +302,7 @@ def update_readme(jobs):
         logo = get_company_logo(job)
         posted = format_posted_date(job.get('posted_date', ''), job.get('published_parsed'))
         link = job['link']
-        table_rows.append(f"| {logo} | {position} | {company} | {posted} | [Apply]({link}) |")
+        table_rows.append(f"| {logo} | {company} | {position} | {posted} | [Apply]({link}) |")
     
     table_rows = '\n'.join(table_rows)
     
