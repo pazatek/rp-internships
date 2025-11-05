@@ -2,7 +2,7 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Last Updated:** November 05, 2025 at 04:29 PM CST  
+**Last Updated:** November 05, 2025 at 04:31 PM CST  
 **Total Positions:** 25
 
 ---
@@ -54,14 +54,6 @@ Jobs
        └────────────────────────────────────────
         0                                       9
 ```
-
-### Key Insights
-
-- **Peak posting time:** 3 PM (9 of 25 jobs)
-- **92% of jobs** posted between 1 PM - 5 PM (CST)
-- **Best times to check:** 3 PM, 2 PM, 1 PM
-
-*Based on 25 job postings analyzed. Insights update automatically as more data is collected.*
 
 ---
 

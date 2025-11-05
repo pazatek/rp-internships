@@ -456,12 +456,6 @@ def update_readme(jobs):
 
 {chart_url}
 
-### Key Insights
-
-{chr(10).join('- ' + line for line in insights_lines)}
-
-*Based on {n} job postings analyzed. Insights update automatically as more data is collected.*
-
 ---
 """
     
