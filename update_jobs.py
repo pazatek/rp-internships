@@ -30,8 +30,8 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Current Openings
 
-| Logo | Company | Position | Posted | Link |
-| :---: | ------- | -------- | ------ | ---- |
+| Logo | Company | Position | Type | Posted | Link |
+| :---: | ------- | -------- | :---: | ------ | ---- |
 {job_table}
 
 {posting_stats}
@@ -116,6 +116,13 @@ def parse_job_board():
             if not logo_url:
                 logo_url = fetch_logo_for_job(entry.link, company)
             
+            # Try to get job description for better type detection
+            description = None
+            if entry.get('summary'):
+                description = entry.get('summary')
+            elif entry.get('description'):
+                description = entry.get('description')
+            
             job = {
                 "id": job_id,
                 "company": company,
@@ -123,7 +130,8 @@ def parse_job_board():
                 "link": entry.link,
                 "posted_date": entry.get('published', ''),
                 "published_parsed": entry.get('published_parsed'),
-                "logo_url": logo_url
+                "logo_url": logo_url,
+                "description": description
             }
             page_jobs.append(job)
         
@@ -145,6 +153,84 @@ def find_new_jobs(current_jobs, existing_jobs):
     """Compare current jobs with cached jobs to find new postings."""
     seen_ids = {job['id'] for job in existing_jobs}
     return [job for job in current_jobs if job['id'] not in seen_ids]
+
+def fetch_job_description(job_link):
+    """Fetch job description from job page for better type detection."""
+    try:
+        req = urllib.request.Request(job_link, headers={'User-Agent': 'Mozilla/5.0'})
+        context = ssl._create_unverified_context()
+        with urllib.request.urlopen(req, context=context, timeout=5) as response:
+            html = response.read().decode('utf-8')
+            soup = BeautifulSoup(html, 'html.parser')
+            
+            # Look for job description/content
+            content = soup.find('div', class_=re.compile(r'content|description|job', re.I))
+            if content:
+                return content.get_text().lower()
+    except:
+        pass
+    return None
+
+def detect_job_type(job):
+    """Detect if job is internship/co-op or full-time based on title and description."""
+    title = job.get('position', '').lower()
+    description = job.get('description', '').lower() if job.get('description') else ''
+    
+    # Combine title and description for analysis
+    text_to_check = title + ' ' + description
+    
+    # Use word boundaries to avoid false matches (e.g., "internet" shouldn't match "intern")
+    import re
+    
+    # Keywords that indicate internship/co-op (use word boundaries for precision)
+    intern_patterns = [
+        r'\binternship\b',
+        r'\bco-op\b',
+        r'\bcoop\b',
+        r'\bcooperative education\b',
+        r'\bsummer intern\b',
+        r'\bwinter intern\b',
+        r'\bspring intern\b',
+        r'\bfall intern\b',
+        r'\bundergraduate intern\b',
+        r'\bgraduate intern\b',
+        r'\bpart-time student\b',
+        r'\bintern\b',  # Must be whole word, not part of "internet" or "internal"
+        r'\bintern –\b',
+        r'\bintern \b',
+        r'\bintern/\b'
+    ]
+    
+    # Keywords that indicate full-time
+    fulltime_patterns = [
+        r'\bfull-time\b',
+        r'\bfulltime\b',
+        r'\bfull time\b',
+        r'\bpermanent position\b',
+        r'\bstaff engineer\b',
+        r'\bstaff software\b',
+        r'\bstaff developer\b'
+    ]
+    
+    # Check for internship keywords (more specific first)
+    for pattern in intern_patterns:
+        if re.search(pattern, text_to_check):
+            return 'Internship/Co-op'
+    
+    # Check for full-time keywords
+    for pattern in fulltime_patterns:
+        if re.search(pattern, text_to_check):
+            return 'Full-time'
+    
+    # Check for senior/lead roles (usually full-time) - but not if intern is in title
+    if not re.search(r'\bintern', title):
+        senior_keywords = ['senior', 'principal', 'lead ', 'manager', 'director', 'chief']
+        for keyword in senior_keywords:
+            if keyword in title:
+                return 'Full-time'
+    
+    # Default: unknown (could be either)
+    return None
 
 def get_company_logo(job):
     """Try to fetch company logo from job page, or return placeholder."""
@@ -365,9 +451,10 @@ def update_readme(jobs):
         position = job['position'].replace('|', '-')
         company = job['company'].replace('|', '-')
         logo = get_company_logo(job)
+        job_type = detect_job_type(job) or '—'
         posted = format_posted_date(job.get('posted_date', ''), job.get('published_parsed'))
         link = job['link']
-        table_rows.append(f"| {logo} | {company} | {position} | {posted} | [Apply]({link}) |")
+        table_rows.append(f"| {logo} | {company} | {position} | {job_type} | {posted} | [Apply]({link}) |")
     
     table_rows = '\n'.join(table_rows)
     
