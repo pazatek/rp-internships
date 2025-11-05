@@ -16,6 +16,7 @@ ENV/
 # Temporary files
 new_jobs.json
 email_body.txt
+commit_msg.txt
 
 # IDE
 .vscode/

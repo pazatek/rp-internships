@@ -67,8 +67,8 @@ jobs:
           echo "$body_content" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
-      - name: Send email notification
-        if: steps.check_new_jobs.outputs.has_new_jobs == 'true'
+      - name: Send email notification (optional)
+        if: steps.check_new_jobs.outputs.has_new_jobs == 'true' && github.event_name != 'pull_request'
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: ${{ secrets.SMTP_SERVER }}
@@ -81,9 +81,34 @@ jobs:
           body: ${{ steps.email_body.outputs.body }}
           attachments: new_jobs.json
 
+      - name: Generate commit message
+        if: steps.check_new_jobs.outputs.has_new_jobs == 'true'
+        id: commit_msg
+        run: |
+          python3 << 'EOF'
+          import json
+          with open('new_jobs.json', 'r') as f:
+              jobs = json.load(f)
+          msg = f"🎓 {len(jobs)} new job posting(s):\n\n"
+          for job in jobs:
+              msg += f"• {job['company']} - {job['position']}\n"
+          msg += f"\nView all jobs: https://github.com/${{ github.repository }}"
+          with open('commit_msg.txt', 'w') as f:
+              f.write(msg)
+          EOF
+          echo "message<<EOF" >> $GITHUB_OUTPUT
+          cat commit_msg.txt >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
       - name: Commit and push if changed
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add -A
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update job listings - $(date +'%Y-%m-%d %H:%M:%S')" && git push)
+          git diff --quiet && git diff --staged --quiet || (
+            if [ -f commit_msg.txt ]; then
+              git commit -F commit_msg.txt && git push
+            else
+              git commit -m "Update job listings - $(date +'%Y-%m-%d %H:%M:%S')" && git push
+            fi
+          )

@@ -2,7 +2,23 @@
 
 This guide explains how to set up email notifications for new Research Park job postings.
 
-## How It Works
+## Two Ways to Get Notified
+
+### Option 1: GitHub Built-in Notifications (Recommended - No Setup!)
+
+**This already works!** When new jobs are posted:
+1. GitHub Action commits the changes
+2. GitHub automatically emails watchers (if you have email notifications enabled)
+3. No configuration needed!
+
+**To enable:**
+- Watch the repo (top right → Watch)
+- GitHub → Settings → Notifications → Email
+- Check "Commits" notifications
+
+### Option 2: Custom SMTP Email (Optional)
+
+For custom email formatting or to send to a specific address:
 
 When new jobs are detected:
 1. Python script creates `new_jobs.json` with job details
@@ -10,7 +26,9 @@ When new jobs are detected:
 3. Email is sent to configured recipient with job details
 4. Email includes job titles, companies, and links
 
-## Setup Instructions
+## Custom Email Setup (Optional)
+
+> **Note:** GitHub already emails watchers on commits! Only use this if you want custom formatting or a specific recipient.
 
 ### 1. Go to Repository Settings
 
