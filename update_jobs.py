@@ -353,19 +353,29 @@ def generate_posting_chart(jobs):
             labels.append(label)
             data.append(count)
     
-    # Create Mermaid bar chart with dark theme (GitHub native rendering)
-    # Using a cleaner dark theme with better colors
+    # Create a simple, clean Unicode bar chart
+    max_value = max(data) if data else 1
+    max_bar_length = 40  # Maximum bar length in characters
+    
     chart_lines = [
-        "```mermaid",
-        "%%{init: {'theme':'dark', 'themeVariables': { 'primaryColor':'#6366f1', 'primaryTextColor':'#e5e7eb', 'primaryBorderColor':'#4b5563', 'lineColor':'#8b5cf6', 'secondaryColor':'#10b981', 'tertiaryColor':'#f59e0b'}}}%%",
-        "xychart-beta",
-        "    title \"Job Posting Times (Based on {} postings)\"".format(len(posting_hours)),
-        "    x-axis [{}]".format(", ".join([f'"{l}"' for l in labels])),
-        "    y-axis \"Number of Jobs\" 0 --> {}".format(max(data) + 1),
-        "    bar [{}]".format(", ".join(map(str, data)))
+        f"### Job Posting Times (Based on {len(posting_hours)} postings)",
+        "",
+        "```",
+        "Jobs",
+        ""
     ]
     
-    chart_lines.append("```")
+    # Create bars using Unicode block characters
+    for label, count in zip(labels, data):
+        bar_length = int((count / max_value) * max_bar_length) if max_value > 0 else 0
+        bar = "█" * bar_length
+        chart_lines.append(f"{label:>6} │{bar} {count}")
+    
+    chart_lines.extend([
+        "       └" + "─" * max_bar_length,
+        "        0" + " " * (max_bar_length - 1) + str(max_value),
+        "```"
+    ])
     
     return "\n".join(chart_lines)
 
