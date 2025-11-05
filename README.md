@@ -2,7 +2,7 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Last Updated:** November 05, 2025 at 03:42 PM CST  
+**Last Updated:** November 05, 2025 at 03:43 PM CST  
 **Total Positions:** 10
 
 ---
@@ -11,16 +11,16 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 | Company | Position | Link |
 | ------- | -------- | ---- |
-| RationalCyPhy Inc | Robotics Hardware Engineer – Rational CyPhy Inc | [Apply](https://researchpark.illinois.edu/job/robotics-hardware-engineer/) |
-| Yahoo! | DevOps Engineer – Yahoo! | [Apply](https://researchpark.illinois.edu/job/devops-engineer/) |
-| Yahoo! | Software Dev Engineer I – Yahoo! | [Apply](https://researchpark.illinois.edu/job/software-dev-engineer-i/) |
 | Boston Bioprocess | Spring/Summer Software Engineering Intern-Boston Bioprocess | [Apply](https://researchpark.illinois.edu/job/spring-summer-software-engineering-intern-boston-bioprocess/) |
-| APTech | Senior Engineering (Transportation Asset Management) – Applied Pavement Technology | [Apply](https://researchpark.illinois.edu/job/senior-engineering-transportation-asset-management-applied-pavement-technology/) |
 | John Deere | Part-Time Student – John Deere | [Apply](https://researchpark.illinois.edu/job/part-time-student-uiuc-john-deere/) |
-| APTech | Marketing Coordinator – Applied Pavement Technology | [Apply](https://researchpark.illinois.edu/job/marketing-coordinator-applied-pavement-technology/) |
-| APTech | Intern – Applied Pavement Technology | [Apply](https://researchpark.illinois.edu/job/intern-applied-pavement-technology/) |
-| APTech | Equipment Operator / Engineering Technician – Applied Pavement Technology | [Apply](https://researchpark.illinois.edu/job/equipment-operator-engineering-technician-applied-pavement-technology/) |
+| APTech | Senior Engineering (Transportation Asset Management) – Applied Pavement Technology | [Apply](https://researchpark.illinois.edu/job/senior-engineering-transportation-asset-management-applied-pavement-technology/) |
+| Yahoo! | Software Dev Engineer I – Yahoo! | [Apply](https://researchpark.illinois.edu/job/software-dev-engineer-i/) |
+| Yahoo! | DevOps Engineer – Yahoo! | [Apply](https://researchpark.illinois.edu/job/devops-engineer/) |
+| RationalCyPhy Inc | Robotics Hardware Engineer – Rational CyPhy Inc | [Apply](https://researchpark.illinois.edu/job/robotics-hardware-engineer/) |
 | APTech | Engineer Associate – Applied Pavement Technology | [Apply](https://researchpark.illinois.edu/job/engineer-associate-applied-pavement-technology/) |
+| APTech | Equipment Operator / Engineering Technician – Applied Pavement Technology | [Apply](https://researchpark.illinois.edu/job/equipment-operator-engineering-technician-applied-pavement-technology/) |
+| APTech | Intern – Applied Pavement Technology | [Apply](https://researchpark.illinois.edu/job/intern-applied-pavement-technology/) |
+| APTech | Marketing Coordinator – Applied Pavement Technology | [Apply](https://researchpark.illinois.edu/job/marketing-coordinator-applied-pavement-technology/) |
 
 ---
 

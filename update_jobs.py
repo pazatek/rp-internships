@@ -89,14 +89,16 @@ def parse_feed():
                 print(f"Error fetching feed: {e}")
                 return []
     
-    jobs = [{
-        "id": entry.get('guid', entry.link),
-        "company": entry.get('job_listing_company', 'N/A'),
-        "position": entry.title,
-        "link": entry.link,
-        "posted_date": entry.get('published', ''),
-        "discovered_date": datetime.now().isoformat()
-    } for entry in feed.entries]
+    jobs = []
+    for entry in feed.entries:
+        job = {
+            "id": entry.get('guid', entry.link),
+            "company": entry.get('job_listing_company', 'N/A'),
+            "position": entry.title,
+            "link": entry.link,
+            "posted_date": entry.get('published', '')
+        }
+        jobs.append(job)
     
     return jobs
 
@@ -107,7 +109,7 @@ def find_new_jobs(current_jobs, existing_jobs):
 
 def update_readme(jobs):
     """Generate and write README.md with current job listings."""
-    sorted_jobs = sorted(jobs, key=lambda x: x.get('discovered_date', ''), reverse=True)
+    sorted_jobs = sorted(jobs, key=lambda x: x.get('posted_date', ''), reverse=True)
     
     table_rows = '\n'.join([
         f"| {job['company'].replace('|', '-')} | {job['position'].replace('|', '-')} | [Apply]({job['link']}) |"
@@ -134,18 +136,28 @@ def main():
     
     current_jobs = parse_feed()
     existing_jobs = load_existing_jobs()
+    
+    # Add discovered_date to new jobs only
+    existing_ids = {job['id'] for job in existing_jobs}
+    for job in current_jobs:
+        if job['id'] not in existing_ids:
+            job['discovered_date'] = datetime.now().isoformat()
+        else:
+            # Preserve discovered_date from existing job
+            existing_job = next((j for j in existing_jobs if j['id'] == job['id']), None)
+            if existing_job and 'discovered_date' in existing_job:
+                job['discovered_date'] = existing_job['discovered_date']
+    
     new_jobs = find_new_jobs(current_jobs, existing_jobs)
     
     if new_jobs:
         print(f"🎉 {len(new_jobs)} new job(s) detected:")
         for job in new_jobs:
             print(f"  • {job['company']} - {job['position']}")
-        # Write new jobs to file for GitHub Action
         with open('new_jobs.json', 'w') as f:
             json.dump(new_jobs, f, indent=2)
     else:
         print(f"✓ No new jobs (scanned {len(current_jobs)} listings)")
-        # Create empty file to indicate no new jobs
         Path('new_jobs.json').touch()
     
     update_readme(current_jobs)

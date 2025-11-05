@@ -45,7 +45,6 @@ jobs:
 
       - name: Generate commit message
         if: steps.check_new_jobs.outputs.has_new_jobs == 'true'
-        id: commit_msg
         run: |
           python3 << 'EOF'
           import json
@@ -58,9 +57,6 @@ jobs:
           with open('commit_msg.txt', 'w') as f:
               f.write(msg)
           EOF
-          echo "message<<EOF" >> $GITHUB_OUTPUT
-          cat commit_msg.txt >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Commit and push if changed
         run: |
