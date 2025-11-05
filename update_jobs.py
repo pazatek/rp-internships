@@ -11,6 +11,7 @@ import urllib.request
 import urllib.error
 from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 RSS_FEED_URL = "https://researchpark.illinois.edu/?feed=job_feed"
 JOBS_FILE = "jobs.json"
@@ -113,8 +114,12 @@ def update_readme(jobs):
         for job in sorted_jobs
     ])
     
+    cst = ZoneInfo('America/Chicago')
+    cst_time = datetime.now(cst)
+    last_updated = cst_time.strftime('%B %d, %Y at %I:%M %p CST')
+    
     readme_content = README_TEMPLATE.format(
-        last_updated=datetime.now().strftime('%B %d, %Y at %I:%M %p'),
+        last_updated=last_updated,
         total_positions=len(jobs),
         job_table=table_rows
     )
