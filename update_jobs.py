@@ -176,13 +176,11 @@ def detect_job_type(job):
     title = job.get('position', '').lower()
     description = job.get('description', '').lower() if job.get('description') else ''
     
-    # Combine title and description for analysis
-    text_to_check = title + ' ' + description
-    
     # Use word boundaries to avoid false matches (e.g., "internet" shouldn't match "intern")
     import re
     
     # Keywords that indicate internship/co-op (use word boundaries for precision)
+    # Check title first (more reliable), then description
     intern_patterns = [
         r'\binternship\b',
         r'\bco-op\b',
@@ -195,11 +193,35 @@ def detect_job_type(job):
         r'\bundergraduate intern\b',
         r'\bgraduate intern\b',
         r'\bpart-time student\b',
-        r'\bintern\b',  # Must be whole word, not part of "internet" or "internal"
-        r'\bintern –\b',
-        r'\bintern \b',
-        r'\bintern/\b'
+        r'\bintern\b'  # Must be whole word, not part of "internet" or "internal"
     ]
+    
+    # Check title first (most reliable indicator)
+    for pattern in intern_patterns:
+        if re.search(pattern, title):
+            return 'Internship/Co-op'
+    
+    # Only check description if title doesn't have clear indicators
+    # Be very strict - only match if description explicitly says this position is an internship
+    if description:
+        # Only check for very explicit patterns that indicate THIS job is an internship
+        explicit_intern_patterns = [
+            r'\bthis internship\b',
+            r'\bthis intern\b',
+            r'\bposition.*internship\b',
+            r'\brole.*internship\b',
+            r'\binternship position\b',
+            r'\bintern position\b',
+            r'\bsummer internship\b',
+            r'\bwinter internship\b',
+            r'\bspring internship\b',
+            r'\bfall internship\b',
+            r'\bco-op position\b',
+            r'\bcoop position\b'
+        ]
+        for pattern in explicit_intern_patterns:
+            if re.search(pattern, description):
+                return 'Internship/Co-op'
     
     # Keywords that indicate full-time
     fulltime_patterns = [
@@ -212,14 +234,9 @@ def detect_job_type(job):
         r'\bstaff developer\b'
     ]
     
-    # Check for internship keywords (more specific first)
-    for pattern in intern_patterns:
-        if re.search(pattern, text_to_check):
-            return 'Internship/Co-op'
-    
-    # Check for full-time keywords
+    # Check title for full-time keywords
     for pattern in fulltime_patterns:
-        if re.search(pattern, text_to_check):
+        if re.search(pattern, title):
             return 'Full-time'
     
     # Check for senior/lead roles (usually full-time) - but not if intern is in title
