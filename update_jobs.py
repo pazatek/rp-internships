@@ -353,11 +353,17 @@ def generate_posting_chart(jobs):
             labels.append(label)
             data.append(count)
     
-    # Create Mermaid bar chart (GitHub native rendering)
-    chart_lines = ["```mermaid", "xychart-beta", "    title \"Job Posting Times (Based on {} postings)\"".format(len(posting_hours)), "    x-axis [{}]".format(", ".join([f'"{l}"' for l in labels])), "    y-axis \"Number of Jobs\" 0 --> {}".format(max(data) + 1)]
-    
-    # Add data series
-    chart_lines.append("    bar [{}]".format(", ".join(map(str, data))))
+    # Create Mermaid bar chart with dark theme (GitHub native rendering)
+    # Using a cleaner dark theme with better colors
+    chart_lines = [
+        "```mermaid",
+        "%%{init: {'theme':'dark', 'themeVariables': { 'primaryColor':'#6366f1', 'primaryTextColor':'#e5e7eb', 'primaryBorderColor':'#4b5563', 'lineColor':'#8b5cf6', 'secondaryColor':'#10b981', 'tertiaryColor':'#f59e0b'}}}%%",
+        "xychart-beta",
+        "    title \"Job Posting Times (Based on {} postings)\"".format(len(posting_hours)),
+        "    x-axis [{}]".format(", ".join([f'"{l}"' for l in labels])),
+        "    y-axis \"Number of Jobs\" 0 --> {}".format(max(data) + 1),
+        "    bar [{}]".format(", ".join(map(str, data)))
+    ]
     
     chart_lines.append("```")
     

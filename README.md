@@ -2,7 +2,7 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Last Updated:** November 05, 2025 at 04:25 PM CST  
+**Last Updated:** November 05, 2025 at 04:28 PM CST  
 **Total Positions:** 25
 
 ---
@@ -41,6 +41,7 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 ## Posting Time Distribution
 
 ```mermaid
+%%{init: {'theme':'dark', 'themeVariables': { 'primaryColor':'#6366f1', 'primaryTextColor':'#e5e7eb', 'primaryBorderColor':'#4b5563', 'lineColor':'#8b5cf6', 'secondaryColor':'#10b981', 'tertiaryColor':'#f59e0b'}}}%%
 xychart-beta
     title "Job Posting Times (Based on 25 postings)"
     x-axis ["1 PM", "2 PM", "3 PM", "4 PM", "5 PM", "6 PM"]
