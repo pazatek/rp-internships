@@ -19,16 +19,13 @@ RSS_FEED_URL = "https://researchpark.illinois.edu/?feed=job_feed"
 JOBS_FILE = "jobs.json"
 README_FILE = "README.md"
 
-README_TEMPLATE = """# UIUC Research Park Job Board
+README_TEMPLATE = """# UIUC Research Park Jobs
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Last Updated:** {last_updated}  
-**Total Positions:** {total_positions}
+**Updated:** {last_updated} | **Total:** {total_positions}
 
 ---
-
-## Current Openings
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |

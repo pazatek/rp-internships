@@ -1,13 +1,10 @@
-# UIUC Research Park Job Board
+# UIUC Research Park Jobs
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Last Updated:** November 05, 2025 at 04:37 PM CST  
-**Total Positions:** 25
+**Updated:** November 05, 2025 at 04:38 PM CST | **Total:** 25
 
 ---
-
-## Current Openings
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
