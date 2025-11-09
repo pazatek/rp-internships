@@ -2,8 +2,8 @@ name: Update Research Park Jobs
 
 on:
   schedule:
-    # Run every 15 minutes
-    - cron: "*/15 * * * *"
+    # Run every 15 minutes between 12pm-6pm CST (17-23 in UTC)
+    - cron: "*/15 17-23 * * *"
   workflow_dispatch: # Allow manual triggers
   push:
     branches:
