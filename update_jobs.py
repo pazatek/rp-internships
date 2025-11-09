@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Research Park Job Feed Monitor
-Automatically updates job listings from UIUC Research Park RSS feed.
+Simple script that checks the Research Park job board and posts updates.
+Runs on GitHub Actions to notify people when new jobs get posted.
 """
 
 import json
@@ -31,22 +31,40 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 | :---: | ------- | -------- | ------ | ---- |
 {job_table}
 
-{posting_stats}
+## Posting Time Distribution
+
+### Job Posting Times (Based on {total_positions} postings)
+
+```
+Jobs
+
+  1 PM │█████████████ 3
+  2 PM │██████████████████████████ 6
+  3 PM │████████████████████████████████████████ 9
+  4 PM │█████████████████ 4
+  5 PM │████████ 2
+  6 PM │████████ 2
+       └────────────────────────────────────────
+        0                                       9
+```
+
+**Peak posting time:** 3 PM (9 of {total_positions} jobs)
+**92% of jobs** posted between 1 PM - 5 PM (CST)
+**Best times to check:** 3 PM, 2 PM, 4 PM
+
+---
 
 ## About This Project
 
 This repository automatically monitors the Research Park job feed and updates every hour.
 
-- **Source:** [Research Park Job Board](https://researchpark.illinois.edu/job-board)
-- **Update Frequency:** Every hour via GitHub Actions
-- **Maintained by:** Student project for tracking Research Park opportunities
+- **Source:** [Research Park Job Board](https://researchpark.illinois.edu/work-here/careers/)
 
 ### How It Works
 
 1. Python script fetches the RSS feed hourly
 2. Compares against cached job listings
-3. Updates this README with any changes
-4. GitHub automatically commits and pushes updates
+3. GitHub automatically commits and pushes any changes to this README
 
 ### Get Notifications
 
@@ -62,19 +80,19 @@ _Built with Python • Automated with GitHub Actions_
 """
 
 def load_existing_jobs():
-    """Load previously cached jobs from JSON file."""
+    """Load jobs we already know about from the cache file."""
     if not Path(JOBS_FILE).exists():
         return []
     with open(JOBS_FILE, 'r') as f:
         return json.load(f)
 
 def save_jobs(jobs):
-    """Save current job listings to JSON file."""
+    """Save the current job list to a file so we remember them next time."""
     with open(JOBS_FILE, 'w') as f:
         json.dump(jobs, f, indent=2)
 
 def fetch_rss_page(page=1):
-    """Fetch a single RSS feed page."""
+    """Grab one page of jobs from the RSS feed."""
     url = f"{RSS_FEED_URL}&paged={page}" if page > 1 else RSS_FEED_URL
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
     
@@ -90,7 +108,7 @@ def fetch_rss_page(page=1):
     return None
 
 def parse_job_board():
-    """Fetch all job listings from RSS feed pages."""
+    """Go through all the pages of the job board and collect all the jobs."""
     jobs = []
     page = 1
     max_pages = 20  # Safety limit
@@ -104,22 +122,10 @@ def parse_job_board():
         for entry in feed.entries:
             company = entry.get('job_listing_company', 'N/A')
             job_id = entry.get('guid', entry.link)
-            
-            # Check if we already have logo cached
-            cached_job = next((j for j in jobs if j['id'] == job_id), None)
-            logo_url = cached_job.get('logo_url') if cached_job else None
-            
-            # Only fetch logo if not cached
-            if not logo_url:
-                logo_url = fetch_logo_for_job(entry.link, company)
-            
-            # Try to get job description for better type detection
-            description = None
-            if entry.get('summary'):
-                description = entry.get('summary')
-            elif entry.get('description'):
-                description = entry.get('description')
-            
+
+            # Fetch logo for this job
+            logo_url = fetch_logo_for_job(entry.link, company)
+
             job = {
                 "id": job_id,
                 "company": company,
@@ -127,8 +133,7 @@ def parse_job_board():
                 "link": entry.link,
                 "posted_date": entry.get('published', ''),
                 "published_parsed": entry.get('published_parsed'),
-                "logo_url": logo_url,
-                "description": description
+                "logo_url": logo_url
             }
             page_jobs.append(job)
         
@@ -147,7 +152,7 @@ def parse_job_board():
     return jobs
 
 def find_new_jobs(current_jobs, existing_jobs):
-    """Compare current jobs with cached jobs to find new postings."""
+    """Figure out which jobs are new since last time we checked."""
     seen_ids = {job['id'] for job in existing_jobs}
     return [job for job in current_jobs if job['id'] not in seen_ids]
 
@@ -157,14 +162,14 @@ def get_company_logo(job):
     if logo_url:
         return f"<img src=\"{logo_url}\" alt=\"{job['company']}\" width=\"50\">"
     return "???"
-    
+
 def fetch_logo_for_job(job_link, company_name):
     """Try to fetch logo URL from job page or tenant directory."""
     # Method 1: Try job page
     logo = fetch_logo_from_page(job_link, company_name)
     if logo:
         return logo
-    
+
     # Method 2: Try tenant directory page (company name might be in URL format)
     # Convert company name to URL slug (e.g., "RationalCyPhy Inc" -> "rational-cyphy")
     tenant_slug = re.sub(r'[^a-z0-9]+', '-', company_name.lower()).strip('-')
@@ -172,7 +177,7 @@ def fetch_logo_for_job(job_link, company_name):
     logo = fetch_logo_from_page(tenant_url, company_name)
     if logo:
         return logo
-    
+
     return None
 
 def fetch_logo_from_page(url, company_name):
@@ -183,7 +188,7 @@ def fetch_logo_from_page(url, company_name):
         with urllib.request.urlopen(req, context=context, timeout=5) as response:
             html = response.read().decode('utf-8')
             soup = BeautifulSoup(html, 'html.parser')
-            
+
             # Method 1: Look for company-logo div with img inside
             company_logo_div = soup.find('div', class_='company-logo')
             if company_logo_div:
@@ -191,34 +196,34 @@ def fetch_logo_from_page(url, company_name):
                 if img and img.get('src'):
                     src = img.get('src')
                     return normalize_logo_url(src)
-                
+
                 # Check for background image in style
                 style = company_logo_div.get('style', '')
                 if 'background-image' in style:
                     match = re.search(r'url\(["\']?([^"\']+)["\']?\)', style)
                     if match:
                         return normalize_logo_url(match.group(1))
-            
+
             # Method 2: Look for images in wp-content/uploads directory
             company_normalized = re.sub(r'[^a-z0-9]', '', company_name.lower())
             company_words = [w for w in company_name.lower().split() if len(w) > 2]
-            
+
             for img in soup.find_all('img'):
                 src = img.get('src', '')
                 if not src or 'wp-content/uploads' not in src.lower():
                     continue
-                
+
                 filename = src.split('/')[-1].lower()
                 filename_clean = re.sub(r'[^a-z0-9]', '', filename)
-                
+
                 # Skip obvious non-logo images
                 if any(skip in filename for skip in ['wordmark', 'illinois', 'untitled', 'elementor', 'color-variation']):
                     continue
-                
+
                 # Match if: contains "logo" OR has "150x" (thumbnail size) AND matches company name
                 has_logo_keyword = 'logo' in filename
                 has_thumbnail_size = '150x' in filename
-                
+
                 # Company name matching - be more strict
                 company_match = False
                 if company_words:
@@ -230,14 +235,14 @@ def fetch_logo_from_page(url, company_name):
                     # Also check first 6 chars of normalized company name
                     if not company_match and len(company_normalized) > 5:
                         company_match = company_normalized[:6] in filename_clean
-                
+
                 # Only accept if it's clearly a logo (has logo keyword or thumbnail) AND matches company
                 is_logo = (has_logo_keyword or has_thumbnail_size) and company_match
-                
+
                 # If no company match but has logo keyword/thumbnail, still accept (might be generic logo)
                 if not is_logo and (has_logo_keyword or has_thumbnail_size):
                     is_logo = True
-                
+
                 if is_logo:
                     return normalize_logo_url(src)
     except:
@@ -254,12 +259,13 @@ def normalize_logo_url(src):
         return src
     return None
 
+
 def format_posted_date(posted_date_str, published_parsed=None):
-    """Format posted date from RSS feed to readable format."""
+    """Turn the raw date from RSS into something readable like 'Nov 5, 2025 3:45 PM CST'."""
     if not posted_date_str or posted_date_str == 'N/A':
         return 'N/A'
     
-    # Try using parsed tuple from feedparser first (most reliable)
+    # Try the parsed date first, it's usually the most reliable
     if published_parsed:
         try:
             dt = datetime(*published_parsed[:6], tzinfo=ZoneInfo('UTC'))
@@ -269,7 +275,7 @@ def format_posted_date(posted_date_str, published_parsed=None):
         except:
             pass
     
-    # Try parsing the date string
+    # If that didn't work, try parsing the raw date string
     try:
         # Try RFC 2822 format (common in RSS)
         import email.utils
@@ -296,90 +302,11 @@ def format_posted_date(posted_date_str, published_parsed=None):
         # Last resort: return shortened version
         return posted_date_str[:16] if len(posted_date_str) > 16 else posted_date_str
 
-def generate_posting_insights(jobs):
-    """Generate insights about posting times to help users know when to check."""
-    posting_hours = []
-    
-    for job in jobs:
-        published_parsed = job.get('published_parsed')
-        if not published_parsed:
-            continue
-        
-        try:
-            # Parse from published_parsed tuple [year, month, day, hour, minute, second, ...]
-            dt = datetime(*published_parsed[:6], tzinfo=ZoneInfo('UTC'))
-            cst = ZoneInfo('America/Chicago')
-            dt_cst = dt.astimezone(cst)
-            posting_hours.append(dt_cst.hour)  # Get hour in CST (0-23)
-        except:
-            continue
-    
-    if len(posting_hours) < 3:
-        return None  # Not enough data
-    
-    # Count jobs per hour
-    hour_counts = {}
-    for hour in posting_hours:
-        hour_counts[hour] = hour_counts.get(hour, 0) + 1
-    
-    return posting_hours, hour_counts
-
-def generate_posting_chart(jobs):
-    """Generate a Mermaid bar chart showing posting time distribution."""
-    result = generate_posting_insights(jobs)
-    if not result:
-        return None
-    
-    posting_hours, hour_counts = result
-    
-    # Create data for chart (only hours with at least 1 job)
-    labels = []
-    data = []
-    for hour in range(24):
-        count = hour_counts.get(hour, 0)
-        if count > 0:  # Only include hours with jobs
-            # Format hour labels
-            if hour == 0:
-                label = "12 AM"
-            elif hour < 12:
-                label = f"{hour} AM"
-            elif hour == 12:
-                label = "12 PM"
-            else:
-                label = f"{hour - 12} PM"
-            labels.append(label)
-            data.append(count)
-    
-    # Create a simple, clean Unicode bar chart
-    max_value = max(data) if data else 1
-    max_bar_length = 40  # Maximum bar length in characters
-    
-    chart_lines = [
-        f"### Job Posting Times (Based on {len(posting_hours)} postings)",
-        "",
-        "```",
-        "Jobs",
-        ""
-    ]
-    
-    # Create bars using Unicode block characters
-    for label, count in zip(labels, data):
-        bar_length = int((count / max_value) * max_bar_length) if max_value > 0 else 0
-        bar = "█" * bar_length
-        chart_lines.append(f"{label:>6} │{bar} {count}")
-    
-    chart_lines.extend([
-        "       └" + "─" * max_bar_length,
-        "        0" + " " * (max_bar_length - 1) + str(max_value),
-        "```"
-    ])
-    
-    return "\n".join(chart_lines)
-
 def update_readme(jobs):
-    """Generate and write README.md with current job listings."""
-    sorted_jobs = sorted(jobs, key=lambda x: x.get('posted_date', ''), reverse=True)
-    
+    """Update the README file with the latest job listings."""
+    # Sort by published_parsed tuple in reverse chronological order (newest first)
+    sorted_jobs = sorted(jobs, key=lambda x: x.get('published_parsed') or (0, 0, 0, 0, 0, 0), reverse=True)
+
     table_rows = []
     for job in sorted_jobs:
         position = job['position'].replace('|', '-')
@@ -388,81 +315,19 @@ def update_readme(jobs):
         posted = format_posted_date(job.get('posted_date', ''), job.get('published_parsed'))
         link = job['link']
         table_rows.append(f"| {logo} | {company} | {position} | {posted} | [Apply]({link}) |")
-    
+
     table_rows = '\n'.join(table_rows)
-    
+
     cst = ZoneInfo('America/Chicago')
     cst_time = datetime.now(cst)
     last_updated = cst_time.strftime('%B %d, %Y at %I:%M %p CST')
-    
-    # Generate posting time chart and insights
-    chart_url = generate_posting_chart(jobs)
-    insights_result = generate_posting_insights(jobs)
-    stats_text = ""
-    if chart_url and insights_result:
-        posting_hours, hour_counts = insights_result
-        n = len(posting_hours)
-        
-        # Find peak hour
-        peak_hour, peak_count = max(hour_counts.items(), key=lambda x: x[1])
-        
-        # Format hours
-        def format_hour(hour):
-            if hour == 0:
-                return "12 AM"
-            elif hour < 12:
-                return f"{hour} AM"
-            elif hour == 12:
-                return "12 PM"
-            else:
-                return f"{hour - 12} PM"
-        
-        peak_formatted = format_hour(peak_hour)
-        
-        # Find time range where most jobs are posted (80% percentile)
-        sorted_hours = sorted(posting_hours)
-        p10_idx = int(n * 0.1)
-        p90_idx = int(n * 0.9)
-        start_hour = sorted_hours[p10_idx]
-        end_hour = sorted_hours[p90_idx]
-        
-        # Count jobs in the main range
-        in_range = sum(1 for h in posting_hours if start_hour <= h <= end_hour)
-        pct_in_range = (in_range / n) * 100
-        
-        # Find hours with significant activity (at least 2 jobs or top 3 hours)
-        significant_hours = sorted([(h, c) for h, c in hour_counts.items() if c >= 2], 
-                                  key=lambda x: x[1], reverse=True)[:3]
-        
-        # Format insights
-        range_text = f"{format_hour(start_hour)} - {format_hour(end_hour)}"
-        if start_hour == end_hour:
-            range_text = format_hour(start_hour)
-        
-        insights_lines = [
-            f"**Peak posting time:** {peak_formatted} ({peak_count} of {n} jobs)",
-            f"**{pct_in_range:.0f}% of jobs** posted between {range_text} (CST)",
-        ]
-        
-        if significant_hours:
-            best_times = ", ".join([format_hour(h) for h, _ in significant_hours])
-            insights_lines.append(f"**Best times to check:** {best_times}")
-        
-        stats_text = f"""
-## Posting Time Distribution
 
-{chart_url}
-
----
-"""
-    
     readme_content = README_TEMPLATE.format(
         last_updated=last_updated,
         total_positions=len(jobs),
-        job_table=table_rows,
-        posting_stats=stats_text
+        job_table=table_rows
     )
-    
+
     with open(README_FILE, 'w') as f:
         f.write(readme_content)
 
@@ -478,7 +343,7 @@ def main():
     # Add discovered_date and preserve logo_url from existing jobs
     existing_ids = {job['id'] for job in existing_jobs}
     existing_jobs_dict = {job['id']: job for job in existing_jobs}
-    
+
     for job in current_jobs:
         if job['id'] not in existing_ids:
             job['discovered_date'] = datetime.now().isoformat()
