@@ -2,12 +2,13 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** November 10, 2025 at 04:46 PM CST | **Total:** 29
+**Updated:** November 11, 2025 at 11:25 AM CST | **Total:** 30
 
 ---
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2020/05/aviatrix-150x150.png" alt="Aviatrix" width="50"> | Aviatrix | SR. MTS Site Reliability Engineer- Aviatrix | Nov 11, 2025 11:23 AM CST | [Apply](https://researchpark.illinois.edu/job/sr-mts-software-development-aviatrix/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg" alt="ADM" width="50"> | ADM | Food Scientist (Bakery) – ADM | Nov 10, 2025 04:23 PM CST | [Apply](https://researchpark.illinois.edu/job/food-scientist-bakery-adm/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2020/05/Caterpillar-150x150.png" alt="Caterpillar" width="50"> | Caterpillar | Structural Simulation Engineer – Caterpillar | Nov 10, 2025 04:23 PM CST | [Apply](https://researchpark.illinois.edu/job/structural-simulation-engineer-caterpillar/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/05/SquareLogo-EPE-01-1-150x150.png" alt="Electric Power Engineers" width="50"> | Electric Power Engineers | Distribution design engineer – Electric Power Engineers | Nov 10, 2025 04:22 PM CST | [Apply](https://researchpark.illinois.edu/job/distribution-design-engineer-electric-power-engineers/) |
@@ -40,7 +41,7 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Posting Time Distribution
 
-### Job Posting Times (Based on 29 postings)
+### Job Posting Times (Based on 30 postings)
 
 ```
 Jobs
@@ -55,7 +56,7 @@ Jobs
         0                                       9
 ```
 
-**Peak posting time:** 3 PM (9 of 29 jobs)
+**Peak posting time:** 3 PM (9 of 30 jobs)
 **92% of jobs** posted between 1 PM - 5 PM (CST)
 **Best times to check:** 3 PM, 2 PM, 4 PM
 
