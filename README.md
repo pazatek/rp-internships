@@ -2,12 +2,13 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** November 14, 2025 at 03:54 PM CST | **Total:** 31
+**Updated:** November 14, 2025 at 04:26 PM CST | **Total:** 32
 
 ---
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png" alt="Rivian" width="50"> | Rivian | Embedded Software Intern – RIvian | Nov 14, 2025 03:58 PM CST | [Apply](https://researchpark.illinois.edu/job/embedded-software-intern-rivian-3/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png" alt="Rivian" width="50"> | Rivian | Validation Intern – Rivian | Nov 14, 2025 03:38 PM CST | [Apply](https://researchpark.illinois.edu/job/validation-intern-rivian/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png" alt="Rivian" width="50"> | Rivian | Hardware Design Intern – Rivian | Nov 14, 2025 03:18 PM CST | [Apply](https://researchpark.illinois.edu/job/hardware-design-intern-2/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2020/05/aviatrix-150x150.png" alt="Aviatrix" width="50"> | Aviatrix | SR. MTS Site Reliability Engineer- Aviatrix | Nov 11, 2025 11:23 AM CST | [Apply](https://researchpark.illinois.edu/job/sr-mts-software-development-aviatrix/) |
@@ -42,7 +43,7 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Posting Time Distribution
 
-### Job Posting Times (Based on 31 postings)
+### Job Posting Times (Based on 32 postings)
 
 ```
 Jobs
@@ -57,7 +58,7 @@ Jobs
         0                                       9
 ```
 
-**Peak posting time:** 3 PM (9 of 31 jobs)
+**Peak posting time:** 3 PM (9 of 32 jobs)
 **92% of jobs** posted between 1 PM - 5 PM (CST)
 **Best times to check:** 3 PM, 2 PM, 4 PM
 
