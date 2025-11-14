@@ -400,6 +400,26 @@
     "discovered_date": "2025-11-05T15:47:32.599130"
   },
   {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46941",
+    "company": "APTech",
+    "position": "Equipment Operator/ Engineering Technician",
+    "link": "https://researchpark.illinois.edu/job/equipment-operator-engineering-technician-2/",
+    "posted_date": "Fri, 19 Sep 2025 21:14:20 +0000",
+    "published_parsed": [
+      2025,
+      9,
+      19,
+      21,
+      14,
+      20,
+      4,
+      262,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2021/08/APTech-150x150.png",
+    "discovered_date": "2025-11-14T21:41:51.073243"
+  },
+  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46926",
     "company": "Kocree",
     "position": "High-Performance Computing Developer",
@@ -558,6 +578,26 @@
     ],
     "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2020/05/Caterpillar-150x150.png",
     "discovered_date": "2025-11-05T15:47:32.599141"
+  },
+  {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46840",
+    "company": "Caterpillar",
+    "position": "2026 Corporate Parallel Co-op \u2013 Engineering",
+    "link": "https://researchpark.illinois.edu/job/2026-corporate-parallel-co-op-engineering/",
+    "posted_date": "Fri, 01 Aug 2025 20:23:52 +0000",
+    "published_parsed": [
+      2025,
+      8,
+      1,
+      20,
+      23,
+      52,
+      4,
+      213,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2020/05/Caterpillar-150x150.png",
+    "discovered_date": "2025-11-05T15:47:32.599143"
   },
   {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46840",
