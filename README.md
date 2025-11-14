@@ -2,12 +2,13 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** November 14, 2025 at 03:41 PM CST | **Total:** 31
+**Updated:** November 14, 2025 at 03:54 PM CST | **Total:** 31
 
 ---
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png" alt="Rivian" width="50"> | Rivian | Validation Intern – Rivian | Nov 14, 2025 03:38 PM CST | [Apply](https://researchpark.illinois.edu/job/validation-intern-rivian/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png" alt="Rivian" width="50"> | Rivian | Hardware Design Intern – Rivian | Nov 14, 2025 03:18 PM CST | [Apply](https://researchpark.illinois.edu/job/hardware-design-intern-2/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2020/05/aviatrix-150x150.png" alt="Aviatrix" width="50"> | Aviatrix | SR. MTS Site Reliability Engineer- Aviatrix | Nov 11, 2025 11:23 AM CST | [Apply](https://researchpark.illinois.edu/job/sr-mts-software-development-aviatrix/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg" alt="ADM" width="50"> | ADM | Food Scientist (Bakery) – ADM | Nov 10, 2025 04:23 PM CST | [Apply](https://researchpark.illinois.edu/job/food-scientist-bakery-adm/) |
@@ -37,7 +38,6 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png" alt="Tiptek" width="50"> | Tiptek | Production Technician | Sep 05, 2025 01:52 PM CST | [Apply](https://researchpark.illinois.edu/job/production-technician/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png" alt="Tiptek" width="50"> | Tiptek | Laboratory Technician | Sep 05, 2025 01:47 PM CST | [Apply](https://researchpark.illinois.edu/job/laboratory-technician/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2020/05/Caterpillar-150x150.png" alt="Caterpillar" width="50"> | Caterpillar | 2026 Engineering Rotational Development Program – Product Development Track | Aug 22, 2025 03:38 PM CST | [Apply](https://researchpark.illinois.edu/job/2026-engineering-rotational-development-program-product-development-track/) |
-| <img src="https://researchpark.illinois.edu/wp-content/uploads/2020/05/Caterpillar-150x150.png" alt="Caterpillar" width="50"> | Caterpillar | 2026 Corporate Parallel Co-op – Engineering | Aug 01, 2025 03:23 PM CST | [Apply](https://researchpark.illinois.edu/job/2026-corporate-parallel-co-op-engineering/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2020/05/Caterpillar-150x150.png" alt="Caterpillar" width="50"> | Caterpillar | 2026 Corporate Parallel Co-op – Engineering | Aug 01, 2025 03:23 PM CST | [Apply](https://researchpark.illinois.edu/job/2026-corporate-parallel-co-op-engineering/) |
 
 ## Posting Time Distribution
