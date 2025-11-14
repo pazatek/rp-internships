@@ -1,5 +1,25 @@
 [
   {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47504",
+    "company": "Rivian",
+    "position": "Hardware Design Intern \u2013 Rivian",
+    "link": "https://researchpark.illinois.edu/job/hardware-design-intern-2/",
+    "posted_date": "Fri, 14 Nov 2025 21:18:19 +0000",
+    "published_parsed": [
+      2025,
+      11,
+      14,
+      21,
+      18,
+      19,
+      4,
+      318,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png",
+    "discovered_date": "2025-11-14T21:24:56.264983"
+  },
+  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47497",
     "company": "Aviatrix",
     "position": "SR. MTS Site Reliability Engineer- Aviatrix",
@@ -62,7 +82,7 @@
   {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47471",
     "company": "Electric Power Engineers",
-    "position": "Distribution design engineer \u2013 Electric Power Engineers",
+    "position": "Distribution Design Engineer \u2013 Electric Power Engineers",
     "link": "https://researchpark.illinois.edu/job/distribution-design-engineer-electric-power-engineers/",
     "posted_date": "Mon, 10 Nov 2025 22:22:49 +0000",
     "published_parsed": [
@@ -380,26 +400,6 @@
     "discovered_date": "2025-11-05T15:47:32.599130"
   },
   {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46941",
-    "company": "APTech",
-    "position": "Equipment Operator/ Engineering Technician",
-    "link": "https://researchpark.illinois.edu/job/equipment-operator-engineering-technician-2/",
-    "posted_date": "Fri, 19 Sep 2025 21:14:20 +0000",
-    "published_parsed": [
-      2025,
-      9,
-      19,
-      21,
-      14,
-      20,
-      4,
-      262,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2021/08/APTech-150x150.png",
-    "discovered_date": "2025-11-05T15:47:32.599131"
-  },
-  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46926",
     "company": "Kocree",
     "position": "High-Performance Computing Developer",
@@ -558,26 +558,6 @@
     ],
     "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2020/05/Caterpillar-150x150.png",
     "discovered_date": "2025-11-05T15:47:32.599141"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46711",
-    "company": "Mondel\u0113z International",
-    "position": "Research and Development Intern",
-    "link": "https://researchpark.illinois.edu/job/research-and-development-intern/",
-    "posted_date": "Wed, 13 Aug 2025 22:12:03 +0000",
-    "published_parsed": [
-      2025,
-      8,
-      13,
-      22,
-      12,
-      3,
-      2,
-      225,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2020/05/Mondelez-150x150.png",
-    "discovered_date": "2025-11-05T15:47:32.599142"
   },
   {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46840",
