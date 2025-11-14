@@ -1,5 +1,25 @@
 [
   {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47509",
+    "company": "City of Champaign",
+    "position": "IT Intern- City of Champaign",
+    "link": "https://researchpark.illinois.edu/job/it-intern-city-of-champaign/",
+    "posted_date": "Fri, 14 Nov 2025 23:14:31 +0000",
+    "published_parsed": [
+      2025,
+      11,
+      14,
+      23,
+      14,
+      31,
+      4,
+      318,
+      0
+    ],
+    "logo_url": null,
+    "discovered_date": "2025-11-14T23:42:17.899629"
+  },
+  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47507",
     "company": "Rivian",
     "position": "Embedded Software Intern \u2013 RIvian",
@@ -141,7 +161,7 @@
   },
   {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47316",
-    "company": "Office of the Vice Chancellor for Research &amp; Innovation",
+    "company": "Office of the Vice Chancellor for Research &amp;amp; Innovation",
     "position": "Graphic Communications Designer/ Senior Graphic designer \u2013 Office of the Vice Chancellor for Research & Innovation",
     "link": "https://researchpark.illinois.edu/job/graphic-communications-designer-senior-graphic-designer-office-of-the-vice-chancellor-for-research-innovation/",
     "posted_date": "Sun, 09 Nov 2025 22:31:11 +0000",
