@@ -2,12 +2,13 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** November 14, 2025 at 05:42 PM CST | **Total:** 33
+**Updated:** November 17, 2025 at 03:56 PM CST | **Total:** 34
 
 ---
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg" alt="ADM" width="50"> | ADM | Senior Engineer, Technoeconomic Analyses – ADM | Nov 17, 2025 03:35 PM CST | [Apply](https://researchpark.illinois.edu/job/senior-engineer-technoeconomic-analyses-adm/) |
 | ??? | City of Champaign | IT Intern- City of Champaign | Nov 14, 2025 05:14 PM CST | [Apply](https://researchpark.illinois.edu/job/it-intern-city-of-champaign/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png" alt="Rivian" width="50"> | Rivian | Embedded Software Intern – RIvian | Nov 14, 2025 03:58 PM CST | [Apply](https://researchpark.illinois.edu/job/embedded-software-intern-rivian-3/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png" alt="Rivian" width="50"> | Rivian | Validation Intern – Rivian | Nov 14, 2025 03:38 PM CST | [Apply](https://researchpark.illinois.edu/job/validation-intern-rivian/) |
@@ -44,7 +45,7 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Posting Time Distribution
 
-### Job Posting Times (Based on 33 postings)
+### Job Posting Times (Based on 34 postings)
 
 ```
 Jobs
@@ -59,7 +60,7 @@ Jobs
         0                                       9
 ```
 
-**Peak posting time:** 3 PM (9 of 33 jobs)
+**Peak posting time:** 3 PM (9 of 34 jobs)
 **92% of jobs** posted between 1 PM - 5 PM (CST)
 **Best times to check:** 3 PM, 2 PM, 4 PM
 
