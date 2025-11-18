@@ -2,12 +2,13 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** November 17, 2025 at 03:56 PM CST | **Total:** 34
+**Updated:** November 18, 2025 at 03:43 PM CST | **Total:** 35
 
 ---
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="John Deere" width="50"> | John Deere | Part-Time Student Graduate Research Assistant – John Deere | Nov 18, 2025 02:03 PM CST | [Apply](https://researchpark.illinois.edu/job/part-time-student-graduate-research-assistant-john-deere/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg" alt="ADM" width="50"> | ADM | Senior Engineer, Technoeconomic Analyses – ADM | Nov 17, 2025 03:35 PM CST | [Apply](https://researchpark.illinois.edu/job/senior-engineer-technoeconomic-analyses-adm/) |
 | ??? | City of Champaign | IT Intern- City of Champaign | Nov 14, 2025 05:14 PM CST | [Apply](https://researchpark.illinois.edu/job/it-intern-city-of-champaign/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png" alt="Rivian" width="50"> | Rivian | Embedded Software Intern – RIvian | Nov 14, 2025 03:58 PM CST | [Apply](https://researchpark.illinois.edu/job/embedded-software-intern-rivian-3/) |
@@ -17,7 +18,7 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg" alt="ADM" width="50"> | ADM | Food Scientist (Bakery) – ADM | Nov 10, 2025 04:23 PM CST | [Apply](https://researchpark.illinois.edu/job/food-scientist-bakery-adm/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2020/05/Caterpillar-150x150.png" alt="Caterpillar" width="50"> | Caterpillar | Structural Simulation Engineer – Caterpillar | Nov 10, 2025 04:23 PM CST | [Apply](https://researchpark.illinois.edu/job/structural-simulation-engineer-caterpillar/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/05/SquareLogo-EPE-01-1-150x150.png" alt="Electric Power Engineers" width="50"> | Electric Power Engineers | Distribution Design Engineer – Electric Power Engineers | Nov 10, 2025 04:22 PM CST | [Apply](https://researchpark.illinois.edu/job/distribution-design-engineer-electric-power-engineers/) |
-| <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/06/OVCRI-Logo-150x150.png" alt="Office of the Vice Chancellor for Research &amp;amp; Innovation" width="50"> | Office of the Vice Chancellor for Research &amp;amp; Innovation | Graphic Communications Designer/ Senior Graphic designer – Office of the Vice Chancellor for Research & Innovation | Nov 09, 2025 04:31 PM CST | [Apply](https://researchpark.illinois.edu/job/graphic-communications-designer-senior-graphic-designer-office-of-the-vice-chancellor-for-research-innovation/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/06/OVCRI-Logo-150x150.png" alt="Office of the Vice Chancellor for Research &amp; Innovation" width="50"> | Office of the Vice Chancellor for Research &amp; Innovation | Graphic Communications Designer/ Senior Graphic designer – Office of the Vice Chancellor for Research & Innovation | Nov 09, 2025 04:31 PM CST | [Apply](https://researchpark.illinois.edu/job/graphic-communications-designer-senior-graphic-designer-office-of-the-vice-chancellor-for-research-innovation/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/01/APT-2-150x150.jpg" alt="APTech" width="50"> | APTech | Engineer Associate – Applied Pavement Technology | Nov 03, 2025 02:59 PM CST | [Apply](https://researchpark.illinois.edu/job/engineer-associate-applied-pavement-technology/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/01/APT-2-150x150.jpg" alt="APTech" width="50"> | APTech | Equipment Operator / Engineering Technician – Applied Pavement Technology | Nov 03, 2025 02:47 PM CST | [Apply](https://researchpark.illinois.edu/job/equipment-operator-engineering-technician-applied-pavement-technology/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/01/APT-2-150x150.jpg" alt="APTech" width="50"> | APTech | Intern – Applied Pavement Technology | Nov 03, 2025 02:32 PM CST | [Apply](https://researchpark.illinois.edu/job/intern-applied-pavement-technology/) |
@@ -45,7 +46,7 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Posting Time Distribution
 
-### Job Posting Times (Based on 34 postings)
+### Job Posting Times (Based on 35 postings)
 
 ```
 Jobs
@@ -60,7 +61,7 @@ Jobs
         0                                       9
 ```
 
-**Peak posting time:** 3 PM (9 of 34 jobs)
+**Peak posting time:** 3 PM (9 of 35 jobs)
 **92% of jobs** posted between 1 PM - 5 PM (CST)
 **Best times to check:** 3 PM, 2 PM, 4 PM
 
