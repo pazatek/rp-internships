@@ -2,12 +2,13 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** November 18, 2025 at 03:43 PM CST | **Total:** 35
+**Updated:** November 21, 2025 at 04:43 PM CST | **Total:** 35
 
 ---
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/08/Screenshot-2025-08-19-164848.png" alt="Facilitating Science" width="50"> | Facilitating Science | Assistant Director of Meetings and Administrative Services – Federation of Animal Science Societies | Nov 21, 2025 03:57 PM CST | [Apply](https://researchpark.illinois.edu/job/assistant-director-of-meetings-and-administrative-services-federation-of-animal-science-societies/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="John Deere" width="50"> | John Deere | Part-Time Student Graduate Research Assistant – John Deere | Nov 18, 2025 02:03 PM CST | [Apply](https://researchpark.illinois.edu/job/part-time-student-graduate-research-assistant-john-deere/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg" alt="ADM" width="50"> | ADM | Senior Engineer, Technoeconomic Analyses – ADM | Nov 17, 2025 03:35 PM CST | [Apply](https://researchpark.illinois.edu/job/senior-engineer-technoeconomic-analyses-adm/) |
 | ??? | City of Champaign | IT Intern- City of Champaign | Nov 14, 2025 05:14 PM CST | [Apply](https://researchpark.illinois.edu/job/it-intern-city-of-champaign/) |
@@ -16,7 +17,6 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png" alt="Rivian" width="50"> | Rivian | Hardware Design Intern – Rivian | Nov 14, 2025 03:18 PM CST | [Apply](https://researchpark.illinois.edu/job/hardware-design-intern-2/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2020/05/aviatrix-150x150.png" alt="Aviatrix" width="50"> | Aviatrix | SR. MTS Site Reliability Engineer- Aviatrix | Nov 11, 2025 11:23 AM CST | [Apply](https://researchpark.illinois.edu/job/sr-mts-software-development-aviatrix/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg" alt="ADM" width="50"> | ADM | Food Scientist (Bakery) – ADM | Nov 10, 2025 04:23 PM CST | [Apply](https://researchpark.illinois.edu/job/food-scientist-bakery-adm/) |
-| <img src="https://researchpark.illinois.edu/wp-content/uploads/2020/05/Caterpillar-150x150.png" alt="Caterpillar" width="50"> | Caterpillar | Structural Simulation Engineer – Caterpillar | Nov 10, 2025 04:23 PM CST | [Apply](https://researchpark.illinois.edu/job/structural-simulation-engineer-caterpillar/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/05/SquareLogo-EPE-01-1-150x150.png" alt="Electric Power Engineers" width="50"> | Electric Power Engineers | Distribution Design Engineer – Electric Power Engineers | Nov 10, 2025 04:22 PM CST | [Apply](https://researchpark.illinois.edu/job/distribution-design-engineer-electric-power-engineers/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/06/OVCRI-Logo-150x150.png" alt="Office of the Vice Chancellor for Research &amp; Innovation" width="50"> | Office of the Vice Chancellor for Research &amp; Innovation | Graphic Communications Designer/ Senior Graphic designer – Office of the Vice Chancellor for Research & Innovation | Nov 09, 2025 04:31 PM CST | [Apply](https://researchpark.illinois.edu/job/graphic-communications-designer-senior-graphic-designer-office-of-the-vice-chancellor-for-research-innovation/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/01/APT-2-150x150.jpg" alt="APTech" width="50"> | APTech | Engineer Associate – Applied Pavement Technology | Nov 03, 2025 02:59 PM CST | [Apply](https://researchpark.illinois.edu/job/engineer-associate-applied-pavement-technology/) |
