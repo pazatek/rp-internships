@@ -31,26 +31,7 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 | :---: | ------- | -------- | ------ | ---- |
 {job_table}
 
-## Posting Time Distribution
-
-### Job Posting Times (Based on {total_positions} postings)
-
-```
-Jobs
-
-  1 PM │█████████████ 3
-  2 PM │██████████████████████████ 6
-  3 PM │████████████████████████████████████████ 9
-  4 PM │█████████████████ 4
-  5 PM │████████ 2
-  6 PM │████████ 2
-       └────────────────────────────────────────
-        0                                       9
-```
-
-**Peak posting time:** 3 PM (9 of {total_positions} jobs)
-**92% of jobs** posted between 1 PM - 5 PM (CST)
-**Best times to check:** 3 PM, 2 PM, 4 PM
+{posting_stats}
 
 ---
 
@@ -302,6 +283,88 @@ def format_posted_date(posted_date_str, published_parsed=None):
         # Last resort: return shortened version
         return posted_date_str[:16] if len(posted_date_str) > 16 else posted_date_str
 
+def generate_posting_insights(jobs):
+    """Generate insights about posting times to help users know when to check."""
+    posting_hours = []
+
+    for job in jobs:
+        published_parsed = job.get('published_parsed')
+        if not published_parsed:
+            continue
+
+        try:
+            # Parse from published_parsed tuple [year, month, day, hour, minute, second, ...]
+            dt = datetime(*published_parsed[:6], tzinfo=ZoneInfo('UTC'))
+            cst = ZoneInfo('America/Chicago')
+            dt_cst = dt.astimezone(cst)
+            posting_hours.append(dt_cst.hour)  # Get hour in CST (0-23)
+        except:
+            continue
+
+    if len(posting_hours) < 3:
+        return None  # Not enough data
+
+    # Count jobs per hour
+    hour_counts = {}
+    for hour in posting_hours:
+        hour_counts[hour] = hour_counts.get(hour, 0) + 1
+
+    return posting_hours, hour_counts
+
+def generate_posting_chart(jobs):
+    """Generate a Mermaid bar chart showing posting time distribution."""
+    result = generate_posting_insights(jobs)
+    if not result:
+        return None
+
+    posting_hours, hour_counts = result
+
+    # Create data for chart (only hours with at least 1 job)
+    labels = []
+    data = []
+    for hour in range(24):
+        count = hour_counts.get(hour, 0)
+        if count > 0:  # Only include hours with jobs
+            # Format hour labels
+            if hour == 0:
+                label = "12 AM"
+            elif hour < 12:
+                label = f"{hour} AM"
+            elif hour == 12:
+                label = "12 PM"
+            else:
+                label = f"{hour - 12} PM"
+            labels.append(label)
+            data.append(count)
+
+    # Create a simple, clean Unicode bar chart
+    max_value = max(data) if data else 1
+    max_bar_length = 40  # Maximum bar length in characters
+
+    chart_lines = [
+        f"## Posting Time Distribution",
+        "",
+        f"### Job Posting Times (Based on {len(posting_hours)} postings)",
+        "",
+        "```",
+        "Jobs",
+        ""
+    ]
+
+    # Create bars using Unicode block characters
+    for label, count in zip(labels, data):
+        bar_length = int((count / max_value) * max_bar_length) if max_value > 0 else 0
+        bar = "█" * bar_length
+        chart_lines.append(f"{label:>6} │{bar} {count}")
+
+    chart_lines.extend([
+        "       └" + "─" * max_bar_length,
+        "        0" + " " * (max_bar_length - 1) + str(max_value),
+        "```"
+    ])
+
+    return "\n".join(chart_lines)
+
 def update_readme(jobs):
     """Update the README file with the latest job listings."""
     # Sort by published_parsed tuple in reverse chronological order (newest first)
@@ -322,10 +385,64 @@ def update_readme(jobs):
     cst_time = datetime.now(cst)
     last_updated = cst_time.strftime('%B %d, %Y at %I:%M %p CST')
 
+    # Generate posting time chart and insights
+    chart_url = generate_posting_chart(jobs)
+    insights_result = generate_posting_insights(jobs)
+    stats_text = ""
+    if chart_url and insights_result:
+        posting_hours, hour_counts = insights_result
+        n = len(posting_hours)
+
+        # Find peak hour
+        peak_hour, peak_count = max(hour_counts.items(), key=lambda x: x[1])
+
+        # Format hours
+        def format_hour(hour):
+            if hour == 0:
+                return "12 AM"
+            elif hour < 12:
+                return f"{hour} AM"
+            elif hour == 12:
+                return "12 PM"
+            else:
+                return f"{hour - 12} PM"
+
+        peak_formatted = format_hour(peak_hour)
+
+        # Find time range where most jobs are posted (80% percentile)
+        sorted_hours = sorted(posting_hours)
+        p10_idx = int(n * 0.1)
+        p90_idx = int(n * 0.9)
+        start_hour = sorted_hours[p10_idx]
+        end_hour = sorted_hours[p90_idx]
+
+        # Count jobs in the main range
+        in_range = sum(1 for h in posting_hours if start_hour <= h <= end_hour)
+        pct_in_range = (in_range / n) * 100
+
+        # Format insights
+        range_text = f"{format_hour(start_hour)} - {format_hour(end_hour)}"
+        if start_hour == end_hour:
+            range_text = format_hour(start_hour)
+
+        insights_lines = [
+            f"**Peak posting time:** {peak_formatted} ({peak_count} of {n} jobs)",
+            f"**{pct_in_range:.0f}% of jobs** posted between {range_text} (CST)",
+        ]
+
+        insights_text = "\n".join(insights_lines)
+
+        stats_text = f"""
+{chart_url}
+
+{insights_text}
+"""
+
     readme_content = README_TEMPLATE.format(
         last_updated=last_updated,
         total_positions=len(jobs),
-        job_table=table_rows
+        job_table=table_rows,
+        posting_stats=stats_text
     )
 
     with open(README_FILE, 'w') as f:
