@@ -434,8 +434,6 @@ def update_readme(jobs):
 
         stats_text = f"""
 {chart_url}
-
-{insights_text}
 """
 
     readme_content = README_TEMPLATE.format(
