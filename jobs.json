@@ -160,46 +160,6 @@
     "discovered_date": "2025-12-02T18:37:09.122954"
   },
   {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47381",
-    "company": "APTech",
-    "position": "Engineer Associate",
-    "link": "https://researchpark.illinois.edu/job/engineer-associate-applied-pavement-technology/",
-    "posted_date": "Mon, 03 Nov 2025 20:59:02 +0000",
-    "published_parsed": [
-      2025,
-      11,
-      3,
-      20,
-      59,
-      2,
-      0,
-      307,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/01/APT-2-150x150.jpg",
-    "discovered_date": "2025-11-05T15:46:37.828918"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47371",
-    "company": "APTech",
-    "position": "Equipment Operator / Engineering Technician",
-    "link": "https://researchpark.illinois.edu/job/equipment-operator-engineering-technician-applied-pavement-technology/",
-    "posted_date": "Mon, 03 Nov 2025 20:47:40 +0000",
-    "published_parsed": [
-      2025,
-      11,
-      3,
-      20,
-      47,
-      40,
-      0,
-      307,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/01/APT-2-150x150.jpg",
-    "discovered_date": "2025-11-05T15:46:37.828927"
-  },
-  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47232",
     "company": "APTech",
     "position": "Senior Engineering (Transportation Asset Management)",
@@ -278,6 +238,26 @@
     ],
     "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/09/epivara-logo.avif",
     "discovered_date": "2025-11-05T15:47:32.599128"
+  },
+  {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46508",
+    "company": "Research Park",
+    "position": "Communications Intern",
+    "link": "https://researchpark.illinois.edu/job/communications-and-social-media-intern/",
+    "posted_date": "Thu, 25 Sep 2025 14:27:23 +0000",
+    "published_parsed": [
+      2025,
+      9,
+      25,
+      14,
+      27,
+      23,
+      3,
+      268,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/01/Research-Park-Logo-Square-150x150.png",
+    "discovered_date": "2025-12-04T23:56:42.203087"
   },
   {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47005",
