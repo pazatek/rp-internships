@@ -2,7 +2,7 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** December 05, 2025 at 03:25 PM CST | **Total:** 23
+**Updated:** December 05, 2025 at 04:27 PM CST | **Total:** 24
 
 ---
 
@@ -22,6 +22,7 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-Yahoo-150x150.png" alt="Yahoo!" width="50"> | Yahoo! | Software Dev Engineer I | Oct 16, 2025 06:53 PM CST | [Apply](https://researchpark.illinois.edu/job/software-dev-engineer-i/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-Yahoo-150x150.png" alt="Yahoo!" width="50"> | Yahoo! | DevOps Engineer – Yahoo! | Oct 16, 2025 06:09 PM CST | [Apply](https://researchpark.illinois.edu/job/devops-engineer/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/09/epivara-logo.avif" alt="Epivara" width="50"> | Epivara | Formulation Scientist | Sep 25, 2025 05:04 PM CST | [Apply](https://researchpark.illinois.edu/job/formulation-scientist/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/01/Research-Park-Logo-Square-150x150.png" alt="Research Park" width="50"> | Research Park | Communications And Social Media Intern | Sep 25, 2025 09:27 AM CST | [Apply](https://researchpark.illinois.edu/job/communications-and-social-media-intern/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png" alt="Tiptek" width="50"> | Tiptek | Part-Time Production Technician | Sep 24, 2025 04:00 PM CST | [Apply](https://researchpark.illinois.edu/job/tiptek-savoy-illinois-5-part-time-production-technician/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2021/12/Kocree-Logo-150x114.png" alt="Kocree" width="50"> | Kocree | High-Performance Computing Developer | Sep 17, 2025 03:11 PM CST | [Apply](https://researchpark.illinois.edu/job/high-performance-computing-developer-2/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2021/12/Kocree-Logo-150x114.png" alt="Kocree" width="50"> | Kocree | System Architect | Sep 17, 2025 03:07 PM CST | [Apply](https://researchpark.illinois.edu/job/system-architect-2/) |
@@ -35,11 +36,12 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Posting Time Distribution
 
-### Job Posting Times (Based on 23 postings)
+### Job Posting Times (Based on 24 postings)
 
 ```
 Jobs
 
+  9 AM │████ 1
   1 PM │████████ 2
   2 PM │████████████████████ 5
   3 PM │████████████████████████████████████████ 10
