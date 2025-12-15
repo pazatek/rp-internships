@@ -1,5 +1,65 @@
 [
   {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47642",
+    "company": "Mondel\u0113z International",
+    "position": "R&D Product Development Intern",
+    "link": "https://researchpark.illinois.edu/job/product-development-intern/",
+    "posted_date": "Mon, 15 Dec 2025 17:14:47 +0000",
+    "published_parsed": [
+      2025,
+      12,
+      15,
+      17,
+      14,
+      47,
+      0,
+      349,
+      0
+    ],
+    "logo_url": null,
+    "discovered_date": "2025-12-15T17:31:35.263585"
+  },
+  {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47641",
+    "company": "Mondel\u0113z International",
+    "position": "Extended Reality Intern",
+    "link": "https://researchpark.illinois.edu/job/extended-reality-intern/",
+    "posted_date": "Mon, 15 Dec 2025 16:49:06 +0000",
+    "published_parsed": [
+      2025,
+      12,
+      15,
+      16,
+      49,
+      6,
+      0,
+      349,
+      0
+    ],
+    "logo_url": null,
+    "discovered_date": "2025-12-15T17:31:35.263594"
+  },
+  {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46508",
+    "company": "Research Park",
+    "position": "Communications Intern",
+    "link": "https://researchpark.illinois.edu/job/uirp-communications-intern/",
+    "posted_date": "Wed, 10 Dec 2025 19:46:30 +0000",
+    "published_parsed": [
+      2025,
+      12,
+      10,
+      19,
+      46,
+      30,
+      2,
+      344,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/01/Research-Park-Logo-Square-150x150.png",
+    "discovered_date": "2025-12-05T22:27:52.026716"
+  },
+  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47619",
     "company": "Tiptek",
     "position": "Laboratory Technician",
@@ -78,106 +138,6 @@
     ],
     "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png",
     "discovered_date": "2025-12-02T18:37:09.122883"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47505",
-    "company": "ADM",
-    "position": "Senior Engineer, Technoeconomic Analyses",
-    "link": "https://researchpark.illinois.edu/job/senior-engineer-technoeconomic-analyses-adm/",
-    "posted_date": "Mon, 17 Nov 2025 21:35:31 +0000",
-    "published_parsed": [
-      2025,
-      11,
-      17,
-      21,
-      35,
-      31,
-      0,
-      321,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg",
-    "discovered_date": "2025-12-02T18:37:09.122918"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47507",
-    "company": "Rivian",
-    "position": "Embedded Software Intern",
-    "link": "https://researchpark.illinois.edu/job/embedded-software-intern-rivian-3/",
-    "posted_date": "Fri, 14 Nov 2025 21:58:00 +0000",
-    "published_parsed": [
-      2025,
-      11,
-      14,
-      21,
-      58,
-      0,
-      4,
-      318,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png",
-    "discovered_date": "2025-12-02T18:37:09.122927"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47506",
-    "company": "Rivian",
-    "position": "Validation Intern",
-    "link": "https://researchpark.illinois.edu/job/validation-intern-rivian/",
-    "posted_date": "Fri, 14 Nov 2025 21:38:30 +0000",
-    "published_parsed": [
-      2025,
-      11,
-      14,
-      21,
-      38,
-      30,
-      4,
-      318,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png",
-    "discovered_date": "2025-12-02T18:37:09.122934"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47504",
-    "company": "Rivian",
-    "position": "Hardware Design Intern",
-    "link": "https://researchpark.illinois.edu/job/hardware-design-intern-2/",
-    "posted_date": "Fri, 14 Nov 2025 21:18:19 +0000",
-    "published_parsed": [
-      2025,
-      11,
-      14,
-      21,
-      18,
-      19,
-      4,
-      318,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png",
-    "discovered_date": "2025-12-02T18:37:09.122941"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47474",
-    "company": "ADM",
-    "position": "Food Scientist (Bakery)",
-    "link": "https://researchpark.illinois.edu/job/food-scientist-bakery-adm/",
-    "posted_date": "Mon, 10 Nov 2025 22:23:37 +0000",
-    "published_parsed": [
-      2025,
-      11,
-      10,
-      22,
-      23,
-      37,
-      0,
-      314,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg",
-    "discovered_date": "2025-12-02T18:37:09.122948"
   },
   {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47471",
@@ -280,26 +240,6 @@
     "discovered_date": "2025-11-05T15:47:32.599128"
   },
   {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46508",
-    "company": "Research Park",
-    "position": "Communications And Social Media Intern",
-    "link": "https://researchpark.illinois.edu/job/communications-and-social-media-intern/",
-    "posted_date": "Thu, 25 Sep 2025 14:27:23 +0000",
-    "published_parsed": [
-      2025,
-      9,
-      25,
-      14,
-      27,
-      23,
-      3,
-      268,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/01/Research-Park-Logo-Square-150x150.png",
-    "discovered_date": "2025-12-05T22:27:52.026716"
-  },
-  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47005",
     "company": "Tiptek",
     "position": "Part-Time Production Technician",
@@ -318,106 +258,6 @@
     ],
     "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png",
     "discovered_date": "2025-11-05T15:47:32.599130"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46926",
-    "company": "Kocree",
-    "position": "High-Performance Computing Developer",
-    "link": "https://researchpark.illinois.edu/job/high-performance-computing-developer-2/",
-    "posted_date": "Wed, 17 Sep 2025 20:11:39 +0000",
-    "published_parsed": [
-      2025,
-      9,
-      17,
-      20,
-      11,
-      39,
-      2,
-      260,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2021/12/Kocree-Logo-150x114.png",
-    "discovered_date": "2025-11-05T15:47:32.599132"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46923",
-    "company": "Kocree",
-    "position": "System Architect",
-    "link": "https://researchpark.illinois.edu/job/system-architect-2/",
-    "posted_date": "Wed, 17 Sep 2025 20:07:07 +0000",
-    "published_parsed": [
-      2025,
-      9,
-      17,
-      20,
-      7,
-      7,
-      2,
-      260,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2021/12/Kocree-Logo-150x114.png",
-    "discovered_date": "2025-11-05T15:47:32.599134"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46922",
-    "company": "Kocree",
-    "position": "Business Development",
-    "link": "https://researchpark.illinois.edu/job/business-development-2/",
-    "posted_date": "Wed, 17 Sep 2025 20:01:49 +0000",
-    "published_parsed": [
-      2025,
-      9,
-      17,
-      20,
-      1,
-      49,
-      2,
-      260,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2021/12/Kocree-Logo-150x114.png",
-    "discovered_date": "2025-11-05T15:47:32.599135"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46920",
-    "company": "Kocree",
-    "position": "Blockchain Developer",
-    "link": "https://researchpark.illinois.edu/job/blockchain-developer-2/",
-    "posted_date": "Wed, 17 Sep 2025 19:46:45 +0000",
-    "published_parsed": [
-      2025,
-      9,
-      17,
-      19,
-      46,
-      45,
-      2,
-      260,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2021/12/Kocree-Logo-150x114.png",
-    "discovered_date": "2025-11-05T15:47:32.599136"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46918",
-    "company": "Kocree",
-    "position": "AI Developer",
-    "link": "https://researchpark.illinois.edu/job/ai-developer-2/",
-    "posted_date": "Wed, 17 Sep 2025 19:37:21 +0000",
-    "published_parsed": [
-      2025,
-      9,
-      17,
-      19,
-      37,
-      21,
-      2,
-      260,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2021/12/Kocree-Logo-150x114.png",
-    "discovered_date": "2025-11-05T15:47:32.599137"
   },
   {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46865",
