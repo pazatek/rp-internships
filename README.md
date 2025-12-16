@@ -2,12 +2,13 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** December 16, 2025 at 02:56 PM CST | **Total:** 22
+**Updated:** December 16, 2025 at 03:28 PM CST | **Total:** 22
 
 ---
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="NVIDIA" width="50"> | NVIDIA | Senior C++ and Build Engineer – DC System Software | Dec 16, 2025 02:46 PM CST | [Apply](https://researchpark.illinois.edu/job/senior-c-and-build-engineer-dc-system-software/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-riverbed-2x2-1-150x150.jpg" alt="MSA" width="50"> | MSA | Water Engineering Intern | Dec 16, 2025 02:24 PM CST | [Apply](https://researchpark.illinois.edu/job/water-engineering-intern/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-riverbed-2x2-1-150x150.jpg" alt="MSA" width="50"> | MSA | Project Engineer Public Works | Dec 16, 2025 02:14 PM CST | [Apply](https://researchpark.illinois.edu/job/project-engineer-public-works/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-riverbed-2x2-1-150x150.jpg" alt="MSA" width="50"> | MSA | Senior Project Manager Engineering (Public Works) | Dec 16, 2025 02:07 PM CST | [Apply](https://researchpark.illinois.edu/job/senior-project-manager-engineering-public-works/) |
@@ -28,7 +29,6 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png" alt="Tiptek" width="50"> | Tiptek | Part-Time Production Technician | Sep 24, 2025 04:00 PM CST | [Apply](https://researchpark.illinois.edu/job/tiptek-savoy-illinois-5-part-time-production-technician/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png" alt="Tiptek" width="50"> | Tiptek | Production Technician | Sep 05, 2025 01:52 PM CST | [Apply](https://researchpark.illinois.edu/job/production-technician/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png" alt="Tiptek" width="50"> | Tiptek | Laboratory Technician | Sep 05, 2025 01:47 PM CST | [Apply](https://researchpark.illinois.edu/job/laboratory-technician/) |
-| <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png" alt="Tiptek" width="50"> | Tiptek | Laboratory Technician | Sep 05, 2025 01:47 PM CST | [Apply](https://researchpark.illinois.edu/job/laboratory-technician/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2020/05/Caterpillar-150x150.png" alt="Caterpillar" width="50"> | Caterpillar | 2026 Engineering Rotational Development Program – Product Development Track | Aug 22, 2025 03:38 PM CST | [Apply](https://researchpark.illinois.edu/job/2026-engineering-rotational-development-program-product-development-track/) |
 
 
@@ -39,16 +39,16 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 ```
 Jobs
 
- 10 AM │██████ 1
- 11 AM │█████████████ 2
-  1 PM │█████████████████████████████████ 5
-  2 PM │████████████████████████████████████████ 6
-  3 PM │████████████████████ 3
-  4 PM │█████████████ 2
-  5 PM │██████ 1
-  6 PM │█████████████ 2
+ 10 AM │█████ 1
+ 11 AM │███████████ 2
+  1 PM │██████████████████████ 4
+  2 PM │████████████████████████████████████████ 7
+  3 PM │█████████████████ 3
+  4 PM │███████████ 2
+  5 PM │█████ 1
+  6 PM │███████████ 2
        └────────────────────────────────────────
-        0                                       6
+        0                                       7
 ```
 
 
