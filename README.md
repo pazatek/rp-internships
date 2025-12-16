@@ -2,12 +2,16 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** December 16, 2025 at 03:28 PM CST | **Total:** 22
+**Updated:** December 16, 2025 at 03:46 PM CST | **Total:** 26
 
 ---
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="NVIDIA" width="50"> | NVIDIA | Lead System Software Engineer, CPU and GPU Performance Visualization Tools | Dec 16, 2025 03:18 PM CST | [Apply](https://researchpark.illinois.edu/job/lead-system-software-engineer-cpu-and-gpu-performance-visualization-tools/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="NVIDIA" width="50"> | NVIDIA | Senior Research Scientist, System Software and I/O Architecture | Dec 16, 2025 03:12 PM CST | [Apply](https://researchpark.illinois.edu/job/senior-research-scientist-system-software-and-i-o-architecture/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="NVIDIA" width="50"> | NVIDIA | Principal Systems Software Engineer | Dec 16, 2025 03:03 PM CST | [Apply](https://researchpark.illinois.edu/job/principal-systems-software-engineer/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="NVIDIA" width="50"> | NVIDIA | Distinguished Engineer, Apache Spark | Dec 16, 2025 02:56 PM CST | [Apply](https://researchpark.illinois.edu/job/distinguished-engineer-apache-spark/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="NVIDIA" width="50"> | NVIDIA | Senior C++ and Build Engineer – DC System Software | Dec 16, 2025 02:46 PM CST | [Apply](https://researchpark.illinois.edu/job/senior-c-and-build-engineer-dc-system-software/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-riverbed-2x2-1-150x150.jpg" alt="MSA" width="50"> | MSA | Water Engineering Intern | Dec 16, 2025 02:24 PM CST | [Apply](https://researchpark.illinois.edu/job/water-engineering-intern/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-riverbed-2x2-1-150x150.jpg" alt="MSA" width="50"> | MSA | Project Engineer Public Works | Dec 16, 2025 02:14 PM CST | [Apply](https://researchpark.illinois.edu/job/project-engineer-public-works/) |
@@ -34,21 +38,21 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Posting Time Distribution
 
-### Job Posting Times (Based on 22 postings)
+### Job Posting Times (Based on 26 postings)
 
 ```
 Jobs
 
  10 AM │█████ 1
- 11 AM │███████████ 2
-  1 PM │██████████████████████ 4
-  2 PM │████████████████████████████████████████ 7
-  3 PM │█████████████████ 3
-  4 PM │███████████ 2
+ 11 AM │██████████ 2
+  1 PM │████████████████████ 4
+  2 PM │████████████████████████████████████████ 8
+  3 PM │██████████████████████████████ 6
+  4 PM │██████████ 2
   5 PM │█████ 1
-  6 PM │███████████ 2
+  6 PM │██████████ 2
        └────────────────────────────────────────
-        0                                       7
+        0                                       8
 ```
 
 
