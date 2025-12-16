@@ -2,12 +2,15 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** December 16, 2025 at 01:54 PM CST | **Total:** 18
+**Updated:** December 16, 2025 at 02:56 PM CST | **Total:** 22
 
 ---
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-riverbed-2x2-1-150x150.jpg" alt="MSA" width="50"> | MSA | Water Engineering Intern | Dec 16, 2025 02:24 PM CST | [Apply](https://researchpark.illinois.edu/job/water-engineering-intern/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-riverbed-2x2-1-150x150.jpg" alt="MSA" width="50"> | MSA | Project Engineer Public Works | Dec 16, 2025 02:14 PM CST | [Apply](https://researchpark.illinois.edu/job/project-engineer-public-works/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-riverbed-2x2-1-150x150.jpg" alt="MSA" width="50"> | MSA | Senior Project Manager Engineering (Public Works) | Dec 16, 2025 02:07 PM CST | [Apply](https://researchpark.illinois.edu/job/senior-project-manager-engineering-public-works/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-riverbed-2x2-1-150x150.jpg" alt="Riverbed" width="50"> | Riverbed | Developer Tools / Product Build Engineer | Dec 16, 2025 01:20 PM CST | [Apply](https://researchpark.illinois.edu/job/developer-tools-product-build-engineer/) |
 | ??? | Littelfuse | Technical Marketing Engineer | Dec 15, 2025 11:34 AM CST | [Apply](https://researchpark.illinois.edu/job/technical-marketing-engineer/) |
 | ??? | Mondelēz International | R&D Product Development Intern | Dec 15, 2025 11:14 AM CST | [Apply](https://researchpark.illinois.edu/job/product-development-intern/) |
@@ -25,26 +28,27 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png" alt="Tiptek" width="50"> | Tiptek | Part-Time Production Technician | Sep 24, 2025 04:00 PM CST | [Apply](https://researchpark.illinois.edu/job/tiptek-savoy-illinois-5-part-time-production-technician/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png" alt="Tiptek" width="50"> | Tiptek | Production Technician | Sep 05, 2025 01:52 PM CST | [Apply](https://researchpark.illinois.edu/job/production-technician/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png" alt="Tiptek" width="50"> | Tiptek | Laboratory Technician | Sep 05, 2025 01:47 PM CST | [Apply](https://researchpark.illinois.edu/job/laboratory-technician/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png" alt="Tiptek" width="50"> | Tiptek | Laboratory Technician | Sep 05, 2025 01:47 PM CST | [Apply](https://researchpark.illinois.edu/job/laboratory-technician/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2020/05/Caterpillar-150x150.png" alt="Caterpillar" width="50"> | Caterpillar | 2026 Engineering Rotational Development Program – Product Development Track | Aug 22, 2025 03:38 PM CST | [Apply](https://researchpark.illinois.edu/job/2026-engineering-rotational-development-program-product-development-track/) |
 
 
 ## Posting Time Distribution
 
-### Job Posting Times (Based on 18 postings)
+### Job Posting Times (Based on 22 postings)
 
 ```
 Jobs
 
- 10 AM │██████████ 1
- 11 AM │████████████████████ 2
-  1 PM │████████████████████████████████████████ 4
-  2 PM │██████████████████████████████ 3
-  3 PM │██████████████████████████████ 3
-  4 PM │████████████████████ 2
-  5 PM │██████████ 1
-  6 PM │████████████████████ 2
+ 10 AM │██████ 1
+ 11 AM │█████████████ 2
+  1 PM │█████████████████████████████████ 5
+  2 PM │████████████████████████████████████████ 6
+  3 PM │████████████████████ 3
+  4 PM │█████████████ 2
+  5 PM │██████ 1
+  6 PM │█████████████ 2
        └────────────────────────────────────────
-        0                                       4
+        0                                       6
 ```
 
 
