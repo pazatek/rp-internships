@@ -2,12 +2,13 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** December 15, 2025 at 12:45 PM CST | **Total:** 17
+**Updated:** December 16, 2025 at 01:54 PM CST | **Total:** 18
 
 ---
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-riverbed-2x2-1-150x150.jpg" alt="Riverbed" width="50"> | Riverbed | Developer Tools / Product Build Engineer | Dec 16, 2025 01:20 PM CST | [Apply](https://researchpark.illinois.edu/job/developer-tools-product-build-engineer/) |
 | ??? | Littelfuse | Technical Marketing Engineer | Dec 15, 2025 11:34 AM CST | [Apply](https://researchpark.illinois.edu/job/technical-marketing-engineer/) |
 | ??? | Mondelēz International | R&D Product Development Intern | Dec 15, 2025 11:14 AM CST | [Apply](https://researchpark.illinois.edu/job/product-development-intern/) |
 | ??? | Mondelēz International | Extended Reality Intern | Dec 15, 2025 10:49 AM CST | [Apply](https://researchpark.illinois.edu/job/extended-reality-intern/) |
@@ -29,21 +30,21 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Posting Time Distribution
 
-### Job Posting Times (Based on 17 postings)
+### Job Posting Times (Based on 18 postings)
 
 ```
 Jobs
 
- 10 AM │█████████████ 1
- 11 AM │██████████████████████████ 2
-  1 PM │████████████████████████████████████████ 3
-  2 PM │████████████████████████████████████████ 3
-  3 PM │████████████████████████████████████████ 3
-  4 PM │██████████████████████████ 2
-  5 PM │█████████████ 1
-  6 PM │██████████████████████████ 2
+ 10 AM │██████████ 1
+ 11 AM │████████████████████ 2
+  1 PM │████████████████████████████████████████ 4
+  2 PM │██████████████████████████████ 3
+  3 PM │██████████████████████████████ 3
+  4 PM │████████████████████ 2
+  5 PM │██████████ 1
+  6 PM │████████████████████ 2
        └────────────────────────────────────────
-        0                                       3
+        0                                       4
 ```
 
 

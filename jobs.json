@@ -1,5 +1,25 @@
 [
   {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47654",
+    "company": "Riverbed",
+    "position": "Developer Tools / Product Build Engineer",
+    "link": "https://researchpark.illinois.edu/job/developer-tools-product-build-engineer/",
+    "posted_date": "Tue, 16 Dec 2025 19:20:25 +0000",
+    "published_parsed": [
+      2025,
+      12,
+      16,
+      19,
+      20,
+      25,
+      1,
+      350,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-riverbed-2x2-1-150x150.jpg",
+    "discovered_date": "2025-12-16T19:54:05.911896"
+  },
+  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47643",
     "company": "Littelfuse",
     "position": "Technical Marketing Engineer",
