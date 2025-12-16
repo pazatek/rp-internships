@@ -2,12 +2,13 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** December 16, 2025 at 03:46 PM CST | **Total:** 26
+**Updated:** December 16, 2025 at 04:45 PM CST | **Total:** 27
 
 ---
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="Office of the Vice Chancellor for Research and Innovation, University of Illinois Urbana Champaign" width="50"> | Office of the Vice Chancellor for Research and Innovation, University of Illinois Urbana Champaign | Director, Sponsored Programs Administration Pre-Award | Dec 16, 2025 03:49 PM CST | [Apply](https://researchpark.illinois.edu/job/director-sponsored-programs-administration-pre-award/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="NVIDIA" width="50"> | NVIDIA | Lead System Software Engineer, CPU and GPU Performance Visualization Tools | Dec 16, 2025 03:18 PM CST | [Apply](https://researchpark.illinois.edu/job/lead-system-software-engineer-cpu-and-gpu-performance-visualization-tools/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="NVIDIA" width="50"> | NVIDIA | Senior Research Scientist, System Software and I/O Architecture | Dec 16, 2025 03:12 PM CST | [Apply](https://researchpark.illinois.edu/job/senior-research-scientist-system-software-and-i-o-architecture/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="NVIDIA" width="50"> | NVIDIA | Principal Systems Software Engineer | Dec 16, 2025 03:03 PM CST | [Apply](https://researchpark.illinois.edu/job/principal-systems-software-engineer/) |
@@ -38,7 +39,7 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Posting Time Distribution
 
-### Job Posting Times (Based on 26 postings)
+### Job Posting Times (Based on 27 postings)
 
 ```
 Jobs
@@ -47,7 +48,7 @@ Jobs
  11 AM │██████████ 2
   1 PM │████████████████████ 4
   2 PM │████████████████████████████████████████ 8
-  3 PM │██████████████████████████████ 6
+  3 PM │███████████████████████████████████ 7
   4 PM │██████████ 2
   5 PM │█████ 1
   6 PM │██████████ 2
