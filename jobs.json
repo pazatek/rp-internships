@@ -1,5 +1,65 @@
 [
   {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47474",
+    "company": "ADM",
+    "position": "Food Scientist (Bakery)",
+    "link": "https://researchpark.illinois.edu/job/food-scientist-bakery-adm/",
+    "posted_date": "Wed, 17 Dec 2025 18:37:35 +0000",
+    "published_parsed": [
+      2025,
+      12,
+      17,
+      18,
+      37,
+      35,
+      2,
+      351,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg",
+    "discovered_date": "2025-12-17T18:43:40.648251"
+  },
+  {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47505",
+    "company": "ADM",
+    "position": "Senior Engineer, Technoeconomic Analyses",
+    "link": "https://researchpark.illinois.edu/job/senior-engineer-technoeconomic-analyses-adm/",
+    "posted_date": "Wed, 17 Dec 2025 18:31:20 +0000",
+    "published_parsed": [
+      2025,
+      12,
+      17,
+      18,
+      31,
+      20,
+      2,
+      351,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg",
+    "discovered_date": "2025-12-17T18:43:40.648259"
+  },
+  {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47671",
+    "company": "Synchrony",
+    "position": "Emerging Technology Intern \u2013 Business, Marketing, Consulting Summer 2026",
+    "link": "https://researchpark.illinois.edu/job/emerging-technology-intern-business-marketing-consulting-summer-2026/",
+    "posted_date": "Wed, 17 Dec 2025 17:32:38 +0000",
+    "published_parsed": [
+      2025,
+      12,
+      17,
+      17,
+      32,
+      38,
+      2,
+      351,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg",
+    "discovered_date": "2025-12-17T18:43:40.648261"
+  },
+  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47673",
     "company": "Synchrony",
     "position": "Emerging Technology Intern \u2013 Technology, Engineering, Design Summer 2026",
