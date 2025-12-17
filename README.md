@@ -2,12 +2,16 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** December 16, 2025 at 04:45 PM CST | **Total:** 27
+**Updated:** December 17, 2025 at 11:30 AM CST | **Total:** 28
 
 ---
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="Synchrony" width="50"> | Synchrony | Emerging Technology Intern – Technology, Engineering, Design Summer 2026 | Dec 17, 2025 11:29 AM CST | [Apply](https://researchpark.illinois.edu/job/emerging-technology-intern-technology-engineering-design-summer-2026/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="Synchrony" width="50"> | Synchrony | Emerging Technology Intern – Data Analytics Capabilities Summer 2026 | Dec 17, 2025 11:27 AM CST | [Apply](https://researchpark.illinois.edu/job/emerging-technology-intern-data-analytics-capabilities-summer-2026/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="Electric Power Engineers" width="50"> | Electric Power Engineers | Power Systems Engineer Intern – Summer | Dec 17, 2025 10:23 AM CST | [Apply](https://researchpark.illinois.edu/job/power-systems-engineer-intern-summer/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/01/Research-Park-Logo-Square-150x150.png" alt="Research Park" width="50"> | Research Park | Communications Intern | Dec 17, 2025 10:06 AM CST | [Apply](https://researchpark.illinois.edu/job/uirp-communications-intern/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="Office of the Vice Chancellor for Research and Innovation, University of Illinois Urbana Champaign" width="50"> | Office of the Vice Chancellor for Research and Innovation, University of Illinois Urbana Champaign | Director, Sponsored Programs Administration Pre-Award | Dec 16, 2025 03:49 PM CST | [Apply](https://researchpark.illinois.edu/job/director-sponsored-programs-administration-pre-award/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="NVIDIA" width="50"> | NVIDIA | Lead System Software Engineer, CPU and GPU Performance Visualization Tools | Dec 16, 2025 03:18 PM CST | [Apply](https://researchpark.illinois.edu/job/lead-system-software-engineer-cpu-and-gpu-performance-visualization-tools/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="NVIDIA" width="50"> | NVIDIA | Senior Research Scientist, System Software and I/O Architecture | Dec 16, 2025 03:12 PM CST | [Apply](https://researchpark.illinois.edu/job/senior-research-scientist-system-software-and-i-o-architecture/) |
@@ -21,15 +25,12 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 | ??? | Littelfuse | Technical Marketing Engineer | Dec 15, 2025 11:34 AM CST | [Apply](https://researchpark.illinois.edu/job/technical-marketing-engineer/) |
 | ??? | Mondelēz International | R&D Product Development Intern | Dec 15, 2025 11:14 AM CST | [Apply](https://researchpark.illinois.edu/job/product-development-intern/) |
 | ??? | Mondelēz International | Extended Reality Intern | Dec 15, 2025 10:49 AM CST | [Apply](https://researchpark.illinois.edu/job/extended-reality-intern/) |
-| <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/01/Research-Park-Logo-Square-150x150.png" alt="Research Park" width="50"> | Research Park | Communications Intern | Dec 10, 2025 01:46 PM CST | [Apply](https://researchpark.illinois.edu/job/uirp-communications-intern/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png" alt="Tiptek" width="50"> | Tiptek | Laboratory Technician | Dec 05, 2025 02:44 PM CST | [Apply](https://researchpark.illinois.edu/job/laboratory-technician-2/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png" alt="Tiptek" width="50"> | Tiptek | Production Technician | Dec 05, 2025 02:44 PM CST | [Apply](https://researchpark.illinois.edu/job/production-technician-2/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png" alt="Rivian" width="50"> | Rivian | Embedded Systems Software – Rivian | Dec 03, 2025 03:48 PM CST | [Apply](https://researchpark.illinois.edu/job/embedded-systems-software-rivian/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="John Deere" width="50"> | John Deere | Part-Time Student Graduate Research Assistant | Nov 18, 2025 02:03 PM CST | [Apply](https://researchpark.illinois.edu/job/part-time-student-graduate-research-assistant-john-deere/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/05/SquareLogo-EPE-01-1-150x150.png" alt="Electric Power Engineers" width="50"> | Electric Power Engineers | Distribution Design Engineer | Nov 10, 2025 04:22 PM CST | [Apply](https://researchpark.illinois.edu/job/distribution-design-engineer-electric-power-engineers/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/01/APT-2-150x150.jpg" alt="APTech" width="50"> | APTech | Senior Engineering (Transportation Asset Management) | Oct 23, 2025 03:26 PM CST | [Apply](https://researchpark.illinois.edu/job/senior-engineering-transportation-asset-management-applied-pavement-technology/) |
-| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-Yahoo-150x150.png" alt="Yahoo!" width="50"> | Yahoo! | Software Dev Engineer I | Oct 16, 2025 06:53 PM CST | [Apply](https://researchpark.illinois.edu/job/software-dev-engineer-i/) |
-| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-Yahoo-150x150.png" alt="Yahoo!" width="50"> | Yahoo! | DevOps Engineer – Yahoo! | Oct 16, 2025 06:09 PM CST | [Apply](https://researchpark.illinois.edu/job/devops-engineer/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/09/epivara-logo.avif" alt="Epivara" width="50"> | Epivara | Formulation Scientist | Sep 25, 2025 05:04 PM CST | [Apply](https://researchpark.illinois.edu/job/formulation-scientist/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png" alt="Tiptek" width="50"> | Tiptek | Part-Time Production Technician | Sep 24, 2025 04:00 PM CST | [Apply](https://researchpark.illinois.edu/job/tiptek-savoy-illinois-5-part-time-production-technician/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png" alt="Tiptek" width="50"> | Tiptek | Production Technician | Sep 05, 2025 01:52 PM CST | [Apply](https://researchpark.illinois.edu/job/production-technician/) |
@@ -39,19 +40,18 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Posting Time Distribution
 
-### Job Posting Times (Based on 27 postings)
+### Job Posting Times (Based on 28 postings)
 
 ```
 Jobs
 
- 10 AM │█████ 1
- 11 AM │██████████ 2
-  1 PM │████████████████████ 4
+ 10 AM │███████████████ 3
+ 11 AM │████████████████████ 4
+  1 PM │███████████████ 3
   2 PM │████████████████████████████████████████ 8
   3 PM │███████████████████████████████████ 7
   4 PM │██████████ 2
   5 PM │█████ 1
-  6 PM │██████████ 2
        └────────────────────────────────────────
         0                                       8
 ```

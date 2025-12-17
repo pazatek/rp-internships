@@ -1,5 +1,85 @@
 [
   {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47673",
+    "company": "Synchrony",
+    "position": "Emerging Technology Intern \u2013 Technology, Engineering, Design Summer 2026",
+    "link": "https://researchpark.illinois.edu/job/emerging-technology-intern-technology-engineering-design-summer-2026/",
+    "posted_date": "Wed, 17 Dec 2025 17:29:32 +0000",
+    "published_parsed": [
+      2025,
+      12,
+      17,
+      17,
+      29,
+      32,
+      2,
+      351,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg",
+    "discovered_date": "2025-12-17T17:30:29.303327"
+  },
+  {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47672",
+    "company": "Synchrony",
+    "position": "Emerging Technology Intern \u2013 Data Analytics Capabilities Summer 2026",
+    "link": "https://researchpark.illinois.edu/job/emerging-technology-intern-data-analytics-capabilities-summer-2026/",
+    "posted_date": "Wed, 17 Dec 2025 17:27:31 +0000",
+    "published_parsed": [
+      2025,
+      12,
+      17,
+      17,
+      27,
+      31,
+      2,
+      351,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg",
+    "discovered_date": "2025-12-17T17:30:29.303336"
+  },
+  {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47668",
+    "company": "Electric Power Engineers",
+    "position": "Power Systems Engineer Intern \u2013 Summer",
+    "link": "https://researchpark.illinois.edu/job/power-systems-engineer-intern-summer/",
+    "posted_date": "Wed, 17 Dec 2025 16:23:24 +0000",
+    "published_parsed": [
+      2025,
+      12,
+      17,
+      16,
+      23,
+      24,
+      2,
+      351,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg",
+    "discovered_date": "2025-12-17T17:30:29.303338"
+  },
+  {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46508",
+    "company": "Research Park",
+    "position": "Communications Intern",
+    "link": "https://researchpark.illinois.edu/job/uirp-communications-intern/",
+    "posted_date": "Wed, 17 Dec 2025 16:06:30 +0000",
+    "published_parsed": [
+      2025,
+      12,
+      17,
+      16,
+      6,
+      30,
+      2,
+      351,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/01/Research-Park-Logo-Square-150x150.png",
+    "discovered_date": "2025-12-05T22:27:52.026716"
+  },
+  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47666",
     "company": "Office of the Vice Chancellor for Research and Innovation, University of Illinois Urbana Champaign",
     "position": "Director, Sponsored Programs Administration Pre-Award",
@@ -260,26 +340,6 @@
     "discovered_date": "2025-12-15T17:31:35.263594"
   },
   {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46508",
-    "company": "Research Park",
-    "position": "Communications Intern",
-    "link": "https://researchpark.illinois.edu/job/uirp-communications-intern/",
-    "posted_date": "Wed, 10 Dec 2025 19:46:30 +0000",
-    "published_parsed": [
-      2025,
-      12,
-      10,
-      19,
-      46,
-      30,
-      2,
-      344,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/01/Research-Park-Logo-Square-150x150.png",
-    "discovered_date": "2025-12-05T22:27:52.026716"
-  },
-  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47619",
     "company": "Tiptek",
     "position": "Laboratory Technician",
@@ -398,46 +458,6 @@
     ],
     "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/01/APT-2-150x150.jpg",
     "discovered_date": "2025-11-05T15:46:37.828932"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47169",
-    "company": "Yahoo!",
-    "position": "Software Dev Engineer I",
-    "link": "https://researchpark.illinois.edu/job/software-dev-engineer-i/",
-    "posted_date": "Thu, 16 Oct 2025 23:53:02 +0000",
-    "published_parsed": [
-      2025,
-      10,
-      16,
-      23,
-      53,
-      2,
-      3,
-      289,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-Yahoo-150x150.png",
-    "discovered_date": "2025-11-05T15:46:37.828934"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47166",
-    "company": "Yahoo!",
-    "position": "DevOps Engineer \u2013 Yahoo!",
-    "link": "https://researchpark.illinois.edu/job/devops-engineer/",
-    "posted_date": "Thu, 16 Oct 2025 23:09:46 +0000",
-    "published_parsed": [
-      2025,
-      10,
-      16,
-      23,
-      9,
-      46,
-      3,
-      289,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-Yahoo-150x150.png",
-    "discovered_date": "2025-11-05T15:46:37.828935"
   },
   {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47015",
