@@ -500,26 +500,6 @@
     "discovered_date": "2025-12-02T18:37:09.122954"
   },
   {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47232",
-    "company": "APTech",
-    "position": "Senior Engineering (Transportation Asset Management)",
-    "link": "https://researchpark.illinois.edu/job/senior-engineering-transportation-asset-management-applied-pavement-technology/",
-    "posted_date": "Thu, 23 Oct 2025 20:26:09 +0000",
-    "published_parsed": [
-      2025,
-      10,
-      23,
-      20,
-      26,
-      9,
-      3,
-      296,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/01/APT-2-150x150.jpg",
-    "discovered_date": "2025-11-05T15:46:37.828932"
-  },
-  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47015",
     "company": "Epivara",
     "position": "Formulation Scientist",
@@ -538,6 +518,26 @@
     ],
     "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/09/epivara-logo.avif",
     "discovered_date": "2025-11-05T15:47:32.599128"
+  },
+  {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46551",
+    "company": "Research Park",
+    "position": "Events Intern",
+    "link": "https://researchpark.illinois.edu/job/events-intern/",
+    "posted_date": "Thu, 25 Sep 2025 14:26:58 +0000",
+    "published_parsed": [
+      2025,
+      9,
+      25,
+      14,
+      26,
+      58,
+      3,
+      268,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/01/Research-Park-Logo-Square-150x150.png",
+    "discovered_date": "2025-12-18T17:30:20.895337"
   },
   {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47005",
