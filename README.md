@@ -2,14 +2,14 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** December 22, 2025 at 03:56 PM CST | **Total:** 31
+**Updated:** December 23, 2025 at 01:44 PM CST | **Total:** 31
 
 ---
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
-| <img src="https://researchpark.illinois.edu/wp-content/uploads/2023/12/Cache-Energy-Logo-150x150.png" alt="Cache Energy" width="50"> | Cache Energy | Thermal Engineering Intern – CFD | Dec 22, 2025 03:42 PM CST | [Apply](https://researchpark.illinois.edu/job/thermal-engineering-intern-cfd/) |
-| <img src="https://researchpark.illinois.edu/wp-content/uploads/2023/12/Cache-Energy-Logo-150x150.png" alt="Cache Energy" width="50"> | Cache Energy | Materials Performance Engineer | Dec 22, 2025 03:37 PM CST | [Apply](https://researchpark.illinois.edu/job/materials-performance-engineer/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/12/MSB-round-logo-250x250-px-150x150.jpg" alt="MS Bioanalytical LLC -A Division of Normec Group" width="50"> | MS Bioanalytical LLC -A Division of Normec Group | Nutrition Supplement Analyst | Dec 23, 2025 01:15 PM CST | [Apply](https://researchpark.illinois.edu/job/nutrition-supplement-analyst/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/12/MSB-round-logo-250x250-px-150x150.jpg" alt="MS Bioanalytical LLC -A Division of Normec Group" width="50"> | MS Bioanalytical LLC -A Division of Normec Group | Lab Technician | Dec 23, 2025 08:05 AM CST | [Apply](https://researchpark.illinois.edu/job/ms-bioanalytical-llc-a-division-of-normec-group-champaign-il-4-lab-technician-and-or-food-analysts/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg" alt="ADM" width="50"> | ADM | Food Scientist (Bakery) | Dec 17, 2025 12:37 PM CST | [Apply](https://researchpark.illinois.edu/job/food-scientist-bakery-adm/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg" alt="ADM" width="50"> | ADM | Senior Engineer, Technoeconomic Analyses | Dec 17, 2025 12:31 PM CST | [Apply](https://researchpark.illinois.edu/job/senior-engineer-technoeconomic-analyses-adm/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="Synchrony" width="50"> | Synchrony | Emerging Technology Intern – Business, Marketing, Consulting Summer 2026 | Dec 17, 2025 11:32 AM CST | [Apply](https://researchpark.illinois.edu/job/emerging-technology-intern-business-marketing-consulting-summer-2026/) |
@@ -48,16 +48,17 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 ```
 Jobs
 
- 10 AM │███████████████ 3
- 11 AM │█████████████████████████ 5
- 12 PM │██████████ 2
-  1 PM │███████████████ 3
-  2 PM │███████████████████████████████████ 7
-  3 PM │████████████████████████████████████████ 8
-  4 PM │██████████ 2
+  8 AM │█████ 1
+ 10 AM │█████████████████ 3
+ 11 AM │████████████████████████████ 5
+ 12 PM │███████████ 2
+  1 PM │██████████████████████ 4
+  2 PM │████████████████████████████████████████ 7
+  3 PM │██████████████████████████████████ 6
+  4 PM │███████████ 2
   5 PM │█████ 1
        └────────────────────────────────────────
-        0                                       8
+        0                                       7
 ```
 
 
