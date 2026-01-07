@@ -1,43 +1,43 @@
 [
   {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47712",
-    "company": "MS Bioanalytical LLC -A Division of Normec Group",
-    "position": "Nutrition Supplement Analyst",
-    "link": "https://researchpark.illinois.edu/job/nutrition-supplement-analyst/",
-    "posted_date": "Tue, 23 Dec 2025 19:15:27 +0000",
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47721",
+    "company": "Rivian",
+    "position": "Embedded Systems Software \u2013 Rivian \u2013 Motor Controls Development",
+    "link": "https://researchpark.illinois.edu/job/embedded-systems-software-rivian-motor-controls-development/",
+    "posted_date": "Wed, 07 Jan 2026 17:52:48 +0000",
     "published_parsed": [
-      2025,
-      12,
-      23,
-      19,
-      15,
-      27,
+      2026,
       1,
-      357,
+      7,
+      17,
+      52,
+      48,
+      2,
+      7,
       0
     ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/12/MSB-round-logo-250x250-px-150x150.jpg",
-    "discovered_date": "2025-12-23T19:44:09.596148"
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png",
+    "discovered_date": "2026-01-07T17:57:36.121576"
   },
   {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47709",
-    "company": "MS Bioanalytical LLC -A Division of Normec Group",
-    "position": "Lab Technician",
-    "link": "https://researchpark.illinois.edu/job/ms-bioanalytical-llc-a-division-of-normec-group-champaign-il-4-lab-technician-and-or-food-analysts/",
-    "posted_date": "Tue, 23 Dec 2025 14:05:04 +0000",
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47720",
+    "company": "Rivian",
+    "position": "Embedded Systems Software \u2013 Rivian \u2013 Inverter Build System",
+    "link": "https://researchpark.illinois.edu/job/embedded-systems-software-rivian-inverter-build-system/",
+    "posted_date": "Wed, 07 Jan 2026 17:42:05 +0000",
     "published_parsed": [
-      2025,
-      12,
-      23,
-      14,
-      5,
-      4,
+      2026,
       1,
-      357,
+      7,
+      17,
+      42,
+      5,
+      2,
+      7,
       0
     ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/12/MSB-round-logo-250x250-px-150x150.jpg",
-    "discovered_date": "2025-12-23T19:44:09.596155"
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png",
+    "discovered_date": "2026-01-07T17:57:36.121585"
   },
   {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47474",
@@ -500,26 +500,6 @@
     "discovered_date": "2025-12-03T22:28:25.501113"
   },
   {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47471",
-    "company": "Electric Power Engineers",
-    "position": "Distribution Design Engineer",
-    "link": "https://researchpark.illinois.edu/job/distribution-design-engineer-electric-power-engineers/",
-    "posted_date": "Mon, 10 Nov 2025 22:22:49 +0000",
-    "published_parsed": [
-      2025,
-      11,
-      10,
-      22,
-      22,
-      49,
-      0,
-      314,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2022/05/SquareLogo-EPE-01-1-150x150.png",
-    "discovered_date": "2025-12-02T18:37:09.122954"
-  },
-  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47015",
     "company": "Epivara",
     "position": "Formulation Scientist",
@@ -538,26 +518,6 @@
     ],
     "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/09/epivara-logo.avif",
     "discovered_date": "2025-11-05T15:47:32.599128"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47005",
-    "company": "Tiptek",
-    "position": "Part-Time Production Technician",
-    "link": "https://researchpark.illinois.edu/job/tiptek-savoy-illinois-5-part-time-production-technician/",
-    "posted_date": "Wed, 24 Sep 2025 21:00:27 +0000",
-    "published_parsed": [
-      2025,
-      9,
-      24,
-      21,
-      0,
-      27,
-      2,
-      267,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png",
-    "discovered_date": "2025-11-05T15:47:32.599130"
   },
   {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46865",
@@ -598,25 +558,5 @@
     ],
     "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png",
     "discovered_date": "2025-11-05T15:47:32.599140"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46842",
-    "company": "Caterpillar",
-    "position": "2026 Engineering Rotational Development Program \u2013 Product Development Track",
-    "link": "https://researchpark.illinois.edu/job/2026-engineering-rotational-development-program-product-development-track/",
-    "posted_date": "Fri, 22 Aug 2025 20:38:45 +0000",
-    "published_parsed": [
-      2025,
-      8,
-      22,
-      20,
-      38,
-      45,
-      4,
-      234,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2020/05/Caterpillar-150x150.png",
-    "discovered_date": "2025-11-05T15:47:32.599141"
   }
 ]
