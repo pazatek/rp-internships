@@ -2,12 +2,13 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** January 08, 2026 at 04:50 PM CST | **Total:** 29
+**Updated:** January 08, 2026 at 05:25 PM CST | **Total:** 30
 
 ---
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/06/3x2-Logo-Electric-Power-Engineers-01.jpg" alt="Electric Power Engineers" width="50"> | Electric Power Engineers | Distribution Design Engineer | Jan 08, 2026 04:43 PM CST | [Apply](https://researchpark.illinois.edu/job/distribution-design-engineer/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/04/lytenlogo-150x150.jpg" alt="Lyten" width="50"> | Lyten | Senior Manager, Plasma Science & Innovation | Jan 08, 2026 04:22 PM CST | [Apply](https://researchpark.illinois.edu/job/senior-manager-plasma-science-innovation/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png" alt="Rivian" width="50"> | Rivian | Embedded Systems Software – Rivian – Motor Controls Development | Jan 07, 2026 11:52 AM CST | [Apply](https://researchpark.illinois.edu/job/embedded-systems-software-rivian-motor-controls-development/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png" alt="Rivian" width="50"> | Rivian | Embedded Systems Software – Rivian – Inverter Build System | Jan 07, 2026 11:42 AM CST | [Apply](https://researchpark.illinois.edu/job/embedded-systems-software-rivian-inverter-build-system/) |
@@ -41,7 +42,7 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Posting Time Distribution
 
-### Job Posting Times (Based on 29 postings)
+### Job Posting Times (Based on 30 postings)
 
 ```
 Jobs
@@ -52,7 +53,7 @@ Jobs
   1 PM │█████████████████ 3
   2 PM │████████████████████████████████████████ 7
   3 PM │████████████████████████████ 5
-  4 PM │█████ 1
+  4 PM │███████████ 2
   5 PM │█████ 1
        └────────────────────────────────────────
         0                                       7
