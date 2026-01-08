@@ -2,12 +2,13 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** January 07, 2026 at 11:57 AM CST | **Total:** 28
+**Updated:** January 08, 2026 at 04:50 PM CST | **Total:** 29
 
 ---
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/04/lytenlogo-150x150.jpg" alt="Lyten" width="50"> | Lyten | Senior Manager, Plasma Science & Innovation | Jan 08, 2026 04:22 PM CST | [Apply](https://researchpark.illinois.edu/job/senior-manager-plasma-science-innovation/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png" alt="Rivian" width="50"> | Rivian | Embedded Systems Software – Rivian – Motor Controls Development | Jan 07, 2026 11:52 AM CST | [Apply](https://researchpark.illinois.edu/job/embedded-systems-software-rivian-motor-controls-development/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png" alt="Rivian" width="50"> | Rivian | Embedded Systems Software – Rivian – Inverter Build System | Jan 07, 2026 11:42 AM CST | [Apply](https://researchpark.illinois.edu/job/embedded-systems-software-rivian-inverter-build-system/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg" alt="ADM" width="50"> | ADM | Food Scientist (Bakery) | Dec 17, 2025 12:37 PM CST | [Apply](https://researchpark.illinois.edu/job/food-scientist-bakery-adm/) |
@@ -40,7 +41,7 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Posting Time Distribution
 
-### Job Posting Times (Based on 28 postings)
+### Job Posting Times (Based on 29 postings)
 
 ```
 Jobs
@@ -51,6 +52,7 @@ Jobs
   1 PM │█████████████████ 3
   2 PM │████████████████████████████████████████ 7
   3 PM │████████████████████████████ 5
+  4 PM │█████ 1
   5 PM │█████ 1
        └────────────────────────────────────────
         0                                       7

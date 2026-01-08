@@ -1,5 +1,25 @@
 [
   {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47726",
+    "company": "Lyten",
+    "position": "Senior Manager, Plasma Science & Innovation",
+    "link": "https://researchpark.illinois.edu/job/senior-manager-plasma-science-innovation/",
+    "posted_date": "Thu, 08 Jan 2026 22:22:10 +0000",
+    "published_parsed": [
+      2026,
+      1,
+      8,
+      22,
+      22,
+      10,
+      3,
+      8,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/04/lytenlogo-150x150.jpg",
+    "discovered_date": "2026-01-08T22:50:59.752988"
+  },
+  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47721",
     "company": "Rivian",
     "position": "Embedded Systems Software \u2013 Rivian \u2013 Motor Controls Development",
