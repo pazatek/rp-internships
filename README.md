@@ -2,12 +2,13 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** January 09, 2026 at 01:27 PM CST | **Total:** 31
+**Updated:** January 09, 2026 at 02:35 PM CST | **Total:** 32
 
 ---
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/03/boston-bioprocess-logo-e1741364276860-150x150.png" alt="Boston Bioprocess" width="50"> | Boston Bioprocess | Contract Software Sales Associate | Jan 09, 2026 02:24 PM CST | [Apply](https://researchpark.illinois.edu/job/contract-software-sales-associate/) |
 | ??? | Caterpillar | Data Analysis Senior Engineer – Structure Simulation | Jan 09, 2026 01:02 PM CST | [Apply](https://researchpark.illinois.edu/job/data-analysis-senior-engineer-structure-simulation/) |
 | ??? | Littelfuse | RISE Rotational Engineer — Electrical | Jan 09, 2026 12:56 PM CST | [Apply](https://researchpark.illinois.edu/job/rise-rotational-engineer-electrical-3/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/06/3x2-Logo-Electric-Power-Engineers-01.jpg" alt="Electric Power Engineers" width="50"> | Electric Power Engineers | Distribution Design Engineer | Jan 08, 2026 04:43 PM CST | [Apply](https://researchpark.illinois.edu/job/distribution-design-engineer/) |
@@ -43,21 +44,21 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Posting Time Distribution
 
-### Job Posting Times (Based on 31 postings)
+### Job Posting Times (Based on 32 postings)
 
 ```
 Jobs
 
- 10 AM │█████████████████ 3
- 11 AM │████████████████████████████████████████ 7
- 12 PM │███████████ 2
-  1 PM │██████████████████████ 4
-  2 PM │████████████████████████████████████████ 7
-  3 PM │████████████████████████████ 5
-  4 PM │███████████ 2
+ 10 AM │███████████████ 3
+ 11 AM │███████████████████████████████████ 7
+ 12 PM │██████████ 2
+  1 PM │████████████████████ 4
+  2 PM │████████████████████████████████████████ 8
+  3 PM │█████████████████████████ 5
+  4 PM │██████████ 2
   5 PM │█████ 1
        └────────────────────────────────────────
-        0                                       7
+        0                                       8
 ```
 
 

@@ -1,5 +1,25 @@
 [
   {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47207",
+    "company": "Boston Bioprocess",
+    "position": "Contract Software Sales Associate",
+    "link": "https://researchpark.illinois.edu/job/contract-software-sales-associate/",
+    "posted_date": "Fri, 09 Jan 2026 20:24:43 +0000",
+    "published_parsed": [
+      2026,
+      1,
+      9,
+      20,
+      24,
+      43,
+      4,
+      9,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/03/boston-bioprocess-logo-e1741364276860-150x150.png",
+    "discovered_date": "2026-01-09T20:35:07.162967"
+  },
+  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47738",
     "company": "Caterpillar",
     "position": "Data Analysis Senior Engineer \u2013 Structure Simulation",
