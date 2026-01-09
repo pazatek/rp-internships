@@ -2,18 +2,19 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** January 08, 2026 at 05:25 PM CST | **Total:** 30
+**Updated:** January 09, 2026 at 01:27 PM CST | **Total:** 31
 
 ---
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
+| ??? | Caterpillar | Data Analysis Senior Engineer – Structure Simulation | Jan 09, 2026 01:02 PM CST | [Apply](https://researchpark.illinois.edu/job/data-analysis-senior-engineer-structure-simulation/) |
+| ??? | Littelfuse | RISE Rotational Engineer — Electrical | Jan 09, 2026 12:56 PM CST | [Apply](https://researchpark.illinois.edu/job/rise-rotational-engineer-electrical-3/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/06/3x2-Logo-Electric-Power-Engineers-01.jpg" alt="Electric Power Engineers" width="50"> | Electric Power Engineers | Distribution Design Engineer | Jan 08, 2026 04:43 PM CST | [Apply](https://researchpark.illinois.edu/job/distribution-design-engineer/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/04/lytenlogo-150x150.jpg" alt="Lyten" width="50"> | Lyten | Senior Manager, Plasma Science & Innovation | Jan 08, 2026 04:22 PM CST | [Apply](https://researchpark.illinois.edu/job/senior-manager-plasma-science-innovation/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png" alt="Rivian" width="50"> | Rivian | Embedded Systems Software – Rivian – Motor Controls Development | Jan 07, 2026 11:52 AM CST | [Apply](https://researchpark.illinois.edu/job/embedded-systems-software-rivian-motor-controls-development/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png" alt="Rivian" width="50"> | Rivian | Embedded Systems Software – Rivian – Inverter Build System | Jan 07, 2026 11:42 AM CST | [Apply](https://researchpark.illinois.edu/job/embedded-systems-software-rivian-inverter-build-system/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg" alt="ADM" width="50"> | ADM | Food Scientist (Bakery) | Dec 17, 2025 12:37 PM CST | [Apply](https://researchpark.illinois.edu/job/food-scientist-bakery-adm/) |
-| <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg" alt="ADM" width="50"> | ADM | Senior Engineer, Technoeconomic Analyses | Dec 17, 2025 12:31 PM CST | [Apply](https://researchpark.illinois.edu/job/senior-engineer-technoeconomic-analyses-adm/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="Synchrony" width="50"> | Synchrony | Emerging Technology Intern – Business, Marketing, Consulting Summer 2026 | Dec 17, 2025 11:32 AM CST | [Apply](https://researchpark.illinois.edu/job/emerging-technology-intern-business-marketing-consulting-summer-2026/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="Synchrony" width="50"> | Synchrony | Emerging Technology Intern – Technology, Engineering, Design Summer 2026 | Dec 17, 2025 11:29 AM CST | [Apply](https://researchpark.illinois.edu/job/emerging-technology-intern-technology-engineering-design-summer-2026/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="Synchrony" width="50"> | Synchrony | Emerging Technology Intern – Data Analytics Capabilities Summer 2026 | Dec 17, 2025 11:27 AM CST | [Apply](https://researchpark.illinois.edu/job/emerging-technology-intern-data-analytics-capabilities-summer-2026/) |
@@ -42,7 +43,7 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Posting Time Distribution
 
-### Job Posting Times (Based on 30 postings)
+### Job Posting Times (Based on 31 postings)
 
 ```
 Jobs
@@ -50,7 +51,7 @@ Jobs
  10 AM │█████████████████ 3
  11 AM │████████████████████████████████████████ 7
  12 PM │███████████ 2
-  1 PM │█████████████████ 3
+  1 PM │██████████████████████ 4
   2 PM │████████████████████████████████████████ 7
   3 PM │████████████████████████████ 5
   4 PM │███████████ 2

@@ -1,5 +1,45 @@
 [
   {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47738",
+    "company": "Caterpillar",
+    "position": "Data Analysis Senior Engineer \u2013 Structure Simulation",
+    "link": "https://researchpark.illinois.edu/job/data-analysis-senior-engineer-structure-simulation/",
+    "posted_date": "Fri, 09 Jan 2026 19:02:25 +0000",
+    "published_parsed": [
+      2026,
+      1,
+      9,
+      19,
+      2,
+      25,
+      4,
+      9,
+      0
+    ],
+    "logo_url": null,
+    "discovered_date": "2026-01-09T19:27:09.600463"
+  },
+  {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47736",
+    "company": "Littelfuse",
+    "position": "RISE Rotational Engineer \u2014 Electrical",
+    "link": "https://researchpark.illinois.edu/job/rise-rotational-engineer-electrical-3/",
+    "posted_date": "Fri, 09 Jan 2026 18:56:33 +0000",
+    "published_parsed": [
+      2026,
+      1,
+      9,
+      18,
+      56,
+      33,
+      4,
+      9,
+      0
+    ],
+    "logo_url": null,
+    "discovered_date": "2026-01-09T19:27:09.600471"
+  },
+  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47728",
     "company": "Electric Power Engineers",
     "position": "Distribution Design Engineer",
@@ -98,26 +138,6 @@
     ],
     "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg",
     "discovered_date": "2025-12-17T18:43:40.648251"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47505",
-    "company": "ADM",
-    "position": "Senior Engineer, Technoeconomic Analyses",
-    "link": "https://researchpark.illinois.edu/job/senior-engineer-technoeconomic-analyses-adm/",
-    "posted_date": "Wed, 17 Dec 2025 18:31:20 +0000",
-    "published_parsed": [
-      2025,
-      12,
-      17,
-      18,
-      31,
-      20,
-      2,
-      351,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg",
-    "discovered_date": "2025-12-17T18:43:40.648259"
   },
   {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47671",
