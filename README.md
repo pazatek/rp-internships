@@ -2,12 +2,14 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** January 09, 2026 at 02:35 PM CST | **Total:** 32
+**Updated:** January 12, 2026 at 11:31 AM CST | **Total:** 34
 
 ---
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2023/12/Cache-Energy-Logo-150x150.png" alt="Cache Energy" width="50"> | Cache Energy | Materials Performance Engineer | Jan 12, 2026 11:04 AM CST | [Apply](https://researchpark.illinois.edu/job/materials-performance-engineer/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2023/12/Cache-Energy-Logo-150x150.png" alt="Cache Energy" width="50"> | Cache Energy | Thermal Engineering Intern – CFD | Jan 12, 2026 11:02 AM CST | [Apply](https://researchpark.illinois.edu/job/thermal-engineering-intern-cfd/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/03/boston-bioprocess-logo-e1741364276860-150x150.png" alt="Boston Bioprocess" width="50"> | Boston Bioprocess | Contract Software Sales Associate | Jan 09, 2026 02:24 PM CST | [Apply](https://researchpark.illinois.edu/job/contract-software-sales-associate/) |
 | ??? | Caterpillar | Data Analysis Senior Engineer – Structure Simulation | Jan 09, 2026 01:02 PM CST | [Apply](https://researchpark.illinois.edu/job/data-analysis-senior-engineer-structure-simulation/) |
 | ??? | Littelfuse | RISE Rotational Engineer — Electrical | Jan 09, 2026 12:56 PM CST | [Apply](https://researchpark.illinois.edu/job/rise-rotational-engineer-electrical-3/) |
@@ -44,21 +46,21 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Posting Time Distribution
 
-### Job Posting Times (Based on 32 postings)
+### Job Posting Times (Based on 34 postings)
 
 ```
 Jobs
 
- 10 AM │███████████████ 3
- 11 AM │███████████████████████████████████ 7
- 12 PM │██████████ 2
-  1 PM │████████████████████ 4
-  2 PM │████████████████████████████████████████ 8
-  3 PM │█████████████████████████ 5
-  4 PM │██████████ 2
-  5 PM │█████ 1
+ 10 AM │█████████████ 3
+ 11 AM │████████████████████████████████████████ 9
+ 12 PM │████████ 2
+  1 PM │█████████████████ 4
+  2 PM │███████████████████████████████████ 8
+  3 PM │██████████████████████ 5
+  4 PM │████████ 2
+  5 PM │████ 1
        └────────────────────────────────────────
-        0                                       8
+        0                                       9
 ```
 
 

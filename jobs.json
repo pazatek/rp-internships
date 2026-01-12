@@ -1,5 +1,45 @@
 [
   {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46395",
+    "company": "Cache Energy",
+    "position": "Materials Performance Engineer",
+    "link": "https://researchpark.illinois.edu/job/materials-performance-engineer/",
+    "posted_date": "Mon, 12 Jan 2026 17:04:28 +0000",
+    "published_parsed": [
+      2026,
+      1,
+      12,
+      17,
+      4,
+      28,
+      0,
+      12,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2023/12/Cache-Energy-Logo-150x150.png",
+    "discovered_date": "2026-01-12T17:31:24.290355"
+  },
+  {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47707",
+    "company": "Cache Energy",
+    "position": "Thermal Engineering Intern \u2013 CFD",
+    "link": "https://researchpark.illinois.edu/job/thermal-engineering-intern-cfd/",
+    "posted_date": "Mon, 12 Jan 2026 17:02:51 +0000",
+    "published_parsed": [
+      2026,
+      1,
+      12,
+      17,
+      2,
+      51,
+      0,
+      12,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2023/12/Cache-Energy-Logo-150x150.png",
+    "discovered_date": "2026-01-12T17:31:24.290364"
+  },
+  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47207",
     "company": "Boston Bioprocess",
     "position": "Contract Software Sales Associate",
