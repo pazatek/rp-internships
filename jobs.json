@@ -1,5 +1,25 @@
 [
   {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47754",
+    "company": "Avea Robotics",
+    "position": "Founding Engineer (Robotics)",
+    "link": "https://researchpark.illinois.edu/job/founding-engineer-robotics/",
+    "posted_date": "Fri, 16 Jan 2026 17:30:32 +0000",
+    "published_parsed": [
+      2026,
+      1,
+      16,
+      17,
+      30,
+      32,
+      4,
+      16,
+      0
+    ],
+    "logo_url": null,
+    "discovered_date": "2026-01-16T17:31:47.265841"
+  },
+  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46395",
     "company": "Cache Energy",
     "position": "Materials Performance Engineer",

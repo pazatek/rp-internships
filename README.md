@@ -2,12 +2,13 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** January 12, 2026 at 11:31 AM CST | **Total:** 34
+**Updated:** January 16, 2026 at 11:31 AM CST | **Total:** 35
 
 ---
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
+| ??? | Avea Robotics | Founding Engineer (Robotics) | Jan 16, 2026 11:30 AM CST | [Apply](https://researchpark.illinois.edu/job/founding-engineer-robotics/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2023/12/Cache-Energy-Logo-150x150.png" alt="Cache Energy" width="50"> | Cache Energy | Materials Performance Engineer | Jan 12, 2026 11:04 AM CST | [Apply](https://researchpark.illinois.edu/job/materials-performance-engineer/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2023/12/Cache-Energy-Logo-150x150.png" alt="Cache Energy" width="50"> | Cache Energy | Thermal Engineering Intern – CFD | Jan 12, 2026 11:02 AM CST | [Apply](https://researchpark.illinois.edu/job/thermal-engineering-intern-cfd/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/03/boston-bioprocess-logo-e1741364276860-150x150.png" alt="Boston Bioprocess" width="50"> | Boston Bioprocess | Contract Software Sales Associate | Jan 09, 2026 02:24 PM CST | [Apply](https://researchpark.illinois.edu/job/contract-software-sales-associate/) |
@@ -46,21 +47,21 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Posting Time Distribution
 
-### Job Posting Times (Based on 34 postings)
+### Job Posting Times (Based on 35 postings)
 
 ```
 Jobs
 
- 10 AM │█████████████ 3
- 11 AM │████████████████████████████████████████ 9
+ 10 AM │████████████ 3
+ 11 AM │████████████████████████████████████████ 10
  12 PM │████████ 2
-  1 PM │█████████████████ 4
-  2 PM │███████████████████████████████████ 8
-  3 PM │██████████████████████ 5
+  1 PM │████████████████ 4
+  2 PM │████████████████████████████████ 8
+  3 PM │████████████████████ 5
   4 PM │████████ 2
   5 PM │████ 1
        └────────────────────────────────────────
-        0                                       9
+        0                                       10
 ```
 
 
