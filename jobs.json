@@ -1,5 +1,25 @@
 [
   {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47534",
+    "company": "John Deere",
+    "position": "Part-Time Student- Software Engineer",
+    "link": "https://researchpark.illinois.edu/job/part-time-student-sophormore-engineer/",
+    "posted_date": "Tue, 20 Jan 2026 21:39:23 +0000",
+    "published_parsed": [
+      2026,
+      1,
+      20,
+      21,
+      39,
+      23,
+      1,
+      20,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png",
+    "discovered_date": "2026-01-20T22:30:23.696589"
+  },
+  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47754",
     "company": "Avea Robotics",
     "position": "Founding Engineer (Robotics)",
@@ -200,26 +220,6 @@
     "discovered_date": "2026-01-07T17:57:36.121585"
   },
   {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47474",
-    "company": "ADM",
-    "position": "Food Scientist (Bakery)",
-    "link": "https://researchpark.illinois.edu/job/food-scientist-bakery-adm/",
-    "posted_date": "Wed, 17 Dec 2025 18:37:35 +0000",
-    "published_parsed": [
-      2025,
-      12,
-      17,
-      18,
-      37,
-      35,
-      2,
-      351,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg",
-    "discovered_date": "2025-12-17T18:43:40.648251"
-  },
-  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47671",
     "company": "Synchrony",
     "position": "Emerging Technology Intern \u2013 Business, Marketing, Consulting Summer 2026",
@@ -340,26 +340,6 @@
     "discovered_date": "2025-12-16T22:45:36.584026"
   },
   {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47665",
-    "company": "NVIDIA",
-    "position": "Lead System Software Engineer, CPU and GPU Performance Visualization Tools",
-    "link": "https://researchpark.illinois.edu/job/lead-system-software-engineer-cpu-and-gpu-performance-visualization-tools/",
-    "posted_date": "Tue, 16 Dec 2025 21:18:24 +0000",
-    "published_parsed": [
-      2025,
-      12,
-      16,
-      21,
-      18,
-      24,
-      1,
-      350,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg",
-    "discovered_date": "2025-12-16T21:46:44.995063"
-  },
-  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47664",
     "company": "NVIDIA",
     "position": "Senior Research Scientist, System Software and I/O Architecture",
@@ -440,26 +420,6 @@
     "discovered_date": "2025-12-16T21:28:51.848666"
   },
   {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47660",
-    "company": "MSA",
-    "position": "Water Engineering Intern",
-    "link": "https://researchpark.illinois.edu/job/water-engineering-intern/",
-    "posted_date": "Tue, 16 Dec 2025 20:24:18 +0000",
-    "published_parsed": [
-      2025,
-      12,
-      16,
-      20,
-      24,
-      18,
-      1,
-      350,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-riverbed-2x2-1-150x150.jpg",
-    "discovered_date": "2025-12-16T20:56:18.309711"
-  },
-  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47658",
     "company": "MSA",
     "position": "Project Engineer Public Works",
@@ -478,46 +438,6 @@
     ],
     "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-riverbed-2x2-1-150x150.jpg",
     "discovered_date": "2025-12-16T20:56:18.309719"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47657",
-    "company": "MSA",
-    "position": "Senior Project Manager Engineering (Public Works)",
-    "link": "https://researchpark.illinois.edu/job/senior-project-manager-engineering-public-works/",
-    "posted_date": "Tue, 16 Dec 2025 20:07:00 +0000",
-    "published_parsed": [
-      2025,
-      12,
-      16,
-      20,
-      7,
-      0,
-      1,
-      350,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-riverbed-2x2-1-150x150.jpg",
-    "discovered_date": "2025-12-16T20:56:18.309721"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47654",
-    "company": "Riverbed",
-    "position": "Developer Tools / Product Build Engineer",
-    "link": "https://researchpark.illinois.edu/job/developer-tools-product-build-engineer/",
-    "posted_date": "Tue, 16 Dec 2025 19:20:25 +0000",
-    "published_parsed": [
-      2025,
-      12,
-      16,
-      19,
-      20,
-      25,
-      1,
-      350,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-riverbed-2x2-1-150x150.jpg",
-    "discovered_date": "2025-12-16T19:54:05.911896"
   },
   {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47643",

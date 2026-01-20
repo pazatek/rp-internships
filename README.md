@@ -2,12 +2,13 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** January 16, 2026 at 11:31 AM CST | **Total:** 35
+**Updated:** January 20, 2026 at 04:30 PM CST | **Total:** 31
 
 ---
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="John Deere" width="50"> | John Deere | Part-Time Student- Software Engineer | Jan 20, 2026 03:39 PM CST | [Apply](https://researchpark.illinois.edu/job/part-time-student-sophormore-engineer/) |
 | ??? | Avea Robotics | Founding Engineer (Robotics) | Jan 16, 2026 11:30 AM CST | [Apply](https://researchpark.illinois.edu/job/founding-engineer-robotics/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2023/12/Cache-Energy-Logo-150x150.png" alt="Cache Energy" width="50"> | Cache Energy | Materials Performance Engineer | Jan 12, 2026 11:04 AM CST | [Apply](https://researchpark.illinois.edu/job/materials-performance-engineer/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2023/12/Cache-Energy-Logo-150x150.png" alt="Cache Energy" width="50"> | Cache Energy | Thermal Engineering Intern – CFD | Jan 12, 2026 11:02 AM CST | [Apply](https://researchpark.illinois.edu/job/thermal-engineering-intern-cfd/) |
@@ -18,22 +19,17 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/04/lytenlogo-150x150.jpg" alt="Lyten" width="50"> | Lyten | Senior Manager, Plasma Science & Innovation | Jan 08, 2026 04:22 PM CST | [Apply](https://researchpark.illinois.edu/job/senior-manager-plasma-science-innovation/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png" alt="Rivian" width="50"> | Rivian | Embedded Systems Software – Rivian – Motor Controls Development | Jan 07, 2026 11:52 AM CST | [Apply](https://researchpark.illinois.edu/job/embedded-systems-software-rivian-motor-controls-development/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2021/08/3x2-Logo-_Rivian-150x150.png" alt="Rivian" width="50"> | Rivian | Embedded Systems Software – Rivian – Inverter Build System | Jan 07, 2026 11:42 AM CST | [Apply](https://researchpark.illinois.edu/job/embedded-systems-software-rivian-inverter-build-system/) |
-| <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg" alt="ADM" width="50"> | ADM | Food Scientist (Bakery) | Dec 17, 2025 12:37 PM CST | [Apply](https://researchpark.illinois.edu/job/food-scientist-bakery-adm/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="Synchrony" width="50"> | Synchrony | Emerging Technology Intern – Business, Marketing, Consulting Summer 2026 | Dec 17, 2025 11:32 AM CST | [Apply](https://researchpark.illinois.edu/job/emerging-technology-intern-business-marketing-consulting-summer-2026/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="Synchrony" width="50"> | Synchrony | Emerging Technology Intern – Technology, Engineering, Design Summer 2026 | Dec 17, 2025 11:29 AM CST | [Apply](https://researchpark.illinois.edu/job/emerging-technology-intern-technology-engineering-design-summer-2026/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="Synchrony" width="50"> | Synchrony | Emerging Technology Intern – Data Analytics Capabilities Summer 2026 | Dec 17, 2025 11:27 AM CST | [Apply](https://researchpark.illinois.edu/job/emerging-technology-intern-data-analytics-capabilities-summer-2026/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="Electric Power Engineers" width="50"> | Electric Power Engineers | Power Systems Engineer Intern – Summer | Dec 17, 2025 10:23 AM CST | [Apply](https://researchpark.illinois.edu/job/power-systems-engineer-intern-summer/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/01/Research-Park-Logo-Square-150x150.png" alt="Research Park" width="50"> | Research Park | Communications Intern | Dec 17, 2025 10:06 AM CST | [Apply](https://researchpark.illinois.edu/job/uirp-communications-intern/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="Office of the Vice Chancellor for Research and Innovation, University of Illinois Urbana Champaign" width="50"> | Office of the Vice Chancellor for Research and Innovation, University of Illinois Urbana Champaign | Director, Sponsored Programs Administration Pre-Award | Dec 16, 2025 03:49 PM CST | [Apply](https://researchpark.illinois.edu/job/director-sponsored-programs-administration-pre-award/) |
-| <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="NVIDIA" width="50"> | NVIDIA | Lead System Software Engineer, CPU and GPU Performance Visualization Tools | Dec 16, 2025 03:18 PM CST | [Apply](https://researchpark.illinois.edu/job/lead-system-software-engineer-cpu-and-gpu-performance-visualization-tools/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="NVIDIA" width="50"> | NVIDIA | Senior Research Scientist, System Software and I/O Architecture | Dec 16, 2025 03:12 PM CST | [Apply](https://researchpark.illinois.edu/job/senior-research-scientist-system-software-and-i-o-architecture/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="NVIDIA" width="50"> | NVIDIA | Principal Systems Software Engineer | Dec 16, 2025 03:03 PM CST | [Apply](https://researchpark.illinois.edu/job/principal-systems-software-engineer/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="NVIDIA" width="50"> | NVIDIA | Distinguished Engineer, Apache Spark | Dec 16, 2025 02:56 PM CST | [Apply](https://researchpark.illinois.edu/job/distinguished-engineer-apache-spark/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="NVIDIA" width="50"> | NVIDIA | Senior C++ and Build Engineer – DC System Software | Dec 16, 2025 02:46 PM CST | [Apply](https://researchpark.illinois.edu/job/senior-c-and-build-engineer-dc-system-software/) |
-| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-riverbed-2x2-1-150x150.jpg" alt="MSA" width="50"> | MSA | Water Engineering Intern | Dec 16, 2025 02:24 PM CST | [Apply](https://researchpark.illinois.edu/job/water-engineering-intern/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-riverbed-2x2-1-150x150.jpg" alt="MSA" width="50"> | MSA | Project Engineer Public Works | Dec 16, 2025 02:14 PM CST | [Apply](https://researchpark.illinois.edu/job/project-engineer-public-works/) |
-| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-riverbed-2x2-1-150x150.jpg" alt="MSA" width="50"> | MSA | Senior Project Manager Engineering (Public Works) | Dec 16, 2025 02:07 PM CST | [Apply](https://researchpark.illinois.edu/job/senior-project-manager-engineering-public-works/) |
-| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-riverbed-2x2-1-150x150.jpg" alt="Riverbed" width="50"> | Riverbed | Developer Tools / Product Build Engineer | Dec 16, 2025 01:20 PM CST | [Apply](https://researchpark.illinois.edu/job/developer-tools-product-build-engineer/) |
 | ??? | Littelfuse | Technical Marketing Engineer | Dec 15, 2025 11:34 AM CST | [Apply](https://researchpark.illinois.edu/job/technical-marketing-engineer/) |
 | ??? | Mondelēz International | R&D Product Development Intern | Dec 15, 2025 11:14 AM CST | [Apply](https://researchpark.illinois.edu/job/product-development-intern/) |
 | ??? | Mondelēz International | Extended Reality Intern | Dec 15, 2025 10:49 AM CST | [Apply](https://researchpark.illinois.edu/job/extended-reality-intern/) |
@@ -47,16 +43,16 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Posting Time Distribution
 
-### Job Posting Times (Based on 35 postings)
+### Job Posting Times (Based on 31 postings)
 
 ```
 Jobs
 
  10 AM │████████████ 3
  11 AM │████████████████████████████████████████ 10
- 12 PM │████████ 2
-  1 PM │████████████████ 4
-  2 PM │████████████████████████████████ 8
+ 12 PM │████ 1
+  1 PM │████████████ 3
+  2 PM │████████████████████████ 6
   3 PM │████████████████████ 5
   4 PM │████████ 2
   5 PM │████ 1
