@@ -1,5 +1,125 @@
 [
   {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47805",
+    "company": "Kocree",
+    "position": "Business Development Intern- Kocree",
+    "link": "https://researchpark.illinois.edu/job/business-development-intern-kocree/",
+    "posted_date": "Fri, 23 Jan 2026 17:02:35 +0000",
+    "published_parsed": [
+      2026,
+      1,
+      23,
+      17,
+      2,
+      35,
+      4,
+      23,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png",
+    "discovered_date": "2026-01-23T17:32:11.593579"
+  },
+  {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47804",
+    "company": "Kocree",
+    "position": "Business Development- Kocree",
+    "link": "https://researchpark.illinois.edu/job/business-development-kocree/",
+    "posted_date": "Fri, 23 Jan 2026 17:01:27 +0000",
+    "published_parsed": [
+      2026,
+      1,
+      23,
+      17,
+      1,
+      27,
+      4,
+      23,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png",
+    "discovered_date": "2026-01-23T17:32:11.593590"
+  },
+  {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47801",
+    "company": "Kocree",
+    "position": "Full-Stack System Architect Intern- Kocree",
+    "link": "https://researchpark.illinois.edu/job/full-stack-system-architect-intern-kocree/",
+    "posted_date": "Fri, 23 Jan 2026 16:57:30 +0000",
+    "published_parsed": [
+      2026,
+      1,
+      23,
+      16,
+      57,
+      30,
+      4,
+      23,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png",
+    "discovered_date": "2026-01-23T17:32:11.593592"
+  },
+  {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47803",
+    "company": "Kocree",
+    "position": "Blockchain Developer Intern- Kocree",
+    "link": "https://researchpark.illinois.edu/job/blockchain-developer-intern-kocree/",
+    "posted_date": "Fri, 23 Jan 2026 16:57:08 +0000",
+    "published_parsed": [
+      2026,
+      1,
+      23,
+      16,
+      57,
+      8,
+      4,
+      23,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png",
+    "discovered_date": "2026-01-23T17:32:11.593594"
+  },
+  {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47802",
+    "company": "Kocree",
+    "position": "Blockchain Developer- Kocree",
+    "link": "https://researchpark.illinois.edu/job/blockchain-developer-kocree/",
+    "posted_date": "Fri, 23 Jan 2026 16:56:51 +0000",
+    "published_parsed": [
+      2026,
+      1,
+      23,
+      16,
+      56,
+      51,
+      4,
+      23,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png",
+    "discovered_date": "2026-01-23T17:32:11.593596"
+  },
+  {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47800",
+    "company": "Kocree",
+    "position": "Full-Stack System Architect \u2013 Kocree",
+    "link": "https://researchpark.illinois.edu/job/full-stack-system-architect-kocree/",
+    "posted_date": "Fri, 23 Jan 2026 16:55:52 +0000",
+    "published_parsed": [
+      2026,
+      1,
+      23,
+      16,
+      55,
+      52,
+      4,
+      23,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png",
+    "discovered_date": "2026-01-23T17:32:11.593597"
+  },
+  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47534",
     "company": "John Deere",
     "position": "Part-Time Student- Software Engineer",
@@ -98,26 +218,6 @@
     ],
     "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/03/boston-bioprocess-logo-e1741364276860-150x150.png",
     "discovered_date": "2026-01-09T20:35:07.162967"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47738",
-    "company": "Caterpillar",
-    "position": "Data Analysis Senior Engineer \u2013 Structure Simulation",
-    "link": "https://researchpark.illinois.edu/job/data-analysis-senior-engineer-structure-simulation/",
-    "posted_date": "Fri, 09 Jan 2026 19:02:25 +0000",
-    "published_parsed": [
-      2026,
-      1,
-      9,
-      19,
-      2,
-      25,
-      4,
-      9,
-      0
-    ],
-    "logo_url": null,
-    "discovered_date": "2026-01-09T19:27:09.600463"
   },
   {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47736",

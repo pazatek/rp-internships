@@ -2,18 +2,23 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** January 20, 2026 at 04:30 PM CST | **Total:** 31
+**Updated:** January 23, 2026 at 11:32 AM CST | **Total:** 36
 
 ---
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="Kocree" width="50"> | Kocree | Business Development Intern- Kocree | Jan 23, 2026 11:02 AM CST | [Apply](https://researchpark.illinois.edu/job/business-development-intern-kocree/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="Kocree" width="50"> | Kocree | Business Development- Kocree | Jan 23, 2026 11:01 AM CST | [Apply](https://researchpark.illinois.edu/job/business-development-kocree/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="Kocree" width="50"> | Kocree | Full-Stack System Architect Intern- Kocree | Jan 23, 2026 10:57 AM CST | [Apply](https://researchpark.illinois.edu/job/full-stack-system-architect-intern-kocree/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="Kocree" width="50"> | Kocree | Blockchain Developer Intern- Kocree | Jan 23, 2026 10:57 AM CST | [Apply](https://researchpark.illinois.edu/job/blockchain-developer-intern-kocree/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="Kocree" width="50"> | Kocree | Blockchain Developer- Kocree | Jan 23, 2026 10:56 AM CST | [Apply](https://researchpark.illinois.edu/job/blockchain-developer-kocree/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="Kocree" width="50"> | Kocree | Full-Stack System Architect – Kocree | Jan 23, 2026 10:55 AM CST | [Apply](https://researchpark.illinois.edu/job/full-stack-system-architect-kocree/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="John Deere" width="50"> | John Deere | Part-Time Student- Software Engineer | Jan 20, 2026 03:39 PM CST | [Apply](https://researchpark.illinois.edu/job/part-time-student-sophormore-engineer/) |
 | ??? | Avea Robotics | Founding Engineer (Robotics) | Jan 16, 2026 11:30 AM CST | [Apply](https://researchpark.illinois.edu/job/founding-engineer-robotics/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2023/12/Cache-Energy-Logo-150x150.png" alt="Cache Energy" width="50"> | Cache Energy | Materials Performance Engineer | Jan 12, 2026 11:04 AM CST | [Apply](https://researchpark.illinois.edu/job/materials-performance-engineer/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2023/12/Cache-Energy-Logo-150x150.png" alt="Cache Energy" width="50"> | Cache Energy | Thermal Engineering Intern – CFD | Jan 12, 2026 11:02 AM CST | [Apply](https://researchpark.illinois.edu/job/thermal-engineering-intern-cfd/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/03/boston-bioprocess-logo-e1741364276860-150x150.png" alt="Boston Bioprocess" width="50"> | Boston Bioprocess | Contract Software Sales Associate | Jan 09, 2026 02:24 PM CST | [Apply](https://researchpark.illinois.edu/job/contract-software-sales-associate/) |
-| ??? | Caterpillar | Data Analysis Senior Engineer – Structure Simulation | Jan 09, 2026 01:02 PM CST | [Apply](https://researchpark.illinois.edu/job/data-analysis-senior-engineer-structure-simulation/) |
 | ??? | Littelfuse | RISE Rotational Engineer — Electrical | Jan 09, 2026 12:56 PM CST | [Apply](https://researchpark.illinois.edu/job/rise-rotational-engineer-electrical-3/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2024/06/3x2-Logo-Electric-Power-Engineers-01.jpg" alt="Electric Power Engineers" width="50"> | Electric Power Engineers | Distribution Design Engineer | Jan 08, 2026 04:43 PM CST | [Apply](https://researchpark.illinois.edu/job/distribution-design-engineer/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/04/lytenlogo-150x150.jpg" alt="Lyten" width="50"> | Lyten | Senior Manager, Plasma Science & Innovation | Jan 08, 2026 04:22 PM CST | [Apply](https://researchpark.illinois.edu/job/senior-manager-plasma-science-innovation/) |
@@ -43,21 +48,21 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Posting Time Distribution
 
-### Job Posting Times (Based on 31 postings)
+### Job Posting Times (Based on 36 postings)
 
 ```
 Jobs
 
- 10 AM │████████████ 3
- 11 AM │████████████████████████████████████████ 10
- 12 PM │████ 1
-  1 PM │████████████ 3
-  2 PM │████████████████████████ 6
-  3 PM │████████████████████ 5
-  4 PM │████████ 2
-  5 PM │████ 1
+ 10 AM │███████████████████████ 7
+ 11 AM │████████████████████████████████████████ 12
+ 12 PM │███ 1
+  1 PM │██████ 2
+  2 PM │████████████████████ 6
+  3 PM │████████████████ 5
+  4 PM │██████ 2
+  5 PM │███ 1
        └────────────────────────────────────────
-        0                                       10
+        0                                       12
 ```
 
 
