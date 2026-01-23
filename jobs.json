@@ -1,8 +1,28 @@
 [
   {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47806",
+    "company": "Boston Bioprocess",
+    "position": "Contract Bioprocess Associate",
+    "link": "https://researchpark.illinois.edu/job/contract-bioprocess-associate-2/",
+    "posted_date": "Fri, 23 Jan 2026 21:55:29 +0000",
+    "published_parsed": [
+      2026,
+      1,
+      23,
+      21,
+      55,
+      29,
+      4,
+      23,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg",
+    "discovered_date": "2026-01-23T22:47:22.496165"
+  },
+  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47805",
     "company": "Kocree",
-    "position": "Business Development Intern- Kocree",
+    "position": "Business Development Intern",
     "link": "https://researchpark.illinois.edu/job/business-development-intern-kocree/",
     "posted_date": "Fri, 23 Jan 2026 17:02:35 +0000",
     "published_parsed": [
@@ -22,7 +42,7 @@
   {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47804",
     "company": "Kocree",
-    "position": "Business Development- Kocree",
+    "position": "Business Development",
     "link": "https://researchpark.illinois.edu/job/business-development-kocree/",
     "posted_date": "Fri, 23 Jan 2026 17:01:27 +0000",
     "published_parsed": [
@@ -42,7 +62,7 @@
   {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47801",
     "company": "Kocree",
-    "position": "Full-Stack System Architect Intern- Kocree",
+    "position": "Full-Stack System Architect Intern",
     "link": "https://researchpark.illinois.edu/job/full-stack-system-architect-intern-kocree/",
     "posted_date": "Fri, 23 Jan 2026 16:57:30 +0000",
     "published_parsed": [
@@ -62,7 +82,7 @@
   {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47803",
     "company": "Kocree",
-    "position": "Blockchain Developer Intern- Kocree",
+    "position": "Blockchain Developer Intern",
     "link": "https://researchpark.illinois.edu/job/blockchain-developer-intern-kocree/",
     "posted_date": "Fri, 23 Jan 2026 16:57:08 +0000",
     "published_parsed": [
@@ -82,7 +102,7 @@
   {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47802",
     "company": "Kocree",
-    "position": "Blockchain Developer- Kocree",
+    "position": "Blockchain Developer",
     "link": "https://researchpark.illinois.edu/job/blockchain-developer-kocree/",
     "posted_date": "Fri, 23 Jan 2026 16:56:51 +0000",
     "published_parsed": [
@@ -102,7 +122,7 @@
   {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47800",
     "company": "Kocree",
-    "position": "Full-Stack System Architect \u2013 Kocree",
+    "position": "Full-Stack System Architect",
     "link": "https://researchpark.illinois.edu/job/full-stack-system-architect-kocree/",
     "posted_date": "Fri, 23 Jan 2026 16:55:52 +0000",
     "published_parsed": [

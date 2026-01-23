@@ -2,18 +2,19 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** January 23, 2026 at 11:32 AM CST | **Total:** 36
+**Updated:** January 23, 2026 at 04:47 PM CST | **Total:** 37
 
 ---
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
-| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="Kocree" width="50"> | Kocree | Business Development Intern- Kocree | Jan 23, 2026 11:02 AM CST | [Apply](https://researchpark.illinois.edu/job/business-development-intern-kocree/) |
-| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="Kocree" width="50"> | Kocree | Business Development- Kocree | Jan 23, 2026 11:01 AM CST | [Apply](https://researchpark.illinois.edu/job/business-development-kocree/) |
-| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="Kocree" width="50"> | Kocree | Full-Stack System Architect Intern- Kocree | Jan 23, 2026 10:57 AM CST | [Apply](https://researchpark.illinois.edu/job/full-stack-system-architect-intern-kocree/) |
-| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="Kocree" width="50"> | Kocree | Blockchain Developer Intern- Kocree | Jan 23, 2026 10:57 AM CST | [Apply](https://researchpark.illinois.edu/job/blockchain-developer-intern-kocree/) |
-| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="Kocree" width="50"> | Kocree | Blockchain Developer- Kocree | Jan 23, 2026 10:56 AM CST | [Apply](https://researchpark.illinois.edu/job/blockchain-developer-kocree/) |
-| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="Kocree" width="50"> | Kocree | Full-Stack System Architect – Kocree | Jan 23, 2026 10:55 AM CST | [Apply](https://researchpark.illinois.edu/job/full-stack-system-architect-kocree/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg" alt="Boston Bioprocess" width="50"> | Boston Bioprocess | Contract Bioprocess Associate | Jan 23, 2026 03:55 PM CST | [Apply](https://researchpark.illinois.edu/job/contract-bioprocess-associate-2/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="Kocree" width="50"> | Kocree | Business Development Intern | Jan 23, 2026 11:02 AM CST | [Apply](https://researchpark.illinois.edu/job/business-development-intern-kocree/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="Kocree" width="50"> | Kocree | Business Development | Jan 23, 2026 11:01 AM CST | [Apply](https://researchpark.illinois.edu/job/business-development-kocree/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="Kocree" width="50"> | Kocree | Full-Stack System Architect Intern | Jan 23, 2026 10:57 AM CST | [Apply](https://researchpark.illinois.edu/job/full-stack-system-architect-intern-kocree/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="Kocree" width="50"> | Kocree | Blockchain Developer Intern | Jan 23, 2026 10:57 AM CST | [Apply](https://researchpark.illinois.edu/job/blockchain-developer-intern-kocree/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="Kocree" width="50"> | Kocree | Blockchain Developer | Jan 23, 2026 10:56 AM CST | [Apply](https://researchpark.illinois.edu/job/blockchain-developer-kocree/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="Kocree" width="50"> | Kocree | Full-Stack System Architect | Jan 23, 2026 10:55 AM CST | [Apply](https://researchpark.illinois.edu/job/full-stack-system-architect-kocree/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="John Deere" width="50"> | John Deere | Part-Time Student- Software Engineer | Jan 20, 2026 03:39 PM CST | [Apply](https://researchpark.illinois.edu/job/part-time-student-sophormore-engineer/) |
 | ??? | Avea Robotics | Founding Engineer (Robotics) | Jan 16, 2026 11:30 AM CST | [Apply](https://researchpark.illinois.edu/job/founding-engineer-robotics/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2023/12/Cache-Energy-Logo-150x150.png" alt="Cache Energy" width="50"> | Cache Energy | Materials Performance Engineer | Jan 12, 2026 11:04 AM CST | [Apply](https://researchpark.illinois.edu/job/materials-performance-engineer/) |
@@ -48,7 +49,7 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Posting Time Distribution
 
-### Job Posting Times (Based on 36 postings)
+### Job Posting Times (Based on 37 postings)
 
 ```
 Jobs
@@ -58,7 +59,7 @@ Jobs
  12 PM │███ 1
   1 PM │██████ 2
   2 PM │████████████████████ 6
-  3 PM │████████████████ 5
+  3 PM │████████████████████ 6
   4 PM │██████ 2
   5 PM │███ 1
        └────────────────────────────────────────
