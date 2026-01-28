@@ -2,12 +2,14 @@
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
-**Updated:** January 23, 2026 at 04:47 PM CST | **Total:** 37
+**Updated:** January 28, 2026 at 11:40 AM CST | **Total:** 38
 
 ---
 
 | Logo | Company | Position | Posted | Link |
 | :---: | ------- | -------- | ------ | ---- |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg" alt="Dow" width="50"> | Dow | Data Engineer Internship Summer 2026 | Jan 28, 2026 11:15 AM CST | [Apply](https://researchpark.illinois.edu/job/data-engineer-internship-summer-2026/) |
+| <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg" alt="Dow" width="50"> | Dow | Data Platform Engineer Internship Summer 2026 | Jan 28, 2026 11:14 AM CST | [Apply](https://researchpark.illinois.edu/job/data-platform-engineer-internship-summer-2026/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg" alt="Boston Bioprocess" width="50"> | Boston Bioprocess | Contract Bioprocess Associate | Jan 23, 2026 03:55 PM CST | [Apply](https://researchpark.illinois.edu/job/contract-bioprocess-associate-2/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="Kocree" width="50"> | Kocree | Business Development Intern | Jan 23, 2026 11:02 AM CST | [Apply](https://researchpark.illinois.edu/job/business-development-intern-kocree/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png" alt="Kocree" width="50"> | Kocree | Business Development | Jan 23, 2026 11:01 AM CST | [Apply](https://researchpark.illinois.edu/job/business-development-kocree/) |
@@ -30,7 +32,6 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="Synchrony" width="50"> | Synchrony | Emerging Technology Intern – Data Analytics Capabilities Summer 2026 | Dec 17, 2025 11:27 AM CST | [Apply](https://researchpark.illinois.edu/job/emerging-technology-intern-data-analytics-capabilities-summer-2026/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="Electric Power Engineers" width="50"> | Electric Power Engineers | Power Systems Engineer Intern – Summer | Dec 17, 2025 10:23 AM CST | [Apply](https://researchpark.illinois.edu/job/power-systems-engineer-intern-summer/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/2025/01/Research-Park-Logo-Square-150x150.png" alt="Research Park" width="50"> | Research Park | Communications Intern | Dec 17, 2025 10:06 AM CST | [Apply](https://researchpark.illinois.edu/job/uirp-communications-intern/) |
-| <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="Office of the Vice Chancellor for Research and Innovation, University of Illinois Urbana Champaign" width="50"> | Office of the Vice Chancellor for Research and Innovation, University of Illinois Urbana Champaign | Director, Sponsored Programs Administration Pre-Award | Dec 16, 2025 03:49 PM CST | [Apply](https://researchpark.illinois.edu/job/director-sponsored-programs-administration-pre-award/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="NVIDIA" width="50"> | NVIDIA | Senior Research Scientist, System Software and I/O Architecture | Dec 16, 2025 03:12 PM CST | [Apply](https://researchpark.illinois.edu/job/senior-research-scientist-system-software-and-i-o-architecture/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="NVIDIA" width="50"> | NVIDIA | Principal Systems Software Engineer | Dec 16, 2025 03:03 PM CST | [Apply](https://researchpark.illinois.edu/job/principal-systems-software-engineer/) |
 | <img src="https://researchpark.illinois.edu/wp-content/uploads/job-manager-uploads/company_logo/2025/01/NVIDIA-Logo-150x150.jpg" alt="NVIDIA" width="50"> | NVIDIA | Distinguished Engineer, Apache Spark | Dec 16, 2025 02:56 PM CST | [Apply](https://researchpark.illinois.edu/job/distinguished-engineer-apache-spark/) |
@@ -49,21 +50,21 @@ Auto-updated job listings from the [University of Illinois Research Park](https:
 
 ## Posting Time Distribution
 
-### Job Posting Times (Based on 37 postings)
+### Job Posting Times (Based on 38 postings)
 
 ```
 Jobs
 
- 10 AM │███████████████████████ 7
- 11 AM │████████████████████████████████████████ 12
- 12 PM │███ 1
-  1 PM │██████ 2
-  2 PM │████████████████████ 6
-  3 PM │████████████████████ 6
-  4 PM │██████ 2
-  5 PM │███ 1
+ 10 AM │████████████████████ 7
+ 11 AM │████████████████████████████████████████ 14
+ 12 PM │██ 1
+  1 PM │█████ 2
+  2 PM │█████████████████ 6
+  3 PM │██████████████ 5
+  4 PM │█████ 2
+  5 PM │██ 1
        └────────────────────────────────────────
-        0                                       12
+        0                                       14
 ```
 
 
