@@ -1,25 +1,44 @@
 #!/usr/bin/env python3
 """
-Simple script that checks the Research Park job board and posts updates.
+Script that checks the Research Park job board and posts updates.
 Runs on GitHub Actions to notify people when new jobs get posted.
 """
 
 import json
-import ssl
-import urllib.request
+import logging
+import os
+import re
+import smtplib
+import time
 import urllib.error
+import urllib.request
 from datetime import datetime
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 from pathlib import Path
 from zoneinfo import ZoneInfo
+
 import feedparser
 from bs4 import BeautifulSoup
-import re
+
+from database import get_active_subscribers, init_db
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+)
+logger = logging.getLogger(__name__)
 
 RSS_FEED_URL = "https://researchpark.illinois.edu/?feed=job_feed"
 JOBS_FILE = "jobs.json"
-README_FILE = "README.md"
+README_FILE = "JOBS.md"
 
-README_TEMPLATE = """# UIUC Research Park Jobs
+JOBS_PER_PAGE = 10
+MAX_PAGES = 20
+FETCH_RETRIES = 2
+FETCH_RETRY_DELAY = 5
+
+README_TEMPLATE = """# UIUC Research Park Jobs List
 
 Auto-updated job listings from the [University of Illinois Research Park](https://researchpark.illinois.edu).
 
@@ -60,272 +79,208 @@ This repository automatically monitors the Research Park job feed and updates ev
 _Built with Python • Automated with GitHub Actions_
 """
 
-def load_existing_jobs():
+
+def load_existing_jobs() -> list[dict]:
     """Load jobs we already know about from the cache file."""
     if not Path(JOBS_FILE).exists():
         return []
-    with open(JOBS_FILE, 'r') as f:
+    with open(JOBS_FILE, "r") as f:
         return json.load(f)
 
-def save_jobs(jobs):
+
+def save_jobs(jobs: list[dict]) -> None:
     """Save the current job list to a file so we remember them next time."""
-    with open(JOBS_FILE, 'w') as f:
+    with open(JOBS_FILE, "w") as f:
         json.dump(jobs, f, indent=2)
 
-def fetch_rss_page(page=1):
-    """Grab one page of jobs from the RSS feed."""
+
+def fetch_rss_page(page: int = 1) -> feedparser.FeedParserDict | None:
+    """Grab one page of jobs from the RSS feed with retry logic."""
     url = f"{RSS_FEED_URL}&paged={page}" if page > 1 else RSS_FEED_URL
-    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-    
-    for use_ssl_verification in [True, False]:
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+
+    for attempt in range(1, FETCH_RETRIES + 2):
         try:
-            context = ssl.create_default_context() if use_ssl_verification else ssl._create_unverified_context()
-            with urllib.request.urlopen(req, context=context) as response:
+            with urllib.request.urlopen(req, timeout=15) as response:
                 return feedparser.parse(response.read())
         except Exception as e:
-            if not use_ssl_verification:
-                print(f"Error fetching RSS page {page}: {e}")
-                return None
+            logger.warning(
+                "Attempt %d/%d fetching RSS page %d failed: %s",
+                attempt,
+                FETCH_RETRIES + 1,
+                page,
+                e,
+            )
+            if attempt <= FETCH_RETRIES:
+                time.sleep(FETCH_RETRY_DELAY)
     return None
 
-def parse_job_board():
+
+def fetch_logo_for_job(company_name: str) -> str | None:
+    """
+    Fetch logo URL from the tenant directory page.
+
+    Slugifies company name to build the tenant directory URL,
+    then extracts the og:image meta tag.
+    """
+    tenant_slug = re.sub(r"[^a-z0-9]+", "-", company_name.lower()).strip("-")
+    tenant_url = f"https://researchpark.illinois.edu/tenant-directory/{tenant_slug}/"
+
+    try:
+        req = urllib.request.Request(
+            tenant_url, headers={"User-Agent": "Mozilla/5.0"}
+        )
+        with urllib.request.urlopen(req, timeout=10) as response:
+            html = response.read().decode("utf-8")
+            soup = BeautifulSoup(html, "html.parser")
+
+            og_image = soup.find("meta", property="og:image")
+            if og_image and og_image.get("content"):
+                return og_image["content"]
+    except Exception as e:
+        logger.debug("Could not fetch logo for %s from %s: %s", company_name, tenant_url, e)
+
+    return None
+
+
+def parse_job_board() -> list[dict]:
     """Go through all the pages of the job board and collect all the jobs."""
     jobs = []
     page = 1
-    max_pages = 20  # Safety limit
-    
-    while page <= max_pages:
+    logo_cache: dict[str, str | None] = {}
+
+    while page <= MAX_PAGES:
         feed = fetch_rss_page(page)
         if not feed or not feed.entries:
             break
-        
+
         page_jobs = []
         for entry in feed.entries:
-            company = entry.get('job_listing_company', 'N/A')
-            job_id = entry.get('guid', entry.link)
+            company = entry.get("job_listing_company", "N/A")
+            job_id = entry.get("guid", entry.link)
 
-            # Fetch logo for this job
-            logo_url = fetch_logo_for_job(entry.link, company)
+            # Fetch logo once per company
+            if company not in logo_cache:
+                logo_cache[company] = fetch_logo_for_job(company)
+            logo_url = logo_cache[company]
 
             job = {
                 "id": job_id,
                 "company": company,
                 "position": entry.title,
                 "link": entry.link,
-                "posted_date": entry.get('published', ''),
-                "published_parsed": entry.get('published_parsed'),
-                "logo_url": logo_url
+                "posted_date": entry.get("published", ""),
+                "published_parsed": entry.get("published_parsed"),
+                "logo_url": logo_url,
             }
             page_jobs.append(job)
-        
+
         if not page_jobs:
             break
-        
+
         jobs.extend(page_jobs)
-        print(f"  Page {page}: found {len(page_jobs)} jobs (total: {len(jobs)})")
-        
-        # Check if there are more pages by looking for next page indicator
-        if len(page_jobs) < 10:  # Typically 10 jobs per page
+        logger.info("Page %d: found %d jobs (total: %d)", page, len(page_jobs), len(jobs))
+
+        if len(page_jobs) < JOBS_PER_PAGE:
             break
-        
+
         page += 1
-    
+
     return jobs
 
-def find_new_jobs(current_jobs, existing_jobs):
-    """Figure out which jobs are new since last time we checked."""
-    seen_ids = {job['id'] for job in existing_jobs}
-    return [job for job in current_jobs if job['id'] not in seen_ids]
 
-def get_company_logo(job):
-    """Try to fetch company logo from job page, or return placeholder."""
-    logo_url = job.get('logo_url', '')
+def find_new_jobs(current_jobs: list[dict], existing_jobs: list[dict]) -> list[dict]:
+    """Figure out which jobs are new since last time we checked."""
+    seen_ids = {job["id"] for job in existing_jobs}
+    return [job for job in current_jobs if job["id"] not in seen_ids]
+
+
+def get_company_logo(job: dict) -> str:
+    """Return HTML for company logo in README."""
+    logo_url = job.get("logo_url", "")
     if logo_url:
-        return f"<img src=\"{logo_url}\" alt=\"{job['company']}\" width=\"50\">"
+        return f'<img src="{logo_url}" alt="{job["company"]}" width="50">'
     return "???"
 
-def fetch_logo_for_job(job_link, company_name):
-    """Try to fetch logo URL from job page or tenant directory."""
-    # Method 1: Try job page
-    logo = fetch_logo_from_page(job_link, company_name)
-    if logo:
-        return logo
 
-    # Method 2: Try tenant directory page (company name might be in URL format)
-    # Convert company name to URL slug (e.g., "RationalCyPhy Inc" -> "rational-cyphy")
-    tenant_slug = re.sub(r'[^a-z0-9]+', '-', company_name.lower()).strip('-')
-    tenant_url = f"https://researchpark.illinois.edu/tenant-directory/{tenant_slug}/"
-    logo = fetch_logo_from_page(tenant_url, company_name)
-    if logo:
-        return logo
-
-    return None
-
-def fetch_logo_from_page(url, company_name):
-    """Fetch logo from a specific page."""
-    try:
-        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-        context = ssl._create_unverified_context()
-        with urllib.request.urlopen(req, context=context, timeout=5) as response:
-            html = response.read().decode('utf-8')
-            soup = BeautifulSoup(html, 'html.parser')
-
-            # Method 1: Look for company-logo div with img inside
-            company_logo_div = soup.find('div', class_='company-logo')
-            if company_logo_div:
-                img = company_logo_div.find('img')
-                if img and img.get('src'):
-                    src = img.get('src')
-                    return normalize_logo_url(src)
-
-                # Check for background image in style
-                style = company_logo_div.get('style', '')
-                if 'background-image' in style:
-                    match = re.search(r'url\(["\']?([^"\']+)["\']?\)', style)
-                    if match:
-                        return normalize_logo_url(match.group(1))
-
-            # Method 2: Look for images in wp-content/uploads directory
-            company_normalized = re.sub(r'[^a-z0-9]', '', company_name.lower())
-            company_words = [w for w in company_name.lower().split() if len(w) > 2]
-
-            for img in soup.find_all('img'):
-                src = img.get('src', '')
-                if not src or 'wp-content/uploads' not in src.lower():
-                    continue
-
-                filename = src.split('/')[-1].lower()
-                filename_clean = re.sub(r'[^a-z0-9]', '', filename)
-
-                # Skip obvious non-logo images
-                if any(skip in filename for skip in ['wordmark', 'illinois', 'untitled', 'elementor', 'color-variation']):
-                    continue
-
-                # Match if: contains "logo" OR has "150x" (thumbnail size) AND matches company name
-                has_logo_keyword = 'logo' in filename
-                has_thumbnail_size = '150x' in filename
-
-                # Company name matching - be more strict
-                company_match = False
-                if company_words:
-                    # Check if any significant company word is in filename
-                    for word in company_words:
-                        if len(word) > 4 and word in filename_clean:
-                            company_match = True
-                            break
-                    # Also check first 6 chars of normalized company name
-                    if not company_match and len(company_normalized) > 5:
-                        company_match = company_normalized[:6] in filename_clean
-
-                # Only accept if it's clearly a logo (has logo keyword or thumbnail) AND matches company
-                is_logo = (has_logo_keyword or has_thumbnail_size) and company_match
-
-                # If no company match but has logo keyword/thumbnail, still accept (might be generic logo)
-                if not is_logo and (has_logo_keyword or has_thumbnail_size):
-                    is_logo = True
-
-                if is_logo:
-                    return normalize_logo_url(src)
-    except:
-        pass
-    return None
-
-def normalize_logo_url(src):
-    """Normalize logo URL to full URL."""
-    if not src:
-        return None
-    if src.startswith('/'):
-        return f"https://researchpark.illinois.edu{src}"
-    elif src.startswith('http'):
-        return src
-    return None
-
-
-def format_posted_date(posted_date_str, published_parsed=None):
+def format_posted_date(posted_date_str: str, published_parsed: list | None = None) -> str:
     """Turn the raw date from RSS into something readable like 'Nov 5, 2025 3:45 PM CST'."""
-    if not posted_date_str or posted_date_str == 'N/A':
-        return 'N/A'
-    
-    # Try the parsed date first, it's usually the most reliable
+    if not posted_date_str or posted_date_str == "N/A":
+        return "N/A"
+
     if published_parsed:
         try:
-            dt = datetime(*published_parsed[:6], tzinfo=ZoneInfo('UTC'))
-            cst = ZoneInfo('America/Chicago')
+            dt = datetime(*published_parsed[:6], tzinfo=ZoneInfo("UTC"))
+            cst = ZoneInfo("America/Chicago")
             dt_cst = dt.astimezone(cst)
-            return dt_cst.strftime('%b %d, %Y %I:%M %p CST')
-        except:
+            return dt_cst.strftime("%b %d, %Y %I:%M %p CST")
+        except Exception:
             pass
-    
-    # If that didn't work, try parsing the raw date string
+
     try:
-        # Try RFC 2822 format (common in RSS)
         import email.utils
+
         timestamp = email.utils.parsedate_tz(posted_date_str)
         if timestamp:
-            dt = datetime(*timestamp[:6], tzinfo=ZoneInfo('UTC'))
-            cst = ZoneInfo('America/Chicago')
+            dt = datetime(*timestamp[:6], tzinfo=ZoneInfo("UTC"))
+            cst = ZoneInfo("America/Chicago")
             dt_cst = dt.astimezone(cst)
-            return dt_cst.strftime('%b %d, %Y %I:%M %p CST')
-    except:
+            return dt_cst.strftime("%b %d, %Y %I:%M %p CST")
+    except Exception:
         pass
-    
-    # Fallback: try ISO format
+
     try:
-        dt_str = posted_date_str.replace('Z', '+00:00')
+        dt_str = posted_date_str.replace("Z", "+00:00")
         dt = datetime.fromisoformat(dt_str)
         if dt.tzinfo:
-            cst = ZoneInfo('America/Chicago')
+            cst = ZoneInfo("America/Chicago")
             dt = dt.astimezone(cst)
         else:
-            dt = dt.replace(tzinfo=ZoneInfo('America/Chicago'))
-        return dt.strftime('%b %d, %Y %I:%M %p CST')
-    except:
-        # Last resort: return shortened version
+            dt = dt.replace(tzinfo=ZoneInfo("America/Chicago"))
+        return dt.strftime("%b %d, %Y %I:%M %p CST")
+    except Exception:
         return posted_date_str[:16] if len(posted_date_str) > 16 else posted_date_str
 
-def generate_posting_insights(jobs):
+
+def generate_posting_insights(jobs: list[dict]) -> tuple[list[int], dict[int, int]] | None:
     """Generate insights about posting times to help users know when to check."""
     posting_hours = []
 
     for job in jobs:
-        published_parsed = job.get('published_parsed')
+        published_parsed = job.get("published_parsed")
         if not published_parsed:
             continue
-
         try:
-            # Parse from published_parsed tuple [year, month, day, hour, minute, second, ...]
-            dt = datetime(*published_parsed[:6], tzinfo=ZoneInfo('UTC'))
-            cst = ZoneInfo('America/Chicago')
+            dt = datetime(*published_parsed[:6], tzinfo=ZoneInfo("UTC"))
+            cst = ZoneInfo("America/Chicago")
             dt_cst = dt.astimezone(cst)
-            posting_hours.append(dt_cst.hour)  # Get hour in CST (0-23)
-        except:
+            posting_hours.append(dt_cst.hour)
+        except Exception:
             continue
 
     if len(posting_hours) < 3:
-        return None  # Not enough data
+        return None
 
-    # Count jobs per hour
-    hour_counts = {}
+    hour_counts: dict[int, int] = {}
     for hour in posting_hours:
         hour_counts[hour] = hour_counts.get(hour, 0) + 1
 
     return posting_hours, hour_counts
 
-def generate_posting_chart(jobs):
-    """Generate a Mermaid bar chart showing posting time distribution."""
+
+def generate_posting_chart(jobs: list[dict]) -> str | None:
+    """Generate a Unicode bar chart showing posting time distribution."""
     result = generate_posting_insights(jobs)
     if not result:
         return None
 
     posting_hours, hour_counts = result
 
-    # Create data for chart (only hours with at least 1 job)
     labels = []
     data = []
     for hour in range(24):
         count = hour_counts.get(hour, 0)
-        if count > 0:  # Only include hours with jobs
-            # Format hour labels
+        if count > 0:
             if hour == 0:
                 label = "12 AM"
             elif hour < 12:
@@ -337,159 +292,215 @@ def generate_posting_chart(jobs):
             labels.append(label)
             data.append(count)
 
-    # Create a simple, clean Unicode bar chart
     max_value = max(data) if data else 1
-    max_bar_length = 40  # Maximum bar length in characters
+    max_bar_length = 40
 
     chart_lines = [
-        f"## Posting Time Distribution",
+        "## Posting Time Distribution",
         "",
         f"### Job Posting Times (Based on {len(posting_hours)} postings)",
         "",
         "```",
         "Jobs",
-        ""
+        "",
     ]
 
-    # Create bars using Unicode block characters
     for label, count in zip(labels, data):
         bar_length = int((count / max_value) * max_bar_length) if max_value > 0 else 0
-        bar = "█" * bar_length
-        chart_lines.append(f"{label:>6} │{bar} {count}")
+        bar = "\u2588" * bar_length
+        chart_lines.append(f"{label:>6} \u2502{bar} {count}")
 
-    chart_lines.extend([
-        "       └" + "─" * max_bar_length,
-        "        0" + " " * (max_bar_length - 1) + str(max_value),
-        "```"
-    ])
+    chart_lines.extend(
+        [
+            "       \u2514" + "\u2500" * max_bar_length,
+            "        0" + " " * (max_bar_length - 1) + str(max_value),
+            "```",
+        ]
+    )
 
     return "\n".join(chart_lines)
 
-def update_readme(jobs):
+
+def update_readme(jobs: list[dict]) -> None:
     """Update the README file with the latest job listings."""
-    # Sort by published_parsed tuple in reverse chronological order (newest first)
-    sorted_jobs = sorted(jobs, key=lambda x: x.get('published_parsed') or (0, 0, 0, 0, 0, 0), reverse=True)
+    sorted_jobs = sorted(
+        jobs,
+        key=lambda x: x.get("published_parsed") or (0, 0, 0, 0, 0, 0),
+        reverse=True,
+    )
 
     table_rows = []
     for job in sorted_jobs:
-        position = job['position'].replace('|', '-')
-        company = job['company'].replace('|', '-')
+        position = job["position"].replace("|", "-")
+        company = job["company"].replace("|", "-")
         logo = get_company_logo(job)
-        posted = format_posted_date(job.get('posted_date', ''), job.get('published_parsed'))
-        link = job['link']
+        posted = format_posted_date(job.get("posted_date", ""), job.get("published_parsed"))
+        link = job["link"]
         table_rows.append(f"| {logo} | {company} | {position} | {posted} | [Apply]({link}) |")
 
-    table_rows = '\n'.join(table_rows)
+    table_text = "\n".join(table_rows)
 
-    cst = ZoneInfo('America/Chicago')
+    cst = ZoneInfo("America/Chicago")
     cst_time = datetime.now(cst)
-    last_updated = cst_time.strftime('%B %d, %Y at %I:%M %p CST')
+    last_updated = cst_time.strftime("%B %d, %Y at %I:%M %p CST")
 
-    # Generate posting time chart and insights
-    chart_url = generate_posting_chart(jobs)
-    insights_result = generate_posting_insights(jobs)
-    stats_text = ""
-    if chart_url and insights_result:
-        posting_hours, hour_counts = insights_result
-        n = len(posting_hours)
-
-        # Find peak hour
-        peak_hour, peak_count = max(hour_counts.items(), key=lambda x: x[1])
-
-        # Format hours
-        def format_hour(hour):
-            if hour == 0:
-                return "12 AM"
-            elif hour < 12:
-                return f"{hour} AM"
-            elif hour == 12:
-                return "12 PM"
-            else:
-                return f"{hour - 12} PM"
-
-        peak_formatted = format_hour(peak_hour)
-
-        # Find time range where most jobs are posted (80% percentile)
-        sorted_hours = sorted(posting_hours)
-        p10_idx = int(n * 0.1)
-        p90_idx = int(n * 0.9)
-        start_hour = sorted_hours[p10_idx]
-        end_hour = sorted_hours[p90_idx]
-
-        # Count jobs in the main range
-        in_range = sum(1 for h in posting_hours if start_hour <= h <= end_hour)
-        pct_in_range = (in_range / n) * 100
-
-        # Format insights
-        range_text = f"{format_hour(start_hour)} - {format_hour(end_hour)}"
-        if start_hour == end_hour:
-            range_text = format_hour(start_hour)
-
-        insights_lines = [
-            f"**Peak posting time:** {peak_formatted} ({peak_count} of {n} jobs)",
-            f"**{pct_in_range:.0f}% of jobs** posted between {range_text} (CST)",
-        ]
-
-        insights_text = "\n".join(insights_lines)
-
-        stats_text = f"""
-{chart_url}
-"""
+    chart = generate_posting_chart(jobs)
+    stats_text = f"\n{chart}\n" if chart else ""
 
     readme_content = README_TEMPLATE.format(
         last_updated=last_updated,
         total_positions=len(jobs),
-        job_table=table_rows,
-        posting_stats=stats_text
+        job_table=table_text,
+        posting_stats=stats_text,
     )
 
-    with open(README_FILE, 'w') as f:
+    with open(README_FILE, "w") as f:
         f.write(readme_content)
 
-def main():
-    print("=" * 60)
-    print("🎓 UIUC Research Park Job Monitor")
-    print("=" * 60 + "\n")
-    
-    print("Fetching all job listings from job board...")
+
+def send_email(new_jobs: list[dict]) -> None:
+    """Send email notification for new jobs using SMTP."""
+    sender_email = os.environ.get("EMAIL_SENDER")
+    sender_password = os.environ.get("EMAIL_PASSWORD")
+    recipients_env = os.environ.get("EMAIL_RECIPIENTS", "")
+    render_app_url = os.environ.get("RENDER_APP_URL", "").rstrip("/")
+
+    if not sender_email or not sender_password:
+        logger.warning("Email credentials not found. Skipping notification.")
+        return
+
+    # Admin recipients from env var
+    admin_recipients = [r.strip() for r in recipients_env.split(",") if r.strip()]
+
+    # DB subscribers
+    db_subscribers = get_active_subscribers()
+
+    if not admin_recipients and not db_subscribers:
+        logger.warning("No recipients found. Skipping notification.")
+        return
+
+    count = len(new_jobs)
+    subject = f"\U0001f393 {count} New Research Park Job{'s' if count > 1 else ''} Found!"
+
+    def build_html(unsubscribe_link: str | None = None) -> str:
+        html = f"""
+    <html>
+      <body style="font-family: Arial, sans-serif; line-height: 1.6;">
+        <h2 style="color: #13294b;">New Job Posting{'s' if count > 1 else ''} at Research Park</h2>
+        <p>The following new position{'s were' if count > 1 else ' was'} just detected:</p>
+        <ul style="list-style-type: none; padding: 0;">
+    """
+        for job in new_jobs:
+            html += f"""
+          <li style="margin-bottom: 15px; border-left: 4px solid #E84A27; padding-left: 10px;">
+            <strong>{job['company']}</strong><br>
+            {job['position']}<br>
+            <a href="{job['link']}" style="color: #13294b; text-decoration: none;">View Job \u2192</a>
+          </li>
+        """
+        html += """
+        </ul>
+        <p style="color: #666; font-size: 12px; margin-top: 30px;">
+          This is an automated notification from your Research Park Job Monitor.<br>
+          <a href="https://github.com/pazatek/rp-internship-notifier">View Repository</a>
+        </p>
+    """
+        if unsubscribe_link:
+            html += f"""
+        <p style="color: #999; font-size: 11px;">
+          <a href="{unsubscribe_link}" style="color: #999;">Unsubscribe from these notifications</a>
+        </p>
+    """
+        html += """
+      </body>
+    </html>
+    """
+        return html
+
+    try:
+        logger.info("Connecting to SMTP server...")
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+            server.login(sender_email, sender_password)
+
+            # Send to admin recipients (no unsubscribe link)
+            for recipient in admin_recipients:
+                msg = MIMEMultipart()
+                msg["From"] = sender_email
+                msg["To"] = recipient
+                msg["Subject"] = subject
+                msg.attach(MIMEText(build_html(), "html"))
+                server.send_message(msg)
+
+            # Send to DB subscribers (with unsubscribe link)
+            for sub in db_subscribers:
+                # Skip if already in admin list
+                if sub["email"] in admin_recipients:
+                    continue
+                unsubscribe_url = (
+                    f"{render_app_url}/unsubscribe?token={sub['unsubscribe_token']}"
+                    if render_app_url
+                    else None
+                )
+                msg = MIMEMultipart()
+                msg["From"] = sender_email
+                msg["To"] = sub["email"]
+                msg["Subject"] = subject
+                msg.attach(MIMEText(build_html(unsubscribe_url), "html"))
+                server.send_message(msg)
+
+        total = len(admin_recipients) + len(db_subscribers)
+        logger.info("Email notification sent to %d recipient(s)", total)
+    except Exception as e:
+        logger.error("Failed to send email: %s", e)
+
+
+def main() -> None:
+    logger.info("=" * 60)
+    logger.info("UIUC Research Park Job Monitor")
+    logger.info("=" * 60)
+
+    init_db()
+
+    logger.info("Fetching all job listings from job board...")
     current_jobs = parse_job_board()
     existing_jobs = load_existing_jobs()
-    
-    # Add discovered_date and preserve logo_url from existing jobs
-    existing_ids = {job['id'] for job in existing_jobs}
-    existing_jobs_dict = {job['id']: job for job in existing_jobs}
+
+    # Preserve metadata from existing jobs
+    existing_ids = {job["id"] for job in existing_jobs}
+    existing_jobs_dict = {job["id"]: job for job in existing_jobs}
 
     for job in current_jobs:
-        if job['id'] not in existing_ids:
-            job['discovered_date'] = datetime.now().isoformat()
+        if job["id"] not in existing_ids:
+            job["discovered_date"] = datetime.now().isoformat()
         else:
-            # Preserve discovered_date and logo_url from existing job
-            existing_job = existing_jobs_dict.get(job['id'])
+            existing_job = existing_jobs_dict.get(job["id"])
             if existing_job:
-                if 'discovered_date' in existing_job:
-                    job['discovered_date'] = existing_job['discovered_date']
-                # Keep cached logo if we have one, otherwise use newly fetched
-                if existing_job.get('logo_url') and not job.get('logo_url'):
-                    job['logo_url'] = existing_job['logo_url']
-    
+                if "discovered_date" in existing_job:
+                    job["discovered_date"] = existing_job["discovered_date"]
+                if existing_job.get("logo_url") and not job.get("logo_url"):
+                    job["logo_url"] = existing_job["logo_url"]
+
     new_jobs = find_new_jobs(current_jobs, existing_jobs)
-    
+
     if new_jobs:
-        print(f"🎉 {len(new_jobs)} new job(s) detected:")
+        logger.info("%d new job(s) detected:", len(new_jobs))
         for job in new_jobs:
-            print(f"  • {job['company']} - {job['position']}")
-        with open('new_jobs.json', 'w') as f:
+            logger.info("  - %s - %s", job["company"], job["position"])
+
+        send_email(new_jobs)
+
+        with open("new_jobs.json", "w") as f:
             json.dump(new_jobs, f, indent=2)
     else:
-        print(f"✓ No new jobs (scanned {len(current_jobs)} listings)")
-        Path('new_jobs.json').touch()
-    
+        logger.info("No new jobs (scanned %d listings)", len(current_jobs))
+        Path("new_jobs.json").touch()
+
     update_readme(current_jobs)
     save_jobs(current_jobs)
-    print("\n" + "=" * 60)
-    print("✅ Update complete!")
-    print("=" * 60)
+    logger.info("=" * 60)
+    logger.info("Update complete!")
+    logger.info("=" * 60)
+
 
 if __name__ == "__main__":
     main()
-

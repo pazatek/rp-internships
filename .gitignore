@@ -1,33 +1,9 @@
-# Python
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
+*.pyc
+.env
+config.env
 venv/
-ENV/
-.venv
-
-# Generated files (don't ignore these, they should be committed)
-# README.md - auto-generated from template
-# jobs.json - cached job data
-
-# Temporary files
-new_jobs.json
-commit_msg.txt
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS
 .DS_Store
-Thumbs.db
-
-# Logs
-*.log
-
+new_jobs.json
+subscribers.json
+commit_msg.txt
