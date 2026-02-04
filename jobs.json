@@ -1,5 +1,25 @@
 [
   {
+    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47829",
+    "company": "Cache Energy",
+    "position": "Part-Time Public Relations Intern",
+    "link": "https://researchpark.illinois.edu/job/part-time-public-relations-intern/",
+    "posted_date": "Wed, 04 Feb 2026 15:46:10 +0000",
+    "published_parsed": [
+      2026,
+      2,
+      4,
+      15,
+      46,
+      10,
+      2,
+      35,
+      0
+    ],
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/04/3x2-Logo-ADM-01-5-150x150.jpg",
+    "discovered_date": "2026-02-04T17:52:37.649775"
+  },
+  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47811",
     "company": "Dow",
     "position": "Data Engineer Internship Summer 2026",
@@ -116,7 +136,7 @@
       23,
       0
     ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2022/07/SquareLogo-John-Deere-150x150.png",
+    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2021/12/Kocree-Logo.png",
     "discovered_date": "2026-01-23T17:32:11.593592"
   },
   {
@@ -238,26 +258,6 @@
     ],
     "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2023/12/Cache-Energy-Logo-150x150.png",
     "discovered_date": "2026-01-12T17:31:24.290355"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47707",
-    "company": "Cache Energy",
-    "position": "Thermal Engineering Intern \u2013 CFD",
-    "link": "https://researchpark.illinois.edu/job/thermal-engineering-intern-cfd/",
-    "posted_date": "Mon, 12 Jan 2026 17:02:51 +0000",
-    "published_parsed": [
-      2026,
-      1,
-      12,
-      17,
-      2,
-      51,
-      0,
-      12,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2023/12/Cache-Energy-Logo-150x150.png",
-    "discovered_date": "2026-01-12T17:31:24.290364"
   },
   {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47207",
@@ -460,26 +460,6 @@
     "discovered_date": "2025-12-17T17:30:29.303338"
   },
   {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46508",
-    "company": "Research Park",
-    "position": "Communications Intern",
-    "link": "https://researchpark.illinois.edu/job/uirp-communications-intern/",
-    "posted_date": "Wed, 17 Dec 2025 16:06:30 +0000",
-    "published_parsed": [
-      2025,
-      12,
-      17,
-      16,
-      6,
-      30,
-      2,
-      351,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/01/Research-Park-Logo-Square-150x150.png",
-    "discovered_date": "2025-12-05T22:27:52.026716"
-  },
-  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47664",
     "company": "NVIDIA",
     "position": "Senior Research Scientist, System Software and I/O Architecture",
@@ -580,106 +560,6 @@
     "discovered_date": "2025-12-16T20:56:18.309719"
   },
   {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47643",
-    "company": "Littelfuse",
-    "position": "Technical Marketing Engineer",
-    "link": "https://researchpark.illinois.edu/job/technical-marketing-engineer/",
-    "posted_date": "Mon, 15 Dec 2025 17:34:22 +0000",
-    "published_parsed": [
-      2025,
-      12,
-      15,
-      17,
-      34,
-      22,
-      0,
-      349,
-      0
-    ],
-    "logo_url": null,
-    "discovered_date": "2025-12-15T18:45:03.134691"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47642",
-    "company": "Mondel\u0113z International",
-    "position": "R&D Product Development Intern",
-    "link": "https://researchpark.illinois.edu/job/product-development-intern/",
-    "posted_date": "Mon, 15 Dec 2025 17:14:47 +0000",
-    "published_parsed": [
-      2025,
-      12,
-      15,
-      17,
-      14,
-      47,
-      0,
-      349,
-      0
-    ],
-    "logo_url": null,
-    "discovered_date": "2025-12-15T17:31:35.263585"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47641",
-    "company": "Mondel\u0113z International",
-    "position": "Extended Reality Intern",
-    "link": "https://researchpark.illinois.edu/job/extended-reality-intern/",
-    "posted_date": "Mon, 15 Dec 2025 16:49:06 +0000",
-    "published_parsed": [
-      2025,
-      12,
-      15,
-      16,
-      49,
-      6,
-      0,
-      349,
-      0
-    ],
-    "logo_url": null,
-    "discovered_date": "2025-12-15T17:31:35.263594"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47619",
-    "company": "Tiptek",
-    "position": "Laboratory Technician",
-    "link": "https://researchpark.illinois.edu/job/laboratory-technician-2/",
-    "posted_date": "Fri, 05 Dec 2025 20:44:47 +0000",
-    "published_parsed": [
-      2025,
-      12,
-      5,
-      20,
-      44,
-      47,
-      4,
-      339,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png",
-    "discovered_date": "2025-12-05T21:25:39.782712"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47620",
-    "company": "Tiptek",
-    "position": "Production Technician",
-    "link": "https://researchpark.illinois.edu/job/production-technician-2/",
-    "posted_date": "Fri, 05 Dec 2025 20:44:25 +0000",
-    "published_parsed": [
-      2025,
-      12,
-      5,
-      20,
-      44,
-      25,
-      4,
-      339,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png",
-    "discovered_date": "2025-12-05T21:25:39.782721"
-  },
-  {
     "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=47614",
     "company": "Rivian",
     "position": "Embedded Systems Software \u2013 Rivian",
@@ -718,45 +598,5 @@
     ],
     "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2025/09/epivara-logo.avif",
     "discovered_date": "2025-11-05T15:47:32.599128"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46865",
-    "company": "Tiptek",
-    "position": "Production Technician",
-    "link": "https://researchpark.illinois.edu/job/production-technician/",
-    "posted_date": "Fri, 05 Sep 2025 18:52:19 +0000",
-    "published_parsed": [
-      2025,
-      9,
-      5,
-      18,
-      52,
-      19,
-      4,
-      248,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png",
-    "discovered_date": "2025-11-05T15:47:32.599138"
-  },
-  {
-    "id": "https://researchpark.illinois.edu/?post_type=job_listing&p=46864",
-    "company": "Tiptek",
-    "position": "Laboratory Technician",
-    "link": "https://researchpark.illinois.edu/job/laboratory-technician/",
-    "posted_date": "Fri, 05 Sep 2025 18:47:07 +0000",
-    "published_parsed": [
-      2025,
-      9,
-      5,
-      18,
-      47,
-      7,
-      4,
-      248,
-      0
-    ],
-    "logo_url": "https://researchpark.illinois.edu/wp-content/uploads/2024/09/TipTek-Logo-150x150.png",
-    "discovered_date": "2025-11-05T15:47:32.599140"
   }
 ]
