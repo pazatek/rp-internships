@@ -32,7 +32,7 @@ def avatar_color(company_name: str) -> str:
 app.jinja_env.filters["avatar_color"] = avatar_color
 
 JOBS_JSON_URL = (
-    "https://raw.githubusercontent.com/pazatek/rp-internships/main/jobs.json"
+    "https://raw.githubusercontent.com/pazatek/rp-jobs/main/jobs.json"
 )
 CACHE_TTL = 300  # 5 minutes
 

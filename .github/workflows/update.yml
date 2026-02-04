@@ -19,7 +19,7 @@ jobs:
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
       EMAIL_SENDER: ${{ secrets.EMAIL_SENDER }}
       EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
-      RENDER_APP_URL: ${{ secrets.RENDER_APP_URL }}
+      APP_URL: ${{ secrets.APP_URL }}
 
     steps:
       - name: Checkout repository

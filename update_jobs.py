@@ -363,7 +363,7 @@ def send_email(new_jobs: list[dict]) -> None:
     sender_email = os.environ.get("EMAIL_SENDER")
     sender_password = os.environ.get("EMAIL_PASSWORD")
     recipients_env = os.environ.get("EMAIL_RECIPIENTS", "")
-    render_app_url = os.environ.get("RENDER_APP_URL", "").rstrip("/")
+    app_url = os.environ.get("APP_URL", "").rstrip("/")
 
     if not sender_email or not sender_password:
         logger.warning("Email credentials not found. Skipping notification.")
@@ -402,7 +402,7 @@ def send_email(new_jobs: list[dict]) -> None:
         </ul>
         <p style="color: #666; font-size: 12px; margin-top: 30px;">
           This is an automated notification from your Research Park Job Monitor.<br>
-          <a href="https://github.com/pazatek/rp-internship-notifier">View Repository</a>
+          <a href="https://github.com/pazatek/rp-jobs">View Repository</a>
         </p>
     """
         if unsubscribe_link:
@@ -437,8 +437,8 @@ def send_email(new_jobs: list[dict]) -> None:
                 if sub["email"] in admin_recipients:
                     continue
                 unsubscribe_url = (
-                    f"{render_app_url}/unsubscribe?token={sub['unsubscribe_token']}"
-                    if render_app_url
+                    f"{app_url}/unsubscribe?token={sub['unsubscribe_token']}"
+                    if app_url
                     else None
                 )
                 msg = MIMEMultipart()
